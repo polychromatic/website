@@ -1,0 +1,232 @@
+/***********************
+ * Fonts
+ **********************/
+/* Google Web Font - Play */
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+html, body {
+    background: #323232;
+    background: linear-gradient(#000000, #323232);
+}
+
+body {
+    color: white;
+    font-family: 'Play', 'Ubuntu', 'DejaVu Sans', 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    /* Sticky footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+}
+
+/***********************
+ * Interface
+ **********************/
+a {
+    color: lime;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline-color: lime;
+}
+
+/***********************
+ * Layout
+ **********************/
+.wrapper {
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        max-width: calc(800px - (30px));
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/* Clearfix */
+.wrapper:after,
+.footer-col-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/***********************
+ * Header
+ **********************/
+body > header {
+    padding: 0.5em 0;
+    border-bottom: 1px solid lime;
+    background: #000;
+}
+
+.site-title {
+    text-decoration: none;
+}
+
+.site-title * {
+    vertical-align: middle;
+}
+
+.site-title span {
+    font-size: 2em;
+    color: lime;
+}
+
+.site-nav {
+    float: right;
+    line-height: 54px;
+}
+
+.site-nav a {
+    color: lime;
+}
+
+.site-nav a + a {
+    margin-left: 0.5em;
+}
+
+.site-nav a.active {
+    color: white;
+    font-weight: bold;
+}
+
+.site-nav .nav-trigger {
+    display: none;
+}
+
+.site-nav .menu-icon {
+    display: none;
+}
+
+.site-nav .page-link {
+    color: #111;
+    line-height: 1.5;
+}
+
+.site-nav .page-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .site-title span {
+        display: none;
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        background-color: #484848;
+        border: 1px solid #000;
+        border-radius: 5px;
+        text-align: right;
+        margin-top: 0.75em;
+    }
+
+    .site-nav a {
+        display: block;
+        padding: 0 1em;
+    }
+
+    .site-nav label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .site-nav .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .site-nav .menu-icon>svg path {
+        fill: #808080;
+    }
+
+    .site-nav input~.trigger {
+        clear: both;
+        display: none;
+    }
+
+    .site-nav input:checked~.trigger {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    .site-nav .page-link {
+        display: block;
+        padding: 5px 10px;
+        margin-left: 20px;
+    }
+
+    .site-nav .page-link:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+/***********************
+ * Footer
+ **********************/
+footer {
+    border-top: 1px solid gray;
+    padding: 0.5em 0;
+    color: gray;
+    font-size: 0.9em;
+    margin-top: auto;
+    background: #000;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .left a {
+    color: gray;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+}
+
+footer .right {
+    float: right;
+    position: relative;
+    top: 0.6em;
+}
+
+footer .right a + a {
+    padding: 0 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+    footer .left,
+    footer .right {
+        text-align: center;
+        padding: 0.5em 0;
+        float: none;
+        position: static;
+    }
+}
+

@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "version": "1",
+  "name": "Polychromatic",
+  "short_name": "Polychromatic",
+  "description": "Front-end to control OpenRazer devices",
+  "default_locale": "en",
+  "icons": [
+    {
+      "src": "/assets/favicon/32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "density": 0.5
+    },
+    {
+      "src": "/assets/favicon/48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": 1.0
+    },
+    {
+      "src": "/assets/favicon/96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": 2.0
+    },
+    {
+      "src": "/assets/favicon/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": 3.0
+    },
+    {
+      "src": "/assets/favicon/196x196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "density": 4.0
+    },
+    {
+      "src": "/assets/favicon/256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "density": 5.0
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#00FF00",
+  "orientation": "any"
+}
