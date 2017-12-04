@@ -76,7 +76,11 @@ body > header {
 }
 
 .site-title {
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+.site-title:hover {
+    color: lime;
 }
 
 .site-title * {
@@ -85,7 +89,6 @@ body > header {
 
 .site-title span {
     font-size: 2em;
-    color: lime;
 }
 
 .site-nav {
@@ -230,3 +233,24 @@ footer .right a + a {
     }
 }
 
+/***********************
+ * Animations
+ **********************/
+@-webkit-keyframes spectrum {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+    100% {
+        filter: hue-rotate(720deg);
+    }
+}
+
+header {
+  animation-name: spectrum;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
