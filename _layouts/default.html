@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   {% include head.html %}
 
@@ -16,5 +16,10 @@
     {% include footer.html %}
 
   </body>
+
+  {% if page.layout == "homepage" %}
+    <script src="/assets/lib/typed.min.js"></script>
+    <script src="/assets/js/homepage.js"></script>
+  {% endif %}
 
 </html>
