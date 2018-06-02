@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Polychromatic
-email: luke@ubuntu-mate.org
+email: code@horwell.me
 description: >- # this means to ignore newlines until "baseurl:"
   A cross-distro front-end for the OpenRazer project. Polychromatic offers a
   tray applet, a graphical interface, a command line program and
