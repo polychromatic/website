@@ -1,0 +1,37 @@
+@import 'variables.scss';
+
+#error-page {
+    position: absolute;
+    left: 0;
+    top: 78px;
+    bottom: 46px;
+    right: 0;
+    background-color: black;
+    background-image: url(/assets/img/error.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#error-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 6em;
+    padding: 1em 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85);
+
+    h3 {
+        font-size: 2em;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    p {
+        font-size: 1em;
+        margin: 0;
+    }
+}

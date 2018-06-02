@@ -1,0 +1,73 @@
+@import 'variables.scss';
+
+footer {
+    border-top: 1px solid gray;
+    padding: 0.5em 0;
+    color: gray;
+    font-size: 0.9em;
+    margin-top: auto;
+    background: #000;
+
+    .left {
+        float: left;
+
+        a {
+            color: gray;
+            text-decoration: dashed;
+            text-decoration-line: underline;
+        }
+    }
+
+    .right {
+        float: right;
+        position: relative;
+        top: 0.6em;
+    }
+
+    .social-links {
+        float: right;
+        position: relative;
+        top: 0.2em;
+        margin-left: 0.5em;
+
+        img {
+            width: 24px;
+            height: 24px;
+            padding: 0 0.25em;
+            transition: opacity 0.2s;
+            opacity: 1;
+        }
+
+        a {
+            &:hover,
+            &:focus {
+                img {
+                    opacity: 0.75;
+                }
+            }
+
+            & + a {
+                padding: 0 0.5em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        &.left,
+        &.right {
+            text-align: center;
+            padding: 0.5em 0;
+            float: none;
+            position: static;
+        }
+    }
+}
+
+/* Sticky footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

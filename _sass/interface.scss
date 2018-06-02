@@ -1,0 +1,60 @@
+@import 'variables.scss';
+
+a {
+    color: lime;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline-color: lime;
+}
+
+ .homepage-buttons {
+    margin: 2em 0;
+    text-align: center;
+ }
+
+ .button-block {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+ }
+
+.btn {
+    width: auto;
+    height: 30px;
+    background-color: #323232;
+    color: #ded9cb;
+    display: inline-block;
+    padding: 4px 16px;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #2d2d2d;
+    -webkit-user-select: none;
+    -webkit-appearance: none;
+}
+
+.btn:hover {
+    color: #0da902;
+    text-decoration: none;
+}
+
+.btn:active {
+    background-color: #06ff00;
+    color: black;
+}
+
+.btn + label {
+    display: block;
+    font-size: 0.8em;
+    color: #808080;
+    padding: 0.5em 0;
+}
