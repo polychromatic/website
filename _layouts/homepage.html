@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="page">
+
+    <div class="splash">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-6 chroma-backdrop">
+                    <img class="penguin" alt="Tux mascot hiding in the background" src="/assets/img/splash/tux.svg">
+                    <img class="chroma-ring" alt="Chroma ring" src="/assets/img/splash/chroma.svg">
+                </div>
+                <div class="col-6 splash-details">
+                    <div class="splash-details-inner">
+                        <h2>{{ page.splash_title }}</h2>
+                        <p>{{ page.splash_paragraph }}</p>
+                        <a href="{{ page.splash_button_url }}" class="btn">{{ page.splash_button_text }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="splash-block"></div>
+
+    <div class="page-content">
+    {{ content }}
+    </div>
+
+</article>

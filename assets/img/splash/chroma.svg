@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg48" xmlns="http://www.w3.org/2000/svg" height="367.58" viewBox="-10 -10 367.60959 367.58328" width="367.61" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs id="defs32">
+  <linearGradient id="redyel" gradientUnits="userSpaceOnUse" y1="-123.29" gradientTransform="scale(1.2329 .81113)" x2="70.244" y2="-61.643">
+   <stop id="stop2" stop-color="#ff0000" offset="0"/>
+   <stop id="stop4" stop-color="#ffff00" offset="1"/>
+  </linearGradient>
+  <linearGradient id="yelgre" x1="171.57" gradientUnits="userSpaceOnUse" y1="-25.238" gradientTransform="scale(.50475 1.9812)" x2="171.57" y2="25.238">
+   <stop id="stop7" stop-color="#ffff00" offset="0"/>
+   <stop id="stop9" stop-color="#00ff00" offset="1"/>
+  </linearGradient>
+  <linearGradient id="grecya" x1="70.244" gradientUnits="userSpaceOnUse" y1="61.643" gradientTransform="scale(1.2329 .81113)" x2="-2.3054e-14" y2="123.29">
+   <stop id="stop12" stop-color="#00ff00" offset="0"/>
+   <stop id="stop14" stop-color="#00ffff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="cyablu" x1="-2.3054e-14" gradientUnits="userSpaceOnUse" y1="123.29" gradientTransform="scale(1.2329 .81113)" x2="-70.244" y2="61.643">
+   <stop id="stop17" stop-color="#00ffff" offset="0"/>
+   <stop id="stop19" stop-color="#0000ff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="blumag" x1="-171.57" gradientUnits="userSpaceOnUse" y1="25.238" gradientTransform="scale(.50475 1.9812)" x2="-171.57" y2="-25.238">
+   <stop id="stop22" stop-color="#0000ff" offset="0"/>
+   <stop id="stop24" stop-color="#ff00ff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="magred" x1="-70.244" gradientUnits="userSpaceOnUse" y1="-61.643" gradientTransform="scale(1.2329 .81113)" x2="0" y2="-123.29">
+   <stop id="stop27" stop-color="#ff00ff" offset="0"/>
+   <stop id="stop29" stop-color="#ff0000" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient910" y2="25.238" xlink:href="#yelgre" gradientUnits="userSpaceOnUse" x2="171.57" gradientTransform="scale(.50475 1.9812)" y1="-25.238" x1="171.57"/>
+  <linearGradient id="linearGradient912" y2="123.29" xlink:href="#grecya" gradientUnits="userSpaceOnUse" x2="-2.3054e-14" gradientTransform="scale(1.2329 .81113)" y1="61.643" x1="70.244"/>
+  <linearGradient id="linearGradient914" y2="61.643" xlink:href="#cyablu" gradientUnits="userSpaceOnUse" x2="-70.244" gradientTransform="scale(1.2329 .81113)" y1="123.29" x1="-2.3054e-14"/>
+  <linearGradient id="linearGradient916" y2="-25.238" xlink:href="#blumag" gradientUnits="userSpaceOnUse" x2="-171.57" gradientTransform="scale(.50475 1.9812)" y1="25.238" x1="-171.57"/>
+  <linearGradient id="linearGradient918" y2="-123.29" xlink:href="#magred" gradientUnits="userSpaceOnUse" x2="0" gradientTransform="scale(1.2329 .81113)" y1="-61.643" x1="-70.244"/>
+  <filter id="filter932" style="color-interpolation-filters:sRGB" height="1.48" width="1.48" y="-.24001" x="-.23999">
+   <feGaussianBlur id="feGaussianBlur934" stdDeviation="19.999653"/>
+  </filter>
+ </defs>
+ <g id="g46" stroke-width="20" fill="none" transform="matrix(-.45458 .78731 .78735 .45455 173.8 173.79)">
+  <path id="path34" stroke="url(#redyel)" d="m0-100a100 100 0 0 1 86.6 50"/>
+  <path id="path36" stroke="url(#linearGradient910)" d="m86.6-50a100 100 0 0 1 0 100"/>
+  <path id="path38" stroke="url(#linearGradient912)" d="m86.6 50a100 100 0 0 1 -86.6 50"/>
+  <path id="path40" stroke="url(#linearGradient914)" d="m0 100a100 100 0 0 1 -86.6 -50"/>
+  <path id="path42" stroke="url(#linearGradient916)" d="m-86.6 50a100 100 0 0 1 0 -100"/>
+  <path id="path44" stroke="url(#linearGradient918)" d="m-86.6-50a100 100 0 0 1 86.6 -50"/>
+ </g>
+ <g id="g46-9" transform="matrix(-.45458 .78731 .78735 .45455 173.8 173.79)" filter="url(#filter932)" stroke-width="20" fill="none">
+  <path id="path34-3" d="m0-100a100 100 0 0 1 86.6 50" stroke="url(#redyel)"/>
+  <path id="path36-6" d="m86.6-50a100 100 0 0 1 0 100" stroke="url(#linearGradient910)"/>
+  <path id="path38-0" d="m86.6 50a100 100 0 0 1 -86.6 50" stroke="url(#linearGradient912)"/>
+  <path id="path40-6" d="m0 100a100 100 0 0 1 -86.6 -50" stroke="url(#linearGradient914)"/>
+  <path id="path42-2" d="m-86.6 50a100 100 0 0 1 0 -100" stroke="url(#linearGradient916)"/>
+  <path id="path44-6" d="m-86.6-50a100 100 0 0 1 86.6 -50" stroke="url(#linearGradient918)"/>
+ </g>
+</svg>

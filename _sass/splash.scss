@@ -1,0 +1,59 @@
+@import 'variables.scss';
+
+$splash-height: 40vh;
+
+.splash-block {
+    display: block;
+    height: $splash-height;
+}
+
+.splash {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: $splash-height;
+    background: black;
+    overflow: hidden;
+    font-size: 1.1em;
+
+    .chroma-backdrop {
+        position: relative;
+        height: $splash-height;
+
+        .penguin {
+            position: absolute;
+            top: 10vh;
+            left: 10vw;
+            transform: rotate(10deg);
+            opacity: 0.1;
+        }
+
+        .chroma-ring {
+            position: absolute;
+            height: 200vh;
+            top: -120vh;
+            left: -50vw;
+            animation: rotate 10s linear infinite;
+        }
+    }
+
+    .splash-details {
+        background: rgba(0,0,0,0.5);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@media screen and (min-width: $screen-sm) {
+    .splash-details-inner {
+        margin-top: 10vh;
+    }
+}

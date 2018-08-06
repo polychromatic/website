@@ -7,6 +7,11 @@ html, body {
     margin: 0;
 }
 
+p {
+    margin: 1em 0;
+    line-height: 24px;
+}
+
 .wrapper {
     max-width: calc(1200px - (30px * 2));
     margin-right: auto;
