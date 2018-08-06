@@ -21,11 +21,9 @@
         </label>
 
         <div class="trigger">
-            {% for path in page_paths %}
-                {% assign subpage = site.pages | where: "path", path | first %}
-                {% if subpage.show_in_nav == true %}
-                <a href="{{ subpage.permalink }}" onclick="changePage(this)" class="nav-btn {% if subpage.permalink == page.url %}active{% endif %}">{{ subpage.title }}</a>
-                {% endif %}
+            {% for subpage in site.navigation %}
+                <a href="{{ subpage.url }}" onclick="changePage(this)" class="nav-btn {% if subpage.url == page.permalink %}active{% endif %}">{{ subpage.text }}</a>
+                <div class="seperator">|</div>
             {% endfor %}
         </div>
     </nav>
