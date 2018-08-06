@@ -2,15 +2,26 @@
 
 body > header {
     border-bottom: 1px solid lime;
-    background-color: lime;
+    background-color: black;
     background-image: url(/assets/img/header-keys.svg);
     background-size: cover;
     background-position: center;
+    animation: smooth-header 0.5s linear forwards;
 
     .wrapper {
         padding-top: 30px;
         padding-bottom: 30px;
         background: linear-gradient(to right, rgba(0,0,0,0.5), black);
+    }
+}
+
+@keyframes smooth-header {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: lime;
     }
 }
 
