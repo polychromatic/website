@@ -8,3 +8,23 @@
     }
 }
 
+.feature {
+    padding: 1em;
+
+    img {
+        padding: 1em;
+        width: 100%;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+<div class="row feature">
+
+    <div class="col-1"></div>
+
+    {% if include.img_position == "left" %}
+    <div class="col-3">
+        {% include img-2x src=include.img %}
+    </div>
+    {% endif %}
+
+    <div class="col-6 {{ include.img_position }}">
+        <h2>{{ include.title }}</h2>
+        <p>{{ include.text | markdownify }}</p>
+    </div>
+
+    {% if include.img_position == "right" %}
+    <div class="col-3">
+        {% include img-2x src=include.img %}
+    </div>
+    {% endif %}
+
+    <div class="col-1"></div>
+
+</div>
