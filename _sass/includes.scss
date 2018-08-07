@@ -25,6 +25,36 @@
     }
 }
 
+.feature-page {
+    margin: 2em 0;
+
+    &.odd {
+        .img {
+            text-align: right;
+        }
+
+        .text {
+            text-align: left;
+        }
+    }
+
+    &.even {
+        .img {
+            text-align: left;
+        }
+
+        .text {
+            text-align: right;
+        }
+    }
+
+    img {
+        margin: 1em 0;
+        height: 100%;
+        max-height: 200px;
+    }
+}
+
 .center {
     text-align: center;
 }

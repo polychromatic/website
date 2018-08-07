@@ -16,6 +16,10 @@ $splash-height: 40vh;
     overflow: hidden;
     font-size: 1.1em;
 
+    h2 {
+        color: white;
+    }
+
     .chroma-backdrop {
         position: relative;
         height: $splash-height;
