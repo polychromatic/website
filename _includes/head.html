@@ -16,8 +16,10 @@
     <meta name="twitter:site" content="@p0lychromatic">
     <meta name="twitter:creator" content="@p0lychromatic">
 
-    <link rel="stylesheet" href="{{ '/assets/lib/bootstrap-grid.min.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/polychromatic.css' | relative_url }}">
+    {% for stylesheet in site.stylesheets %}
+    <link rel="stylesheet" href="{{ stylesheet }}">
+    {% endfor %}
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
 

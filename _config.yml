@@ -51,6 +51,11 @@ facebook_page: "https://facebook.com/p0lychromatic"
 twitter_page: "https://twitter.com/p0lychromatic"
 rss_feed: "https://github.com/polychromatic/polychromatic/releases.atom"
 
+# Stylesheets
+stylesheets:
+    - /assets/lib/bootstrap-grid.min.css
+    - /assets/css/polychromatic.css
+
 # Navigation
 navigation:
     - text: Features
