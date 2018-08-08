@@ -23,14 +23,7 @@ $splash-height: 40vh;
     .chroma-backdrop {
         position: relative;
         height: $splash-height;
-
-        .penguin {
-            position: absolute;
-            top: 10vh;
-            left: 10vw;
-            transform: rotate(10deg);
-            opacity: 0.1;
-        }
+        pointer-events: none;
 
         .chroma-ring {
             position: absolute;

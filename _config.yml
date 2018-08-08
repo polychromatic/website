@@ -64,8 +64,5 @@ navigation:
     - text: Download
       url: /download/
 
-    - text: Screenshots
-      url: /screenshots/
-
     - text: Documentation
       url: /docs/

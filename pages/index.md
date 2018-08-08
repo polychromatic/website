@@ -3,7 +3,7 @@ layout: homepage
 title:
 permalink: /
 
-splash_title: Welcome home, BlackWidow & friends!
+splash_title: Welcome, BlackWidow & friends!
 splash_paragraph: >-
     Polychromatic is a frontend for OpenRazer
     that enables Razer devices to control lighting effects
@@ -56,14 +56,14 @@ complement the [OpenRazer] driver and daemon.
 {% include feature
     img_position = "left"
     img = "/assets/img/logo.svg"
-    title = "Inspired by Razer Synapse"
-    text = "Supporting most of its abilities, with new features."
+    title = "Take control of your devices"
+    text = "Visually set your Razer device's settings and lighting preferences."
 %}
 
 {% include feature
     img_position = "right"
     img = "/assets/img/logo.svg"
-    title = "No Clouds, No Registration"
+    title = "No clouds, no registration"
     text = "It's local software that runs on your computer."
 %}
 
