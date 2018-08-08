@@ -7,12 +7,22 @@ body > header {
     background-size: cover;
     background-position: center;
     animation: smooth-header 0.5s linear forwards;
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 
     .wrapper {
         padding-top: 30px;
         padding-bottom: 30px;
         background: linear-gradient(to right, rgba(0,0,0,0.5), black);
     }
+}
+
+#header-block {
+    height: $header-height;
 }
 
 @keyframes smooth-header {
