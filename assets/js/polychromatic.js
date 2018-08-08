@@ -59,3 +59,7 @@ var FadeTransition = Barba.BaseTransition.extend({
 Barba.Pjax.getTransition = function() {
     return FadeTransition;
 };
+
+function makeActive(self) {
+    $(self).addClass("active");
+}

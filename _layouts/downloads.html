@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="page">
+
+    <header class="page-header">
+        <h1 class="page-title">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="page-content">
+
+        <div class="distros row">
+        {% for distro in page.distros %}
+            <a class="col" href="{{ distro.url }}" onclick="makeActive(this)">
+                <img src="/assets/img/distros/{{ distro.url }}.svg" alt="{{ distro.name }} logo"/>
+                <span>{{ distro.name }}</span>
+            </a>
+        {% endfor %}
+        </div>
+
+        {{ content }}
+    </div>
+
+</article>

@@ -58,3 +58,64 @@
 .center {
     text-align: center;
 }
+
+.grey {
+    color: grey;
+}
+
+.distros {
+    margin: 2em 0;
+
+    .col {
+        text-align: center;
+        background: black;
+        box-shadow: 0px 0px 5px lime;
+        margin: 0 0.5em;
+        padding: 1em;
+        transition: box-shadow $btn-speed, filter $btn-speed;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 15px lime;
+            text-decoration: none;
+
+            img {
+                filter: grayscale(0);
+            }
+
+            span {
+                color: lime;
+            }
+        }
+
+        &:active,
+        &.active {
+            background-color: green;
+
+            span {
+                color: white;
+            }
+        }
+
+        img {
+            width: 100%;
+            filter: grayscale(1);
+            transition: filter $btn-speed;
+        }
+
+        span {
+            display: block;
+            margin-top: 1em;
+            color: green;
+            transition: color $btn-speed;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .distros {
+        img {
+            max-width: 100px;
+        }
+    }
+}
