@@ -1,5 +1,10 @@
 @import 'variables.scss';
 
+@font-face {
+    font-family: 'Play';
+    src: url('/assets/lib/Play-Regular.ttf')  format('truetype');
+}
+
 body {
     font-family: 'Play', 'Ubuntu', 'DejaVu Sans', 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
