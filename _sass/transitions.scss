@@ -1,9 +1,27 @@
 @import 'variables.scss';
 
 .page-in {
-
+    animation: in ease-out $page-speed;
 }
 
 .page-out {
+    animation: out ease-in $page-speed;
+}
 
+@keyframes page-in {
+    0% {
+        transform: translateY(5vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+}
+
+@keyframes page-out {
+    0% {
+        transform: translateY(0vw);
+    }
+    100% {
+        transform: translateY(5vw);
+    }
 }

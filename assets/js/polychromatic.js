@@ -36,7 +36,10 @@ var FadeTransition = Barba.BaseTransition.extend({
     },
 
     fadeOut: function() {
-        return $(this.oldContainer).addClass("page-out").animate({ opacity: 0 }).promise();
+        $(this.oldContainer).addClass("page-out").animate({ opacity: 0 }).promise();
+        setTimeout(function() {
+            return;
+        }, 500);
     },
 
     fadeIn: function() {
