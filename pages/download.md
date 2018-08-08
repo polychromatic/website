@@ -31,7 +31,10 @@ distros:
 ---
 
 {:.center}
-[Not listed / Manual Instructions](manual){:.btn}
+[Other Distributions / Manual Install](manual/){:.btn}
 
 {:.grey .center}
 Red Hat or CentOS is not supported at the moment. [Read more.](/docs/support/redhat)
+
+{:.center}
+[View Source Code on GitHub](https://github.com/polychromatic/)

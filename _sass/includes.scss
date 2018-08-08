@@ -119,3 +119,32 @@
         }
     }
 }
+
+.download-page {
+    .distro-logo {
+        width: 100%;
+        padding: 2em;
+    }
+}
+
+.back-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    margin-top: 1.25em;
+
+    img {
+        position: absolute;
+        right: -1em;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    &:hover,
+    &:focus {
+        img {
+            opacity: 0.5;
+        }
+    }
+}

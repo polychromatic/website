@@ -66,3 +66,14 @@ hr {
 h1, h2, h3 {
     color: lime;
 }
+
+pre {
+    background: $pre-colour;
+    color: lime;
+    padding: 1em;
+    overflow-x: auto;
+}
+
+code {
+    color: lime;
+}
