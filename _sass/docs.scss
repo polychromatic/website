@@ -20,4 +20,65 @@ body.docs {
             }
         }
     }
+
+    footer {
+        .left {
+            .editme {
+                color: lime;
+            }
+        }
+    }
+
+    article {
+        margin: 0;
+    }
 }
+
+.sidebar {
+    min-height: calc(100vh - 192px) !important;
+    background: black;
+    padding: 1em;
+
+    .category-heading {
+        color: $sidebar-heading;
+        margin-top: 1em;
+        padding: 0.25em 0;
+        border-bottom: 1px solid darken($sidebar-heading, 40%);
+    }
+
+    .category {
+        display: block;
+        padding: 0.25em 1em;
+        border-bottom: 1px solid darken($sidebar-heading, 40%);
+
+        &:hover,
+        &:focus {
+            background: #313131;
+            color: white;
+            text-decoration: none;
+        }
+
+        &.active {
+            background: green;
+
+            &:hover,
+            &:focus {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .category-home {
+        @extend .category;
+        padding: 0.5em 0;
+    }
+}
+
+.topic {
+    .page-title {
+        color: white;
+        font-weight: 400;
+    }
+}
+
