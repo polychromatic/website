@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+body.docs {
+    .site-header {
+        background-image: url(/assets/img/docs/header.jpg);
+
+        .wrapper {
+            background: transparent;
+        }
+    }
+
+    .site-title {
+        .docs {
+            color: lightgray;
+        }
+
+        &:hover {
+            .docs {
+                color: lighten(green, 10%);
+            }
+        }
+    }
+}
