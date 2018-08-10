@@ -22,7 +22,7 @@ Polychromatic depends on:
 ### System-wide Install
 
 You'll need to install the latest versions of `git`, `meson` and `ninja`, as well
-as the [application's dependencies](/docs/technical/dependencies).
+as the [application's dependencies](/docs/dependencies).
 
 ```
 git clone https://github.com/polychromatic/polychromatic.git
