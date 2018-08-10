@@ -3,15 +3,19 @@
 a {
     color: lime;
     text-decoration: none;
-}
 
-a:hover {
-    color: green;
-    text-decoration: underline;
-}
+    &:hover {
+        color: green;
+        text-decoration: underline;
 
-a:focus {
-    outline-color: lime;
+        code {
+            color: green;
+        }
+    }
+
+    &:focus {
+        outline-color: lime;
+    }
 }
 
 .homepage-buttons {
