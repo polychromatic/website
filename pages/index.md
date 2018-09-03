@@ -9,8 +9,8 @@ splash_paragraph: >-
     that enables Razer devices to control lighting effects
     and more on GNU/Linux.
 
-splash_button_url: /about/
-splash_button_text: See Features
+splash_button_url: /download/
+splash_button_text: Download
 
 ---
 
@@ -19,7 +19,7 @@ splash_button_text: See Features
 {% include feature-tile
     img = "/assets/img/homepage/controller.png"
     title = "Controller"
-    text = "The graphical application to set effects, create profiles and manage devices."
+    text = "The graphical application to set effects, create key mapping for applications and manage hardware settings."
 %}
 
 {% include feature-tile
@@ -28,48 +28,30 @@ splash_button_text: See Features
     text = "Conveniently alter the lighting and features of your devices a few clicks away."
 %}
 
-{% include feature-tile
-    img = "/assets/img/homepage/command-line.png"
-    title = "Command Line"
-    text = "Terminal warriors and scripting junkies are covered."
-%}
-
 {% include end-row %}
 
----
-
-{:.center}
-# Powered by OpenRazer
-
-{:.center}
-![OpenRazer logo with devices](/assets/img/homepage/openrazer.svg)
-
-{:.center}
-Polychromatic is just a collection of front-end utilities that
-complement the [OpenRazer] driver and daemon.
-
-{:.center}
-[View Supported Devices](https://openrazer.github.io/#devices){:.btn}
+{:.center .grey}
+**Coming Soon:** A command line tool for terminal warriors and scripting junkies.
 
 ---
 
 {% include feature
     img_position = "left"
-    img = "/assets/img/logo.svg"
-    title = "Take control of your devices"
-    text = "Visually set your Razer device's settings and lighting preferences."
+    img = "/assets/img/openrazer.svg"
+    title = "Powered by OpenRazer"
+    text = "Complements the OpenRazer driver and daemon, supporting over 50+ devices.<br><br>[View Supported Devices](https://openrazer.github.io/#devices)"
 %}
 
 {% include feature
     img_position = "right"
-    img = "/assets/img/logo.svg"
+    img = "/assets/fa/cloud.svg"
     title = "No clouds, no registration"
-    text = "It's local software that runs on your computer."
+    text = "Local software that runs on your computer, with no telemetry."
 %}
 
 {% include feature
     img_position = "left"
-    img = "/assets/img/logo.svg"
+    img = "/assets/fa/box-open.svg"
     title = "It's free and open source"
     text = "Free forever. Licensed and distributed under the [GPLv3](/docs/license/)."
 %}
@@ -77,17 +59,15 @@ complement the [OpenRazer] driver and daemon.
 ---
 
 {:.center}
-# Razer device, meet penguin.
+# Razer, snake... meet penguin.
 
 {:.center}
 ![Tux meets a snake](/assets/img/homepage/meet-penguin.svg)
 
 {:.center}
-[Over 50 devices are supported](https://openrazer.github.io/#devices).
-Whether you've got one or planning to buy one, your gaming weapon is covered on GNU/Linux.
+Whether you've got one or planning to buy Razer peripherals, OpenRazer + Polychromatic will cover your gaming weapon.
 
 {:.center}
 [Download](/download/){:.btn}
-
 
 [OpenRazer]: https://openrazer.github.io

@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   tools to schedule tasks so you can configure lighting and profiles on
   your GNU/Linux system very simply.
 
-  It's like Razer Synapse, but it does more, is open source and cloud-free.
+  It's a bit like Razer Synapse, but only that it's not.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
