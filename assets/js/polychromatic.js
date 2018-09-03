@@ -18,11 +18,6 @@ document.addEventListener("click", function(e) {
         return;
     }
 
-    /* Prevent smooth fading when visiting documentation */
-    if (el.href.endsWith("docs")) {
-        return;
-    }
-
     /* Prevent smooth fading when returning from docs */
     if ($("body").attr("class") === "docs" && el.href.endsWith("polychromatic.github.io/")) {
         return;
