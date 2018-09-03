@@ -2,40 +2,6 @@
 
 $roadmap-line: #00FF00;
 
-body.docs {
-    .site-header {
-        background-image: url(/assets/img/docs/header.jpg);
-
-        .wrapper {
-            background: transparent;
-        }
-    }
-
-    .site-title {
-        .docs {
-            color: lightgray;
-        }
-
-        &:hover {
-            .docs {
-                color: lighten(green, 10%);
-            }
-        }
-    }
-
-    footer {
-        .left {
-            .editme {
-                color: lime;
-            }
-        }
-    }
-
-    article {
-        margin: 0;
-    }
-}
-
 .sidebar {
     min-height: calc(100vh - 192px) !important;
     background: black;
@@ -81,6 +47,11 @@ body.docs {
     .page-title {
         color: white;
         font-weight: 400;
+    }
+
+    img {
+        max-width: 100%;
+        box-shadow: 0 0 20px green;
     }
 }
 

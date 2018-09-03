@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<article class="page">
+
+    <div class="page-content">
+
+        <div class="row">
+            <div class="sidebar col-3">
+                <a class="category-home nav-btn {% if page.permalink == "/" %}active{% endif %}" href="/docs/" onclick="changePage(this)">Documentation Home</a>
+
+                {% for parent in site.sidebar %}
+
+                <div class="category-heading">{{ parent.name }}</div>
+
+                  {% for subpage in site.pages %}
+                    {% if subpage.category == parent.id %}
+                    <a href="{{ subpage.permalink | relative_url }}" onclick="changePage(this)" class="nav-btn category {% if page.permalink == subpage.permalink %}active{% endif %}">{{ subpage.title }}</a>
+                    {% endif %}
+                  {% endfor %}
+
+                {% endfor %}
+
+            </div>
+
+            <div class="col topic">
+
+                <div id="barba-wrapper">
+                    <div class="barba-container">
+                        <h1 class="page-title">{{ page.title | escape }}</h1>
+
+                        <div class="roadmap">
+                            {% for version in page.roadmap %}
+                            <div class="row">
+                                <div class="line">
+                                    <div class="circle {% if version.checked == true %}checked{% endif %} {% if version.checked == 'progress' %}progress{% endif %}"></div>
+                                </div>
+                                <div class="col">
+                                    <h3>{{ version.name }}</h3>
+                                    <ul class="completed">
+                                        {% for item in version.completed %}
+                                        <li>{{ item }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    <ul class="pending">
+                                        {% for item in version.pending %}
+                                        <li>{{ item }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        {{ content }}
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</article>

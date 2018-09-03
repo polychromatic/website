@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 function changePage(element) {
-    $(".nav-btn").removeClass("active");
+    $(element).siblings().removeClass("active");
     $(element).addClass("active");
 }
 
@@ -14,12 +14,7 @@ document.addEventListener("click", function(e) {
     var el = e.target;
     var hostname = e.target.host;
 
-    if (hostname !== "localhost" || hostname !== "polychromatic.github.io") {
-        return;
-    }
-
-    /* Prevent smooth fading when returning from docs */
-    if ($("body").attr("class") === "docs" && el.href.endsWith("polychromatic.github.io/")) {
+    if (hostname !== "localhost" || hostname !== "polychromatic.app") {
         return;
     }
 

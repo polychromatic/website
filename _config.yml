@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+source_code_url: "https://github.com/polychromatic/polychromatic-website"
 
 # Build settings
 markdown: kramdown
@@ -67,3 +68,17 @@ navigation:
 
     - text: Documentation
       url: /docs/
+
+# Docs
+sidebar:
+    #~ - id: user
+      #~ name: User Guide
+
+    - id: dev
+      name: Development
+
+    - id: support
+      name: Troubleshooting
+
+    - id: project
+      name: Project

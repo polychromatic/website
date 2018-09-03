@@ -3,7 +3,7 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="/" onclick="changePage(this)">
+    <a class="site-title" href="/" onclick="$('.active').removeClass('active');">
         <img src="/assets/img/logo.svg" alt="Polychromatic Logo"/>
         <span>polychromatic</span>
     </a>
