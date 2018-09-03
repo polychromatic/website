@@ -14,7 +14,7 @@ If you haven't already, you'll need the [OpenRazer](https://openrazer.github.io)
 
 ```
 sudo layman -a vifino-overlay
-emerge razer-drivers
+emerge app-misc/openrazer
 ```
 
 {:.grey}
@@ -29,5 +29,5 @@ The [vifino-overlay](https://github.com/vifino/vifino-overlay/tree/master/app-mi
 
 ```
 sudo layman -a vifino-overlay
-emerge polychromatic
+emerge app-misc/polychromatic
 ```
