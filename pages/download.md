@@ -37,4 +37,4 @@ distros:
 Red Hat and CentOS are not officially supported. [Read more](/docs/supported-distros/)
 
 {:.center}
-[View Source Code on GitHub](https://github.com/polychromatic/)
+[View Source Code on GitHub](https://github.com/polychromatic/polychromatic/)

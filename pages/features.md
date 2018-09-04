@@ -24,14 +24,14 @@ features:
 
     - title: Key Mapping
       img: /assets/img/features/keymapping.gif
-      text: Build static key maps for when your programs and games.
+      text: Build static key maps for your programs and games.
       points: null
 
 
 ---
 
 {:.center .grey}
-<small>`*` GNOME Shell 3.x on some distributions may require the **AppIndicator extension** to be installed.</small>
+<small>`*` GNOME Shell 3.x requires the **AppIndicator extension** to be installed.</small>
 
 ---
 

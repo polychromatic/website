@@ -22,7 +22,7 @@
 
         <div class="trigger">
             {% for subpage in site.navigation %}
-                <a href="{{ subpage.url }}" onclick="changePage(this)" class="nav-btn {% if subpage.url == page.permalink %}active{% endif %} {% if subpage.url == '/docs/' %}no-barba{% endif %}">{{ subpage.text }}</a>
+                <a href="{{ subpage.url }}" onclick="changePage(this)" class="nav-btn {% if subpage.url == page.permalink %}active{% endif %}">{{ subpage.text }}</a>
                 <div class="seperator">|</div>
             {% endfor %}
         </div>
