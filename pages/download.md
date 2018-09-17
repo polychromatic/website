@@ -3,8 +3,8 @@ layout: downloads
 title: Download
 permalink: /download/
 
-distros:
-    - name: Ubuntu & Linux Mint
+official_distros:
+    - name: Ubuntu / Linux Mint
       url: ubuntu
       maintainer: official
 
@@ -24,21 +24,18 @@ distros:
       url: opensuse
       maintainer: z3ntu
 
-    - name: Gentoo
-      url: gentoo
-      maintainer: vifino
-
     - name: Mageia
       url: mageia
       maintainer: z3ntu
 
+community_title: "Community Supported"
+community_distros:
+    - name: Gentoo
+      url: gentoo
+      maintainer: vifino
+
+
 ---
 
 {:.center}
-[Other Distributions / Manual Install](manual/){:.btn}
-
-{:.grey .center}
-Red Hat and CentOS are not officially supported. [Read more](/docs/supported-distros/)
-
-{:.center}
-[View Source Code on GitHub](https://github.com/polychromatic/polychromatic/)
+[Manual Installation Instructions](manual/){:.btn} [View Source Code](https://github.com/polychromatic/polychromatic/){:.btn}
