@@ -28,6 +28,10 @@ distros:
       url: gentoo
       maintainer: vifino
 
+    - name: Mageia
+      url: mageia
+      maintainer: z3ntu
+
 ---
 
 {:.center}
