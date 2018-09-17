@@ -14,9 +14,7 @@ Works on:
 
 ## 1. OpenRazer
 
-If you haven't already, you'll need the [OpenRazer](https://openrazer.github.io) driver and daemon.
-
-You can install this by typing these commands in a terminal:
+First, you'll need [OpenRazer](https://openrazer.github.io). Type these commands in a terminal:
 
 ```
 sudo add-apt-repository ppa:openrazer/stable
@@ -25,14 +23,14 @@ sudo apt install openrazer-meta
 ```
 
 {:.grey}
-See the [project website](http://openrazer.github.io/#ubuntu) for original instructions.
+For original instructions, see the [OpenRazer website](http://openrazer.github.io/#ubuntu).
 Be sure to restart the computer after installing.
 
 ---
 
 ## 2. Polychromatic
 
-Polychromatic can be installed via this PPA:
+Polychromatic can be installed via the official PPA:
 
 ```
 sudo add-apt-repository ppa:polychromatic/stable

@@ -6,22 +6,16 @@ distro: mageia
 distro_name: Mageia
 ---
 
-Packages kindly maintained by [z3ntu](https://github.com/z3ntu).
+## OpenRazer & Polychromatic
 
-## 1. OpenRazer
+First, you'll need to install [OpenRazer](https://openrazer.github.io).
 
-If you haven't already, you'll need the [OpenRazer](https://openrazer.github.io) driver and daemon.
+Both OpenRazer can Polychromatic are built by the openSUSE Build Service:
 
-Packages and a one-click install is [avaliable from the openSUSE Build Service](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta).
+* [openrazer-meta](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta)
+* [polychromatic](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic)
+
+From there, you'll be able to download packages, get instructions or perform a one-click install.
 
 {:.grey}
-See the [project website](http://openrazer.github.io/#opensuse) for original instructions.
 Be sure to restart the computer after installing.
-
----
-
-## 2. Polychromatic
-
-You can also obtain packages or perform a one-click install for [`polychromatic` on the
-openSUSE Build Service](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic).
-

@@ -6,13 +6,10 @@ distro: fedora
 distro_name: Fedora
 ---
 
-Packages kindly maintained by [z3ntu](https://github.com/z3ntu).
-
 ## 1. OpenRazer
 
-If you haven't already, you'll need the [OpenRazer](https://openrazer.github.io) driver and daemon.
-
-See the [project website](http://openrazer.github.io/#fedora) for instructions.
+First, you'll need to install [OpenRazer](https://openrazer.github.io).
+See the [OpenRazer website](http://openrazer.github.io/#fedora) for instructions.
 
 {:.grey}
 Be sure to restart the computer after installing.

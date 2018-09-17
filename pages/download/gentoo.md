@@ -6,11 +6,10 @@ distro: gentoo
 distro_name: Gentoo
 ---
 
-Packages kindly maintained by [vifino](https://github.com/vifino).
+These packages are maintained by [vifino] in the [vifino-overlay] repository.
+If there's a packaging or dependency problem, please [raise the issue] in their repository.
 
 ## 1. OpenRazer
-
-If you haven't already, you'll need the [OpenRazer](https://openrazer.github.io) driver and daemon.
 
 ```
 sudo layman -a vifino-overlay
@@ -18,16 +17,19 @@ emerge app-misc/openrazer
 ```
 
 {:.grey}
-See the [project website](http://openrazer.github.io/#gentoo) for original instructions.
+See the [OpenRazer website](http://openrazer.github.io/#gentoo) for original instructions.
 Be sure to restart the computer after installing.
 
 ---
 
 ## 2. Polychromatic
 
-The [vifino-overlay](https://github.com/vifino/vifino-overlay/tree/master/app-misc/) contains a package for `polychromatic`.
-
 ```
 sudo layman -a vifino-overlay
 emerge app-misc/polychromatic
 ```
+
+
+[vifino]: https://github.com/vifino/
+[vifino-overlay]: https://github.com/vifino/vifino-overlay/tree/master/app-misc/
+[raise the issue]: https://github.com/vifino/vifino-overlay/issues
