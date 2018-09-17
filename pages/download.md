@@ -34,6 +34,9 @@ community_distros:
       url: gentoo
       maintainer: vifino
 
+    - name: CentOS / Red Hat
+      url: redhat
+      maintainer: moozhub
 
 ---
 
