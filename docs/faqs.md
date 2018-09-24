@@ -22,7 +22,7 @@ WebKit. There are other tools with similar functionality, such as
 
 [OpenRazer] is a driver and daemon which analyses the protocols used to speak
 to Razer peripherals to control their lighting and hardware effects. It also
-exposes an API for scripts and applications (such as this one!) to control
+exposes an API for scripts and applications (like this one!) to control
 the devices at a higher level.
 
 The daemon is written in Python, with a driver for device-specific
@@ -31,10 +31,13 @@ endorsed by Razer themselves.
 
 ----
 
-### Does this work on Windows or Mac?
+### Is Windows or Mac supported?
 
-Not at this time. [OpenRazer] will need to port its driver and daemon to these
-operating systems before Polychromatic will work on other operating systems.
+Not at the moment. First, [OpenRazer] will need to port the daemon and
+Python library required by Polychromatic to these platforms.
+
+One of the OpenRazer team members is [experimenting with this](https://github.com/z3ntu/razer_test)
+using [hidapi](https://github.com/signal11/hidapi).
 
 * <https://github.com/openrazer/openrazer/issues/623>
 
@@ -42,7 +45,7 @@ operating systems before Polychromatic will work on other operating systems.
 
 ----
 
-### Do you support other LED devices, such as Logitech?
+### Are other brands of LED devices supported, such as Logitech?
 
 No, the software has been heavily designed around the OpenRazer daemon, which
 makes it unfeasible to support other brands or daemons.
