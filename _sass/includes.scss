@@ -89,7 +89,7 @@
             text-decoration: none;
 
             img {
-                filter: grayscale(0);
+                filter: grayscale(0) brightness(0.5);
             }
 
             span {
