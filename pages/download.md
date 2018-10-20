@@ -28,6 +28,10 @@ official_distros:
       url: mageia
       maintainer: z3ntu
 
+    - name: Solus
+      url: solus
+      maintainer: z3ntu
+
 community_title: "Community Supported"
 community_distros:
     - name: Gentoo
