@@ -1,10 +1,10 @@
 ---
 layout: docs
-title: Welcome
+title: Documentation
 permalink: /docs/
 ---
 
-![Docs Image](/assets/img/docs/home.jpg)
+![](/assets/img/docs/home.jpg)
 
 The documentation aims to answer common questions about this project and [OpenRazer].
 Eventually, this will be expanded to include an online user guide and details
