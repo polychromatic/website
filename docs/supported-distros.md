@@ -15,6 +15,7 @@ Arch Linux                                      | [z3ntu]
 Fedora 27 or later                              | [z3ntu]
 openSUSE Leap 15.0 or Tumbleweed                | [z3ntu]
 Mageia                                          | [z3ntu]
+Solus                                           | [z3ntu]
 
 `*` Includes flavours and variants (such as Linux Mint)
 
