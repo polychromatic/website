@@ -18,8 +18,8 @@ roadmap:
         - New command line utility
         - New website and documentation
         - Rewrite how the Controller UI works under the hood
-      pending:
         - New devices UI
+      pending:
         - New effects UI
         - Support custom mappings for all types of devices (mice, firefly, etc)
         - Design and play animated effects
