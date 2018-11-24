@@ -18,8 +18,8 @@ features:
       text: >-
         A handy GTK applet that sits in your indicator or notification area.
         <br><br>
-        Works on a variety of desktop environments,
-        including GNOME`*`, MATE, KDE, LXDE and XFCE.
+        Works on a variety of desktop environments`*`,
+        including GNOME`**`, MATE, KDE, LXDE and XFCE.
       points: null
 
     - title: Key Mapping
@@ -31,7 +31,12 @@ features:
 ---
 
 {:.center .grey}
-<small>`*` GNOME Shell 3.x requires the **AppIndicator extension** to be installed.</small>
+<small>
+`*` Desktop environment needs to support **AppIndicator**. Some distributions
+    (such as elementaryOS) require additional steps.
+<br>
+`**` GNOME Shell 3.x requires the **AppIndicator extension** to be installed.
+</small>
 
 ---
 
