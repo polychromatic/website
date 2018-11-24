@@ -45,8 +45,9 @@ using [hidapi](https://github.com/signal11/hidapi).
 
 ----
 
-### Are other brands of LED devices supported, such as Logitech?
+### Are other LED peripherals supported, such as Logitech or Corsair?
 
-No, the software has been heavily designed around the OpenRazer daemon, which
-makes it unfeasible to support other brands or daemons.
+Not at the moment. The software has been heavily designed around the OpenRazer
+daemon, and it would be very messy to bolt on other brands or daemons with the
+current codebase. Potentially, this may be supported in the distant future.
 
