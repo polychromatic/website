@@ -89,7 +89,7 @@ $roadmap-line: #00FF00;
         border: 2px solid $roadmap-line;
         margin: auto;
         border-radius: 100%;
-        background: #000;
+        background: $bg-colour;
 
         &.checked,
         &.progress {

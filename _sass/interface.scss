@@ -79,6 +79,12 @@ pre {
     overflow-x: auto;
 }
 
+.width-80 {
+    pre {
+        max-width: 80ch;
+    }
+}
+
 code {
     color: lime;
 }
