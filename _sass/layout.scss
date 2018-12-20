@@ -16,6 +16,11 @@ p {
     line-height: 24px;
 }
 
+::selection {
+    background-color: green;
+    color: white;
+}
+
 .wrapper {
     max-width: calc(1200px - (30px * 2));
     margin-right: auto;
