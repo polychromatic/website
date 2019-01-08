@@ -19,6 +19,7 @@ roadmap:
         - New website and documentation
         - Rewrite how the Controller UI works under the hood
         - New devices UI
+        - New preferences UI
       pending:
         - New effects UI
         - Support custom mappings for all types of devices (mice, firefly, etc)
