@@ -1,6 +1,8 @@
 //--------------------------------------
 // Barba Library and Page Transitions
 //--------------------------------------
+var transition_speed = 300;
+
 $(document).ready(function() {
     Barba.Pjax.start();
 });
@@ -36,28 +38,29 @@ var FadeTransition = Barba.BaseTransition.extend({
     },
 
     fadeOut: function() {
-        $(this.oldContainer).addClass("page-out").animate({ opacity: 0 }).promise();
-        setTimeout(function() {
-            return;
-        }, 500);
+        return;
     },
 
     fadeIn: function() {
         var _this = this;
-        var $el = $(this.newContainer);
+        var oldContainer = $(this.oldContainer)
+        var newContainer = $(this.newContainer)
 
-        $(this.oldContainer).hide();
+        oldContainer.hide();
+        window.scrollTo(0, 0);
 
-        $el.css({
-            visibility : 'visible',
-            opacity : 0
-        });
+        // Skip transitions on documentation pages.
+        if (window.location.pathname.substring(0, 6) == "/docs/") {
+            newContainer.css("visibility", "visible");
+            newContainer.find(".topic").addClass("page-in");
+        } else {
+            // Similiar transition as seen in the Controller.
+            newContainer.css("visibility", "visible").addClass("page-in");
+        }
 
-        $("html,body").animate({ scrollTop: 0 }, 400);
-
-        $el.addClass("page-in").animate({ opacity: 1 }, 400, function() {
+        setTimeout(function() {
             _this.done();
-        });
+        }, transition_speed);
     }
 });
 
