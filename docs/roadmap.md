@@ -20,11 +20,11 @@ roadmap:
         - Rewrite how the Controller UI works under the hood
         - New devices UI
         - New preferences UI
+        - Fix tray applet issues
       pending:
         - New effects UI
         - Support custom mappings for all types of devices (mice, firefly, etc)
         - Design and play animated effects
-        - Fix tray applet issues
         - Save/load macros recorded via on-the-fly.
         - Ability to create presets (profiles) for various devices.
         - Ability to schedule profiles to activate based on events (e.g. at login)
