@@ -78,18 +78,18 @@
     .col {
         text-align: center;
         background: black;
-        box-shadow: 0px 0px 5px lime;
+        border: 1px solid green;
         margin: 0.5em;
         padding: 1em;
-        transition: box-shadow $btn-speed, filter $btn-speed;
+        transition: border-color $btn-speed, filter $btn-speed;
 
         &:hover,
         &:focus {
-            box-shadow: 0 0 15px lime;
+            border-color: lime;
             text-decoration: none;
 
             img {
-                filter: grayscale(0) brightness(0.5);
+                filter: grayscale(0);
             }
 
             span {
@@ -99,10 +99,15 @@
 
         &:active,
         &.active {
-            background-color: green;
+            background-color: lime;
+
+            img {
+                filter: grayscale(1) brightness(0.25);
+                transition: none;
+            }
 
             span {
-                color: white;
+                color: black;
             }
         }
 
