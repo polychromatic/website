@@ -19,10 +19,74 @@
 
     {% include footer.html %}
 
-  </body>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://polychromatic.app",
+                        "name": "Home"
+                    }
+                }
+                {% if page.permalink != "/" %}
+                  ,
+                    {% if page.layout == "docs" and page.permalink != "/docs/" %}
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@id": "https://polychromatic.app/docs/",
+                                "name": "Documentation"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@id": "https://polychromatic.app{{ page.permalink }}",
+                                "name": "{{ page.title }}"
+                            }
+                        }
+                    {% elsif page.layout == "download-page" %}
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@id": "https://polychromatic.app/download/",
+                                "name": "Download"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@id": "https://polychromatic.app{{ page.permalink }}",
+                                "name": "{{ page.title | replace:'Download - ','' }}"
+                            }
+                        }
+                    {% else %}
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@id": "https://polychromatic.app{{ page.permalink }}",
+                                "name": "{{ page.title }}"
+                            }
+                        }
+                    {% endif %}
+                {% endif %}
+            ]
+        }
+    </script>
 
-  <script src="/assets/lib/jquery-3.3.1.min.js"></script>
-  <script src="/assets/lib/barba.min.js"></script>
-  <script src="/assets/js/polychromatic.js"></script>
+    <script src="/assets/lib/jquery-3.3.1.min.js"></script>
+    <script src="/assets/lib/barba.min.js"></script>
+    <script src="/assets/js/polychromatic.js"></script>
+
+  </body>
 
 </html>
