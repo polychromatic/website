@@ -13,7 +13,7 @@ Razer device on GNU/Linux, similar to the features found on Razer Synapse.
 
 The application is written in Python, with the Controller application powered by
 WebKit. There are other tools with similar functionality, such as
-[razerCommander](https://github.com/GabMus/razerCommander) (GTK) and
+[razerCommander](https://gitlab.com/gabmus/razerCommander) (GTK) and
 [RazerGenie](https://github.com/z3ntu/RazerGenie) (Qt).
 
 ----
