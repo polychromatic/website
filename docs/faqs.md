@@ -22,26 +22,35 @@ WebKit. There are other tools with similar functionality, such as
 
 [OpenRazer] is a driver and daemon which analyses the protocols used to speak
 to Razer peripherals to control their lighting and hardware effects. It also
-exposes an API for scripts and applications (like this one!) to control
+exposes an API for scripts and applications [(like Polychromatic)](/) to control
 the devices at a higher level.
 
-The daemon is written in Python, with a driver for device-specific
-features like handling macros. It is an unofficial implementation and is not
-endorsed by Razer themselves.
+The project aims to support the hardware's features (e.g. DPI and lighting).
+
+The daemon is written in Python, with a DKMS driver for device-specific
+features like handling macro keys. It is an unofficial implementation and is
+**not endorsed** by Razer.
+
+[OpenRazer]: https://openrazer.github.io
 
 ----
 
 ### Is Windows or Mac supported?
 
-Not at the moment. First, [OpenRazer] will need to port the daemon and
-Python library required by Polychromatic to these platforms.
+Not at the moment.
 
-One of the OpenRazer team members is [experimenting with this](https://github.com/z3ntu/razer_test)
-using [hidapi](https://github.com/signal11/hidapi).
+Currently, one of the OpenRazer team members is rewriting [OpenRazer] to handle
+everything in userspace, which will eliminate the dependency on DKMS drivers for GNU/Linux.
+This rewrite uses [hidapi](https://github.com/signal11/hidapi) and is making
+excellent progress, but is still in early development.
 
+* <https://github.com/z3ntu/razer_test>
+* <https://github.com/z3ntu/python-openrazer>
+* <https://github.com/z3ntu/openrazer-shim>
 * <https://github.com/openrazer/openrazer/issues/623>
 
-[OpenRazer]: https://openrazer.github.io
+Once OpenRazer is fully compatible with Windows and Mac, Polychromatic will
+be able to support Windows and macOS.
 
 ----
 
@@ -51,3 +60,93 @@ Not at the moment. The software has been heavily designed around the OpenRazer
 daemon, and it would be very messy to bolt on other brands or daemons with the
 current codebase. Potentially, this may be supported in the distant future.
 
+---
+
+### Are macros supported for keyboards **with** dedicated macro keys?
+
+Yes, the OpenRazer daemon provides on-the-fly macro recording for Razer
+keyboards (such as BlackWidow Chroma) that have dedicated macro keys (M1-M5).
+
+Keystrokes can be recorded and stored in the daemon until it is stopped.
+The key combination is slightly different to Razer's official drivers:
+
+1. Press <kbd>FN</kbd> + <kbd>F9</kbd>.
+  * The macro LED will start blinking.
+2. Press the key that will save this macro.
+  * E.g. <kbd>M1</kbd>. The macro LED will turn solid.
+3. Type your keystrokes.
+4. Press <kbd>FN</kbd> + <kbd>F9</kbd> to finish.
+
+If the macro LED rapidly blinks on step 1, you may need to restart the daemon.
+
+Playback will play the keystrokes one-after-the-other, which is incredibly fast.
+Time delays are not supported right now.
+
+---
+
+### Are macros supported for keyboards **without** dedicated macro keys?
+
+Officially, no. With a patch, yes. To make on-the-fly recording work for ANY key,
+locate this file and remove these lines:
+
+[/usr/lib/python3/**/openrazer_daemon/misc/key_event_management.py](https://github.com/openrazer/openrazer/blob/bd71e769d9239fc4ffac69c04cf3cc88b12d7bda/daemon/openrazer_daemon/misc/key_event_management.py#L488-L495)
+
+```
+                    if self._current_macro_bind_key is None:
+-                        # Restrict macro bind keys to M1-M5
+-                        if key_name not in ('M1', 'M2', 'M3', 'M4', 'M5'):
+-                            self._logger.warning("Macros are only for M1-M5 for now.")
+-                            self._recording_macro = False
+-                            self._parent.setMacroMode(False)
+-                        else:
+                            self._current_macro_bind_key = key_name
+                            self._parent.setMacroEffect(0x00)
+```
+
+This 'hack' is just for reference. This does not
+work with gamepads as they behave like a Chroma keyboard (default device behaviour).
+
+---
+
+### What is macro support like in Polychromatic?
+
+The current version `(v0.3.12)` is limited and will only inform you about the
+OpenRazer daemon's on-the-fly macro recording feature.
+[In a future update](/docs/roadmap/), new functionality will enable you to
+save, load and apply macros to devices with dedicated macro keys.
+
+---
+
+### Can I remap keys?
+
+Neither Polychromatic or [OpenRazer] support key/button remapping at the
+moment for any device - neither mice, keyboards or keypads.
+
+In the meantime, other users have reported using these utilities:
+
+* [Keyboarding Master](https://sites.google.com/site/keyboardingmaster/) _(Java)_
+* [Pystromo](https://github.com/byrongibson/Pystromo) _(Python 2)_
+
+---
+
+### Can I create my own effects?
+
+Not yet, but Polychromatic will add new and improve existing functionality
+[in a future update](/docs/roadmap/).
+
+For now, the current version `(v0.3.12)` can set static colours for keyboards
+based on the Razer BlackWidow layout. Ideal for mapping out keys for games or applications.
+
+Other users have patched the graphic to work with these devices in the interim:
+
+* [Blade Stealh Late 2016](https://github.com/polychromatic/polychromatic/pull/144)
+* [BlackWidow Elite](https://github.com/polychromatic/polychromatic/pull/200)
+
+---
+
+### Can I create my own profiles?
+
+Not yet, but Polychromatic will add profile ("presets") functionality [in a future update](/docs/roadmap/).
+
+Confusingly, the current version `(v0.3.12)` refers to a custom static keymapping as
+"application profile".
