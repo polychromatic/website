@@ -108,15 +108,19 @@ body > header {
         }
     }
 
+    body > header .wrapper {
+        padding-top: 40px;
+        padding-bottom: 34px;
+    }
+
     .site-nav {
         position: absolute;
         top: 9px;
         right: 15px;
-        background-color: #484848;
-        border: 1px solid #000;
-        border-radius: 5px;
+        background-color: transparent;
+        border: none;
         text-align: right;
-        margin-top: 0.75em;
+        margin: 1.5em 0;
 
         a {
             display: block;
@@ -125,11 +129,13 @@ body > header {
 
         label[for="nav-trigger"] {
             display: block;
+            background: black;
             float: right;
             width: 36px;
             height: 36px;
             z-index: 2;
             cursor: pointer;
+            margin: 15px 0;
         }
 
         .menu-icon {
@@ -140,6 +146,10 @@ body > header {
             line-height: 0;
             padding-top: 10px;
             text-align: center;
+        }
+
+        .seperator {
+            display: none;
         }
 
         .menu-icon>svg path {
@@ -164,6 +174,11 @@ body > header {
             &:not(:last-child) {
                 margin-right: 0;
             }
+        }
+
+        > .trigger {
+            background: black;
+            text-align: left;
         }
     }
 }
