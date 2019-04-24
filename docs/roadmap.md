@@ -17,11 +17,12 @@ roadmap:
       completed:
         - New command line utility
         - New website and documentation
-        - Rewrite how the Controller UI works under the hood
+        - First pass of Controller refactor
         - New devices UI
         - New preferences UI
-        - Fix tray applet issues
+        - Rewrite tray applet to fix its shortcomings
       pending:
+        - Second pass of Controller refactor
         - New effects UI
         - Support custom mappings for all types of devices (mice, firefly, etc)
         - Design and play animated effects
@@ -37,7 +38,7 @@ roadmap:
         - Ability to browse/share effects designed by other Polychromatic users.
         - Scriptable animated effects.
         - Import from Razer Chroma Workshop
-        - Change theme (skin) of Controller application.
+        - Change the Controller application's colour scheme.
 
 ---
 
