@@ -150,3 +150,18 @@ Not yet, but Polychromatic will add profile ("presets") functionality [in a futu
 
 Confusingly, the current version `(v0.3.12)` refers to a custom static keymapping as
 "application profile".
+
+---
+
+### When will the next version be released?
+
+Polychromatic 1.0.0 _(referred to as dev-0.4.0 and dev-0.5.0 during development)_ is going to
+be a major update worth waiting for. Check out [the roadmap](/docs/roadmap/) to see what
+new and improved features you can expect. Daily builds will be reinstated once the "application profiles"
+replacement is added, so there is no loss of `stable` functionality. Although, you can 
+always [check out the branch](https://github.com/polychromatic/polychromatic/branches) earlier.
+
+Since the software is developed during free time, progress can be slow at times. Rest assured,
+the software is definitely not dead, but `v0.3.12` is not expecting minor updates. 
+
+1.0.0 will be released "when it's ready", but as a rough estimate, let's say... **Q4 of 2019**.
