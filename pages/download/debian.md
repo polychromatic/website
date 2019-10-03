@@ -29,6 +29,6 @@ sudo apt-get update
 sudo apt-get install polychromatic
 ```
 
-For development builds (which may be unstable and cutting edge), replace `stable` with `daily`.
+If you'd like to be on cutting edge (which may be unstable), swap `stable` with `daily`.
 
-Alternately, .deb files are provided in the [releases notes](https://github.com/lah7/polychromatic/releases/latest/).
+Alternately, .deb files are provided in the [releases notes](https://github.com/polychromatic/polychromatic/releases/latest/).

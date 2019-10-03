@@ -40,8 +40,11 @@ sudo apt install polychromatic
 
 The PPA is recommended as it keeps the application up-to-date.
 
-### Development Builds
-These builds deliver the newest features and improvements quicker, but are not well tested and may be buggy at times.
+### Testing Builds
+
+If you're interested in testing the newest stuff before it goes stable,
+consider using the daily/development builds. While these deliver the newest
+features and improvements quicker, they haven't been as extensively tested.
 
 ```
 sudo add-apt-repository ppa:polychromatic/daily
