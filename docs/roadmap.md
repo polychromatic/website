@@ -12,7 +12,7 @@ roadmap:
       pending:
         - The tray applet can be tempermental on some DEs, this will be addressed in next version.
 
-    - name: v1.0.0 - ("Major Update" - v0.4.0-dev)
+    - name: v1.0.0 - ("Major Update")
       checked: progress
       completed:
         - New command line utility
@@ -23,6 +23,8 @@ roadmap:
         - Rewrite tray applet to fix its shortcomings
       pending:
         - Second pass of Controller refactor
+        - Rebuild devices UI
+        - Rebuild preferences UI
         - New effects UI
         - Support custom mappings for all types of devices (mice, firefly, etc)
         - Design and play animated effects
