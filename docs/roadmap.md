@@ -21,16 +21,15 @@ roadmap:
         - New devices UI
         - New preferences UI
         - Rewrite tray applet to fix its shortcomings
-      pending:
         - Second pass of Controller refactor
+      pending:
         - Rebuild devices UI
         - Rebuild preferences UI
-        - New effects UI
+        - New effects UI (static/animated frame editor)
         - Support custom mappings for all types of devices (mice, firefly, etc)
-        - Design and play animated effects
-        - Save/load macros recorded via on-the-fly.
-        - Ability to create presets (profiles) for various devices.
-        - Ability to schedule profiles to activate based on events (e.g. at login)
+        - New profiles UI (presets for devices)
+        - New macros UI (save/load on-the-fly M1-M5 keys)
+        - New feature to activate profiles based on events (e.g. at login)
 
     - name: v1.1.0
       checked: false
