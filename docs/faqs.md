@@ -49,8 +49,8 @@ excellent progress, but is still in early development.
 * <https://github.com/z3ntu/openrazer-shim>
 * <https://github.com/openrazer/openrazer/issues/623>
 
-Once OpenRazer is fully compatible with Windows and Mac, Polychromatic will
-be able to support Windows and macOS.
+Once OpenRazer is fully compatible with Windows and Mac, Polychromatic can look at
+supporting Windows and macOS.
 
 ----
 
@@ -112,8 +112,8 @@ work with gamepads as they behave like a Chroma keyboard (default device behavio
 
 The current version `(v0.3.12)` is limited and will only inform you about the
 OpenRazer daemon's on-the-fly macro recording feature.
-[In a future update](/docs/roadmap/), new functionality will enable you to
-save, load and apply macros to devices with dedicated macro keys.
+[In a future update](/docs/roadmap/), a minor feature will allow you to
+save, load and apply M1-M5 macros keys.
 
 ---
 
@@ -124,8 +124,9 @@ moment for any device - neither mice, keyboards or keypads.
 
 In the meantime, other users have reported using these utilities:
 
-* [Keyboarding Master](https://sites.google.com/site/keyboardingmaster/) _(Java)_
+* [Keyboarding Master](https://sites.google.com/site/keyboardingmaster/) _(Java, GUI)_
 * [Pystromo](https://github.com/byrongibson/Pystromo) _(Python 2)_
+* [keyboard](https://github.com/boppreh/keyboard) _(Python 3)_
 
 ---
 
@@ -155,7 +156,7 @@ Confusingly, the current version `(v0.3.12)` refers to a custom static keymappin
 
 ### When will the next version be released?
 
-Polychromatic 1.0.0 _(referred to as dev-0.4.0 and dev-0.5.0 during development)_ is going to
+Polychromatic 1.0.0 _(`dev-0.4.0` then `dev-1.0.0` during development)_ is going to
 be a major update worth waiting for. Check out [the roadmap](/docs/roadmap/) to see what
 new and improved features you can expect. Daily builds will be reinstated once the "application profiles"
 replacement is added, so there is no loss of `stable` functionality. Although, you can 
