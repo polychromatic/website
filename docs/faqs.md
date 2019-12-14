@@ -165,4 +165,5 @@ always [check out the branch](https://github.com/polychromatic/polychromatic/bra
 Since the software is developed during free time, progress can be slow at times. Rest assured,
 the software is definitely not dead, but `v0.3.12` is not expecting minor updates. 
 
-1.0.0 will be released "when it's ready", but as a rough estimate, let's say... **Q4 of 2019**.
+1.0.0 will be released "when it's ready", but as a rough estimate, let's say... **Q1 of 2020**
+or sooner.
