@@ -38,7 +38,6 @@ roadmap:
       pending:
         - Ability to browse/share effects designed by other Polychromatic users.
         - Scriptable animated effects.
-        - Import from Razer Chroma Workshop
         - Change the Controller application's colour scheme.
 
 ---
