@@ -22,14 +22,14 @@ roadmap:
         - New preferences UI
         - Rewrite tray applet to fix its shortcomings
         - Second pass of Controller refactor
-      pending:
         - Rebuild devices UI
+      pending:
         - Rebuild preferences UI
-        - New effects UI (static/animated frame editor)
+        - New effects UI ("application profiles" replacement)
         - Support custom mappings for all types of devices (mice, firefly, etc)
         - New profiles UI (presets for devices)
-        - New macros UI (save/load on-the-fly M1-M5 keys)
         - New feature to activate profiles based on events (e.g. at login)
+        - User and technical documentation
 
     - name: v1.1.0
       checked: false
@@ -39,6 +39,7 @@ roadmap:
         - Ability to browse/share effects designed by other Polychromatic users.
         - Scriptable animated effects.
         - Change the Controller application's colour scheme.
+        - Key remapping support
 
 ---
 
