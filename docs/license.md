@@ -2,7 +2,6 @@
 layout: docs
 title: License
 permalink: /docs/license/
-category: project
 ---
 
 ## Summary

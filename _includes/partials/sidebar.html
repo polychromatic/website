@@ -1,0 +1,15 @@
+<a class="category-home nav-btn {% if page.permalink == '/docs/' %}active{% endif %}" href="/docs/" onclick="changePage(this)">Documentation Home</a>
+
+{% for category in site.data.sidebar-docs %}
+
+    <div class="category-heading">{{ category.title }}</div>
+
+    {% for item in category.items %}
+        {% if subpage.category == parent.id %}
+        <a href="{{ item.url | relative_url }}" onclick="changePage(this)" class="nav-btn category {% if item.url == page.permalink %}active{% endif %} {% if item.disabled == true %}disabled{% endif %}" {% if item.disabled == true %}disabled{% endif %}>
+            {{ item.name }}
+        </a>
+        {% endif %}
+    {% endfor %}
+
+{% endfor %}

@@ -50,17 +50,3 @@ navigation:
 
     - text: Documentation
       url: /docs/
-
-# Docs
-sidebar:
-    #~ - id: user
-      #~ name: User Guide
-
-    - id: dev
-      name: Development
-
-    - id: support
-      name: Troubleshooting
-
-    - id: project
-      name: Project

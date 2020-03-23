@@ -1,0 +1,64 @@
+- title: Project
+  items:
+    - name: About
+      url: /docs/about/
+
+    - name: Roadmap
+      url: /docs/roadmap/
+
+    - name: License
+      url: /docs/license/
+
+    - name: History
+      url: /docs/history/
+      disabled: true
+
+    - name: Supported Distros
+      url: /docs/distros/
+
+    - name: FAQs
+      url: /docs/faqs/
+
+- title: User Guide
+  items:
+    - name: Devices
+      url: /docs/devices/
+      disabled: true
+
+    - name: Effects
+      url: /docs/effects/
+      disabled: true
+
+    - name: Profiles
+      url: /docs/profiles/
+      disabled: true
+
+    - name: Events
+      url: /docs/events/
+      disabled: true
+
+    - name: Command Line Interface
+      url: /docs/cli/
+      disabled: true
+
+- title: Get Involved
+  items:
+    - name: Translations
+      url: /docs/translations/
+
+    - name: Device Mapping
+      url: /docs/devicemaps/
+      disabled: true
+
+- title: Internals
+  items:
+    - name: Architecture
+      url: /docs/internals/
+      disabled: true
+
+    - name: Dependencies
+      url: /docs/dependencies/
+
+    - name: Save Data
+      url: /docs/config/
+      disabled: true

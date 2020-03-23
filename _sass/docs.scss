@@ -35,6 +35,12 @@ $roadmap-line: #00FF00;
                 text-decoration: none;
             }
         }
+
+        &.disabled {
+            opacity: 0.5;
+            filter: grayscale(1);
+            pointer-events: none;
+        }
     }
 
     .category-home {

@@ -7,20 +7,7 @@ layout: default
 
         <div class="row">
             <div class="sidebar col-3">
-                <a class="category-home nav-btn {% if page.permalink == "/" %}active{% endif %}" href="/docs/" onclick="changePage(this)">Documentation Home</a>
-
-                {% for parent in site.sidebar %}
-
-                <div class="category-heading">{{ parent.name }}</div>
-
-                  {% for subpage in site.pages %}
-                    {% if subpage.category == parent.id %}
-                    <a href="{{ subpage.permalink | relative_url }}" onclick="changePage(this)" class="nav-btn category {% if page.permalink == subpage.permalink %}active{% endif %}">{{ subpage.title }}</a>
-                    {% endif %}
-                  {% endfor %}
-
-                {% endfor %}
-
+                {% include partials/sidebar.html %}
             </div>
 
             <div class="col topic">

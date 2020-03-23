@@ -2,7 +2,6 @@
 layout: docs
 title: Distro Support
 permalink: /docs/distros/
-category: support
 ---
 
 ## Officially Supported

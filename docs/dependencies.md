@@ -2,7 +2,6 @@
 layout: docs
 title: Dependencies
 permalink: /docs/dependencies/
-category: support
 ---
 
 ## OpenRazer
