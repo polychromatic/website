@@ -21,7 +21,7 @@ Polychromatic depends on:
 
 ### System-wide Install
 
-* Only applies to [`dev-0.4.0`](https://github.com/polychromatic/polychromatic/tree/dev-0.4.0) branch.
+* Only applies to [`dev-1.0.0`](https://github.com/polychromatic/polychromatic/tree/dev-1.0.0) branch.
 
 You'll need to install the latest versions of `git`, `meson` and `ninja`, as well
 as the [application's dependencies](/docs/dependencies/).
