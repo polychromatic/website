@@ -71,3 +71,13 @@ Barba.Pjax.getTransition = function() {
 function makeActive(self) {
     $(self).addClass("active");
 }
+
+if (document.location.href.search("/docs/") != -1) {
+    $("td").each(function() {
+        if (this.textContent == "Yes") {
+            this.classList.add("yes")
+        } else if (this.textContent == "No") {
+            this.classList.add("no")
+        }
+    });
+}

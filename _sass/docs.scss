@@ -166,3 +166,20 @@ $roadmap-line: #00FF00;
         transform: rotate(359deg);
     }
 }
+
+/* JavaScript-assisted classes for table */
+.yes {
+    color: lime;
+
+    &::before {
+        content: "✓ ";
+    }
+}
+
+.no {
+    color: red;
+
+    &::before {
+        content: "✗ ";
+    }
+}

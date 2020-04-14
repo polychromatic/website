@@ -21,6 +21,9 @@
 
 - title: User Guide
   items:
+    - name: Supported Devices
+      url: /docs/device-support/
+
     - name: Devices
       url: /docs/devices/
       disabled: true
