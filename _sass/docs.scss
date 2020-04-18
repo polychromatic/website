@@ -61,6 +61,17 @@ $roadmap-line: #00FF00;
     }
 }
 
+blockquote {
+    background: $pre-colour;
+    border-left: 4px solid lighten($pre-colour, 25%);
+    color: lighten($pre-colour, 50%);
+    margin: 15px 0;
+
+    p {
+        padding: 10px;
+    }
+}
+
 .roadmap {
     padding-bottom: 4em;
     padding: 1em;
