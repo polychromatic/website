@@ -32,8 +32,6 @@ openrazer_repo: "https://github.com/openrazer/openrazer/"
 openrazer_website: "https://openrazer.github.io/"
 polychromatic_org: "https://github.com/polychromatic/"
 polychromatic_repo: "https://github.com/polychromatic/polychromatic/"
-facebook_page: "https://facebook.com/p0lychromatic"
-twitter_page: "https://twitter.com/p0lychromatic"
 rss_feed: "https://github.com/polychromatic/polychromatic/releases.atom"
 
 # Stylesheets
