@@ -17,19 +17,18 @@ roadmap:
       completed:
         - New command line utility
         - New website and documentation
-        - First pass of Controller refactor
-        - New devices UI
-        - New preferences UI
+        - Refactor Controller (first pass)
         - Rewrite tray applet to fix its shortcomings
-        - Second pass of Controller refactor
+        - Refactor Controller (second pass)
         - Rebuild devices UI
+        - Rebuild preferences (and UI components)
       pending:
-        - Rebuild preferences UI
         - New effects UI ("application profiles" replacement)
-        - Support custom mappings for all types of devices (mice, firefly, etc)
-        - New profiles UI (presets for devices)
-        - New feature to activate profiles based on events (e.g. at login)
-        - User and technical documentation
+        - Support custom mappings for all types of devices (mice, mousemats, etc)
+        - New presets UI ("profiles")
+        - New feature to activate presets based on events (e.g. at login)
+        - Cross-distro and device testing
+        - Update documentation
 
     - name: v1.1.0
       checked: false
@@ -37,9 +36,8 @@ roadmap:
         null
       pending:
         - Ability to browse/share effects designed by other Polychromatic users.
-        - Scriptable animated effects.
-        - Change the Controller application's colour scheme.
-        - Key remapping support
+        - Customise the application's colour scheme.
+        - Key remapping (macro) support.
 
 ---
 
