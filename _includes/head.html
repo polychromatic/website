@@ -24,12 +24,11 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
 
     <link rel="manifest" href="/assets/manifest.json">
+
+    {% assign icon_sizes = "16,32,48,64,96,144,196" | split: ',' %}
     <link rel="icon" type="image/x-icon" href="/assets/favicon/48x48.png" />
-    <link rel="icon" type="image/png" sizes="196x196" href="/assets/favicon/196x196.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="/assets/favicon/144x144.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/96x96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon/64x64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/16x16.png">
+    {% for size in icon_sizes %}
+        <link rel="icon" type="image/png" sizes="{{ size }}x{{ size }}" href="/assets/favicon/{{ size }}x{{ size }}.png">
+    {% endfor %}
 
 </head>
