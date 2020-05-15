@@ -2,6 +2,7 @@
 layout: docs
 title: How to Translate
 permalink: /docs/translations/
+class: docs
 ---
 
 ## Overview

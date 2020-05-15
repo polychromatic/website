@@ -4,6 +4,7 @@ title: Download - Arch
 permalink: /download/arch/
 distro: arch
 distro_name: Arch Linux
+class: download
 ---
 
 ## 1. OpenRazer

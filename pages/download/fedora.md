@@ -4,6 +4,7 @@ title: Download - Fedora
 permalink: /download/fedora/
 distro: fedora
 distro_name: Fedora
+class: download
 ---
 
 ## 1. OpenRazer

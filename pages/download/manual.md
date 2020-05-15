@@ -4,6 +4,7 @@ title: Manual Installation
 permalink: /download/manual/
 distro: generic
 distro_name: Manual Installation
+class: download
 ---
 
 ## 1. OpenRazer

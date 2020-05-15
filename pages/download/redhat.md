@@ -4,6 +4,7 @@ title: Download - Red Hat/CentOS
 permalink: /download/redhat/
 distro: redhat
 distro_name: Red Hat / CentOS
+class: download
 ---
 
 These packages are maintained by [moozhub] in the [yum-repo-mooz] repository.

@@ -2,6 +2,7 @@
 layout: docs
 title: Documentation
 permalink: /docs/
+class: docs
 ---
 
 ![](/assets/img/docs/home.jpg)

@@ -6,43 +6,38 @@ layout: default
     <div class="page-content">
 
         <div class="row">
-            <div class="sidebar col-3">
+            <div class="sidebar col-3 transition-fade">
                 {% include partials/sidebar.html %}
             </div>
 
-            <div class="col topic">
+            <div class="col topic transition-fade">
 
-                <div id="barba-wrapper">
-                    <div class="barba-container">
-                        <h1 class="page-title">{{ page.title | escape }}</h1>
+                <h1 class="page-title">{{ page.title | escape }}</h1>
 
-                        <div class="roadmap">
-                            {% for version in page.roadmap %}
-                            <div class="row">
-                                <div class="line">
-                                    <div class="circle {% if version.checked == true %}checked{% endif %} {% if version.checked == 'progress' %}progress{% endif %}"></div>
-                                </div>
-                                <div class="col">
-                                    <h3>{{ version.name }}</h3>
-                                    <ul class="completed">
-                                        {% for item in version.completed %}
-                                        <li>{{ item }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                    <ul class="pending">
-                                        {% for item in version.pending %}
-                                        <li>{{ item }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            </div>
-                            {% endfor %}
+                <div class="roadmap">
+                    {% for version in page.roadmap %}
+                    <div class="row">
+                        <div class="line">
+                            <div class="circle {% if version.checked == true %}checked{% endif %} {% if version.checked == 'progress' %}progress{% endif %}"></div>
                         </div>
-
-                        {{ content }}
-
+                        <div class="col">
+                            <h3>{{ version.name }}</h3>
+                            <ul class="completed">
+                                {% for item in version.completed %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                            <ul class="pending">
+                                {% for item in version.pending %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </div>
+                    {% endfor %}
                 </div>
+
+                {{ content }}
 
             </div>
         </div>

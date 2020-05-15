@@ -2,6 +2,7 @@
 layout: docs
 title: Device Support
 permalink: /docs/device-support/
+class: docs
 ---
 
 ## Backends

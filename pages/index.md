@@ -2,6 +2,7 @@
 layout: homepage
 title:
 permalink: /
+class:
 
 splash_title: Welcome, BlackWidow & friends!
 splash_paragraph: >-

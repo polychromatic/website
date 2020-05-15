@@ -4,6 +4,7 @@ title: Download - Solus
 permalink: /download/solus/
 distro: solus
 distro_name: Solus
+class: download
 ---
 
 ## OpenRazer & Polychromatic

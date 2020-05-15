@@ -2,6 +2,7 @@
 layout: downloads
 title: Download
 permalink: /download/
+class: download
 
 official_distros:
     - name: Ubuntu / Linux Mint

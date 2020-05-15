@@ -1,83 +1,74 @@
-//--------------------------------------
-// Barba Library and Page Transitions
-//--------------------------------------
-var transition_speed = 300;
+// Smooth Page Transitions
+var docs_sidebar_shown = false;
 
-$(document).ready(function() {
-    Barba.Pjax.start();
-});
-
-function changePage(element) {
-    $(element).siblings().removeClass("active");
-    $(element).addClass("active");
-}
-
-document.addEventListener("click", function(e) {
-    var el = e.target;
-    var hostname = e.target.host;
-
-    if (hostname !== "localhost" || hostname !== "polychromatic.app") {
-        return;
-    }
-
-    while (el && !el.href) {
-        el = el.parentNode;
-    }
-
-    if (el) {
-        e.preventDefault();
-        return;
-    }
-});
-
-var FadeTransition = Barba.BaseTransition.extend({
-    start: function() {
-        Promise
-          .all([this.newContainerLoading, this.fadeOut()])
-          .then(this.fadeIn.bind(this));
-    },
-
-    fadeOut: function() {
-        return;
-    },
-
-    fadeIn: function() {
-        var _this = this;
-        var oldContainer = $(this.oldContainer)
-        var newContainer = $(this.newContainer)
-
-        oldContainer.hide();
-        window.scrollTo(0, 0);
-
-        // Skip transitions on documentation pages.
-        if (window.location.pathname.substring(0, 6) == "/docs/") {
-            newContainer.css("visibility", "visible");
-            newContainer.find(".topic").addClass("page-in");
-        } else {
-            // Similiar transition as seen in the Controller.
-            newContainer.css("visibility", "visible").addClass("page-in");
-        }
-
-        setTimeout(function() {
-            _this.done();
-        }, transition_speed);
-    }
-});
-
-Barba.Pjax.getTransition = function() {
-    return FadeTransition;
+const options = {
+    animateHistoryBrowsing: true,
+    linkSelector: 'a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup]), a[href^="../"]:not([data-no-swup])',
 };
 
-function makeActive(self) {
-    $(self).addClass("active");
+const swup = new Swup(options);
+swup.on("transitionStart", page_exit);
+swup.on("contentReplaced", page_enter);
+
+function page_enter() {
+    window.scrollTo(0, 0);
+
+    // Update navigation 'active' class
+    var nav_class = document.getElementById("current-page-class").value;
+    var nav_active = document.getElementById("nav-" + nav_class);
+    var nav_btns = document.getElementsByClassName("nav-btn");
+
+    for (b = 0; b < nav_btns.length; b++) {
+        nav_btns[b].classList.remove("active");
+    }
+
+    if (nav_active != null) {
+        nav_active.classList.add("active");
+    }
+
+    // If sidebar is present, make sure it's smoothly animated.
+    var nav_sidebar = document.getElementsByClassName("sidebar")[0];
+    if (docs_sidebar_shown === true && nav_sidebar != null) {
+        nav_sidebar.classList.remove("transition-fade");
+        docs_sidebar_shown = window.location.pathname.search("/docs/") != -1;
+
+        setTimeout(function() {
+            nav_sidebar.classList.add("transition-fade");
+        }, 500);
+    }
+
+    // If page contains Yes/No in tables, add the fancy decorations.
+    var td = document.querySelectorAll("td");
+    if (td.length > 0) {
+        for (i = 0; i < td.length; i++) {
+            if (td[i].textContent == "Yes") {
+                td[i].classList.add("yes");
+            } else if (td[i].textContent == "No") {
+                td[i].classList.add("no");
+            }
+        }
+    }
 }
 
-if (document.location.href.search("/docs/") != -1) {
-    $("td").each(function() {
-        if (this.textContent == "Yes") {
-            this.classList.add("yes")
-        } else if (this.textContent == "No") {
-            this.classList.add("no")
-        }
-    });
+function page_exit() {
+    docs_sidebar_shown = window.location.pathname.search("/docs/") != -1;
 }
+
+function download_select(element) {
+    element.classList.add("active");
+}
+
+function change_doc(element) {
+    var nav_docs = document.getElementsByClassName("nav-docs");
+    var nav_sidebar = document.getElementsByClassName("sidebar")[0];
+
+    for (b = 0; b < nav_docs.length; b++) {
+        nav_docs[b].classList.remove("active");
+    }
+
+    element.classList.add("active");
+    nav_sidebar.classList.remove("transition-fade");
+}
+
+// Initial page load
+page_enter();

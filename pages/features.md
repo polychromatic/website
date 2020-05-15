@@ -2,6 +2,7 @@
 layout: features
 title: Features
 permalink: /about/
+class: features
 
 features:
     - title: Configure the Hardware

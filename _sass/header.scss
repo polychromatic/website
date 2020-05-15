@@ -152,16 +152,16 @@ body > header {
             display: none;
         }
 
-        .menu-icon>svg path {
+        .menu-icon > svg path {
             fill: #808080;
         }
 
-        input~.trigger {
+        input ~ .trigger {
             clear: both;
             display: none;
         }
 
-        input:checked~.trigger {
+        input:checked ~ .trigger {
             display: block;
             padding-bottom: 5px;
         }

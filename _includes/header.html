@@ -3,7 +3,7 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="/" onclick="$('.active').removeClass('active');">
+    <a class="site-title" href="/">
         <img src="/assets/img/logo.svg" alt="Polychromatic Logo"/>
         <span>polychromatic</span>
     </a>
@@ -21,12 +21,8 @@
         </label>
 
         <div class="trigger">
-            {% for subpage in site.navigation %}
-                {% assign active = false %}
-                {% if subpage.url == page.permalink %}{% assign active = true %}{% endif %}
-                {% capture starturl %}{{ page.permalink | slice: 0,6 }}{% endcapture %}
-                {% if starturl == "/docs/" and subpage.url == "/docs/" %}{% assign active = true %}{% endif %}
-                <a href="{{ subpage.url }}" onclick="changePage(this)" class="nav-btn {% if active == true %}active{% endif %}">{{ subpage.text }}</a>
+            {% for navitem in site.navigation %}
+                <a id="nav-{{ navitem.class }}" href="{{ navitem.url }}" class="nav-btn {% if page.class == navitem.class %}active{% endif %}">{{ navitem.text }}</a>
                 <div class="seperator">|</div>
             {% endfor %}
         </div>

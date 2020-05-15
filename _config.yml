@@ -44,9 +44,12 @@ stylesheets:
 navigation:
     - text: Features
       url: /about/
+      class: features
 
     - text: Download
       url: /download/
+      class: download
 
     - text: Documentation
       url: /docs/
+      class: docs

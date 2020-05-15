@@ -4,6 +4,7 @@ title: Download - Mageia
 permalink: /download/mageia/
 distro: mageia
 distro_name: Mageia
+class: download
 ---
 
 ## OpenRazer & Polychromatic

@@ -7,13 +7,13 @@
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
+    <main class="page-content" aria-label="Content" id="swup">
       <div class="wrapper">
-        <div id="barba-wrapper">
-            <div class="barba-container">
-                {{ content }}
-            </div>
-        </div>
+
+        {{ content }}
+
+        <input id="current-page-class" value="{{ page.class }}" style="display:none; appearance:none"/>
+
       </div>
     </main>
 
@@ -83,8 +83,7 @@
         }
     </script>
 
-    <script src="/assets/lib/jquery-3.3.1.min.js"></script>
-    <script src="/assets/lib/barba.min.js"></script>
+    <script src="/assets/lib/swup.min.js"></script>
     <script src="/assets/js/polychromatic.js"></script>
 
   </body>

@@ -4,6 +4,7 @@ title: Download - openSUSE
 permalink: /download/opensuse/
 distro: opensuse
 distro_name: openSUSE
+class: download
 ---
 
 ## OpenRazer & Polychromatic

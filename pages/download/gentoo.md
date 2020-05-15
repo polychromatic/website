@@ -4,6 +4,7 @@ title: Download - Gentoo
 permalink: /download/gentoo/
 distro: gentoo
 distro_name: Gentoo
+class: download
 ---
 
 These packages are maintained by [vifino] in the [vifino-overlay] repository.

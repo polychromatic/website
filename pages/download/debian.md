@@ -4,6 +4,7 @@ title: Download - Debian
 permalink: /download/debian/
 distro: debian
 distro_name: Debian
+class: download
 ---
 
 ## 1. OpenRazer

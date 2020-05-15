@@ -4,6 +4,7 @@ title: Download - Ubuntu
 permalink: /download/ubuntu/
 distro: ubuntu
 distro_name: Ubuntu & Linux Mint
+class: download
 ---
 
 Works on:

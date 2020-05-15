@@ -2,6 +2,7 @@
 layout: roadmap
 title: Roadmap
 permalink: /docs/roadmap/
+class: docs
 
 roadmap:
     - name: v0.3.12 ("Stable")

@@ -2,6 +2,7 @@
 layout: docs
 title: License
 permalink: /docs/license/
+class: docs
 ---
 
 ## Summary
