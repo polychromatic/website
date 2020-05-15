@@ -12,6 +12,10 @@ $roadmap-line: #00FF00;
         margin-top: 1em;
         padding: 0.25em 0;
         border-bottom: 1px solid darken($sidebar-heading, 40%);
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     .category {
