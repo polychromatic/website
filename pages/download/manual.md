@@ -28,9 +28,10 @@ as the [application's dependencies](/docs/dependencies/).
 
 ```
 git clone https://github.com/polychromatic/polychromatic.git
+cd polychromatic
 git checkout stable
 meson build
-ninja -C build
+ninja -C build install
 ```
 
 ### Development Mode
@@ -40,6 +41,7 @@ providing the [application's dependencies](/docs/dependencies/) have been instal
 
 ```
 git clone https://github.com/polychromatic/polychromatic.git -b master
+cd polychromatic
 ./polychromatic-controller
 ./polychromatic-tray-applet
 ./polychromatic-cmd
