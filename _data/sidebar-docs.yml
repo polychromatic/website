@@ -1,7 +1,7 @@
 - title: Project
   items:
-    - name: About
-      url: /docs/about/
+    - name: FAQs
+      url: /docs/faqs/
 
     - name: Roadmap
       url: /docs/roadmap/
@@ -13,34 +13,43 @@
       url: /docs/history/
       disabled: true
 
-    - name: Supported Distros
-      url: /docs/distros/
-
-    - name: FAQs
-      url: /docs/faqs/
-
 - title: User Guide
   items:
     - name: Supported Devices
       url: /docs/device-support/
 
-    - name: Devices
-      url: /docs/devices/
+    - name: Distros and Enviroments
+      url: /docs/distros/
+
+    - name: 'Controller'
+      url: /docs/controller/
       disabled: true
 
-    - name: Effects
-      url: /docs/effects/
+    - name: 'Devices'
+      url: /docs/controller/devices/
+      disabled: true
+      indent: true
+
+    - name: 'Effects'
+      url: /docs/controller/effects/
+      disabled: true
+      indent: true
+
+    - name: 'Presets'
+      url: /docs/controller/presets/
+      disabled: true
+      indent: true
+
+    - name: 'Triggers'
+      url: /docs/controller/events/
+      disabled: true
+      indent: true
+
+    - name: Tray Applet
+      url: /docs/tray-applet/
       disabled: true
 
-    - name: Profiles
-      url: /docs/profiles/
-      disabled: true
-
-    - name: Events
-      url: /docs/events/
-      disabled: true
-
-    - name: Command Line Interface
+    - name: Command Line
       url: /docs/cli/
       disabled: true
 
@@ -53,6 +62,14 @@
       url: /docs/devicemaps/
       disabled: true
 
+    - name: Backend & Device Support
+      url: /docs/backends/
+      disabled: true
+
+    - name: Share Custom Effects
+      url: /docs/polychromunity/
+      disabled: true
+
 - title: Internals
   items:
     - name: Architecture
@@ -62,6 +79,19 @@
     - name: Dependencies
       url: /docs/dependencies/
 
-    - name: Save Data
+    - name: Configuration
       url: /docs/config/
+
+    - name: 'Effects'
+      url: /docs/config-effects/
+      indent: true
+
+    - name: 'Presets'
+      url: /docs/config-presets/
+      indent: true
+
+- title: Backends
+  items:
+    - name: OpenRazer
+      url: /docs/openrazer/
       disabled: true

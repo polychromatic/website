@@ -4,7 +4,7 @@
 
     {% for item in category.items %}
         {% if subpage.category == parent.id %}
-        <a href="{{ item.url | relative_url }}" onclick="change_doc(this)" class="category nav-docs {% if item.url == page.permalink %}active{% endif %} {% if item.disabled == true %}disabled{% endif %}" {% if item.disabled == true %}disabled{% endif %}>
+        <a href="{{ item.url | relative_url }}" onclick="change_doc(this)" class="category nav-docs {% if item.indent %}indent{% endif %} {% if item.url == page.permalink %}active{% endif %} {% if item.disabled == true %}disabled{% endif %}" {% if item.disabled == true %}disabled{% endif %}>
             {{ item.name }}
         </a>
         {% endif %}
