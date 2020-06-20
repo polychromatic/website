@@ -3,15 +3,17 @@ var docs_sidebar_shown = false;
 
 const options = {
     animateHistoryBrowsing: true,
-    linkSelector: 'a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup]), a[href^="../"]:not([data-no-swup])',
+    linkSelector: 'a[href^="/"]:not([data-no-swup]), a[href^="../"]:not([data-no-swup])',
 };
 
 const swup = new Swup(options);
 swup.on("transitionStart", page_exit);
 swup.on("contentReplaced", page_enter);
 
-function page_enter() {
-    window.scrollTo(0, 0);
+function page_enter(no_scroll) {
+    if (no_scroll != true) {
+        window.scrollTo(0, 0);
+    }
 
     // Update navigation 'active' class
     var nav_class = document.getElementById("current-page-class").value;
@@ -41,9 +43,9 @@ function page_enter() {
     var td = document.querySelectorAll("td");
     if (td.length > 0) {
         for (i = 0; i < td.length; i++) {
-            if (td[i].textContent == "Yes") {
+            if (td[i].textContent.search("Yes") != -1) {
                 td[i].classList.add("yes");
-            } else if (td[i].textContent == "No") {
+            } else if (td[i].textContent.search("No") != -1) {
                 td[i].classList.add("no");
             }
         }
@@ -71,4 +73,4 @@ function change_doc(element) {
 }
 
 // Initial page load
-page_enter();
+page_enter(true);

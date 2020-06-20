@@ -8,13 +8,10 @@ class: docs
 ## Overview
 
 Polychromatic uses gettext to localize the application to different languages.
-The source language is **English (US)**.
+The source language is **English (UK)** in both the UI and code.
 
 These instructions are aimed for contributors not 100% familiar with how the
 process works.
-
----
-**Note: These instructions apply to the new development version (v0.4.0) of Polychromatic.**
 
 ---
 
