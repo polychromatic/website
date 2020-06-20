@@ -25,10 +25,11 @@
 
     <link rel="manifest" href="/assets/manifest.json">
 
-    {% assign icon_sizes = "16,32,48,64,96,144,196" | split: ',' %}
-    <link rel="icon" type="image/x-icon" href="/assets/favicon/48x48.png" />
-    {% for size in icon_sizes %}
-        <link rel="icon" type="image/png" sizes="{{ size }}x{{ size }}" href="/assets/favicon/{{ size }}x{{ size }}.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
+    {% assign favicons = "16,32,64,96,144,196,256" | split: "," %}
+    {% for icon in favicons %}
+    <link rel="icon" type="image/png" sizes="{{ icon }}x{{ icon }}" href="/assets/favicon/{{ icon }}x{{ icon }}.png">
+    <link rel="apple-touch-icon" sizes="{{ icon }}x{{ icon }}" href="/assets/favicon/{{ icon }}x{{ icon }}.png">
     {% endfor %}
 
 </head>
