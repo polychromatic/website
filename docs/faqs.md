@@ -128,6 +128,10 @@ In the meantime, other users have reported using these utilities:
 * [Pystromo](https://github.com/byrongibson/Pystromo) _(Python 2)_
 * [keyboard](https://github.com/boppreh/keyboard) _(Python 3)_
 
+You could also try:
+
+* [OpenRazer Pull Request #1124](https://github.com/openrazer/openrazer/pull/1124)
+
 ---
 
 ### Can I create my own effects?
@@ -156,13 +160,13 @@ Confusingly, the current version `(v0.3.12)` refers to a custom static keymappin
 
 ### When will the next version be released?
 
-Polychromatic 1.0.0 _(`dev-0.4.0` then `dev-1.0.0` during development)_ is going to
-be a major update worth waiting for. Check out [the roadmap](/docs/roadmap/) to see what
-new and improved features you can expect. Daily builds will be reinstated once the "application profiles"
+Polychromatic v1.0.0 is going to be a major update worth waiting for.
+Check out [the roadmap](/docs/roadmap/) to see what new and improved features
+you can expect. Daily builds will be reinstated once the "application profiles"
 replacement is added, so there is no loss of `stable` functionality. Although, you can 
 always [check out the branch](https://github.com/polychromatic/polychromatic/branches) earlier.
 
 Since the software is developed during free time, progress can be slow at times. Rest assured,
 the software is definitely not dead, but `v0.3.12` is not expecting minor updates. 
 
-v1.0.0 will be released "when it's ready", but as a rough estimate, let's say... **2020 Q2** or sooner.
+As a rough estimate, let's aim for a v1.0.0 beta release in **July or August 2020**.
