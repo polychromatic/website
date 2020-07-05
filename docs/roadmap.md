@@ -17,16 +17,17 @@ roadmap:
       completed:
         - New command line utility
         - New website and documentation
-        - Refactor Controller (first pass)
         - Rewrite tray applet to fix its shortcomings
+        - Refactor Controller (first pass)
         - Refactor Controller (second pass)
-        - Rebuild devices UI
-        - Rebuild preferences (and UI components)
       pending:
-        - New effects UI ("application profiles" replacement)
-        - New presets UI ("profiles")
-        - New feature to activate presets based on events (e.g. at login)
-        - Beta - Cross-distro, device testing and finalizing documentation
+        - Port Controller to PyQt5 (third refactor)
+        - Reimplement Devices tab
+        - Reimplement Preferences tab
+        - Implement Effects tab ("application profiles" replacement)
+        - Implement Presets tab ("profiles")
+        - Implement Triggers tab (a new feature to activate presets based on events, such as session login)
+        - Beta Release - Cross-distro, device testing and finalizing documentation
 
     - name: v1.1.0
       checked: false
