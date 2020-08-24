@@ -12,16 +12,16 @@ roadmap:
       pending:
         - The tray applet can be tempermental on some DEs, this will be addressed in next version.
 
-    - name: v1.0.0 - July/August 2020
+    - name: v1.0.0 - September 2020
       checked: progress
       completed:
         - New command line utility
         - New website and documentation
         - Rewrite tray applet to fix its shortcomings
-        - Refactor Controller (first pass)
-        - Refactor Controller (second pass)
+        - Refactor Controller (first pass, 2018)
+        - Refactor Controller (second pass, 2019)
+        - Port Controller to PyQt5 (third refactor, 2020)
       pending:
-        - Port Controller to PyQt5 (third refactor)
         - Reimplement Devices tab
         - Reimplement Preferences tab
         - Implement Effects tab ("application profiles" replacement)
@@ -35,6 +35,7 @@ roadmap:
         null
       pending:
         - Browse/share effects designed by other Polychromatic users.
+        - Key remapping (macro) support.
 
     - name: Future Ambitions
       checked: false
@@ -42,7 +43,6 @@ roadmap:
         null
       pending:
         - Add OpenRGB as a backend.
-        - Key remapping (macro) support.
         - Port application to Windows and macOS.
 
 ---
