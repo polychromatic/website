@@ -56,9 +56,12 @@ supporting Windows and macOS.
 
 ### Are other LED peripherals supported, such as Logitech or Corsair?
 
-Not at the moment. The software has been heavily designed around the OpenRazer
+In future, yes. So far, the software has been heavily designed around the OpenRazer
 daemon, and it would be very messy to bolt on other brands or daemons with the
-current codebase. Potentially, this may be supported in the distant future.
+current codebase.
+
+The release of v1.0.0 will put Polychromatic in a position to modularly add
+other backends and provide a GUI for them.
 
 ---
 
@@ -110,10 +113,9 @@ work with gamepads as they behave like a Chroma keyboard (default device behavio
 
 ### What is macro support like in Polychromatic?
 
-The current version `(v0.3.12)` is limited and will only inform you about the
-OpenRazer daemon's on-the-fly macro recording feature.
-[In a future update](/docs/roadmap/), a minor feature will allow you to
-save, load and apply M1-M5 macros keys.
+The current version `(v0.3.12)` only informs you about OpenRazer's
+on-the-fly macro recording feature. [In a future update](/docs/roadmap/), 
+a new feature aims to enable the remapping of the buttons on any keyboard or mouse.
 
 ---
 
@@ -127,6 +129,9 @@ In the meantime, other users have reported using these utilities:
 * [Keyboarding Master](https://sites.google.com/site/keyboardingmaster/) _(Java, GUI)_
 * [Pystromo](https://github.com/byrongibson/Pystromo) _(Python 2)_
 * [keyboard](https://github.com/boppreh/keyboard) _(Python 3)_
+* [mouse](https://github.com/boppreh/mouse) _(Python 3)_
+
+Polychromatic intends to use the latter projects by **boppreh** in a future update.
 
 You could also try:
 
@@ -137,10 +142,11 @@ You could also try:
 ### Can I create my own effects?
 
 Not yet, but Polychromatic will add new and improve existing functionality
-[in a future update](/docs/roadmap/).
+[in the upcoming v1.0.0 update](/docs/roadmap/).
 
 For now, the current version `(v0.3.12)` can set static colours for keyboards
 based on the Razer BlackWidow layout. Ideal for mapping out keys for games or applications.
+These will be automatically _upgraded_ when v1.0.0 is released.
 
 Other users have patched the graphic to work with these devices in the interim:
 
@@ -151,10 +157,10 @@ Other users have patched the graphic to work with these devices in the interim:
 
 ### Can I create my own profiles?
 
-Not yet, but Polychromatic will add profile ("presets") functionality [in a future update](/docs/roadmap/).
+Not yet, but Polychromatic will add profile ("presets") functionality [in the upcoming v1.0.0 update](/docs/roadmap/).
 
-Confusingly, the current version `(v0.3.12)` refers to a custom static keymapping as
-"application profile".
+Confusingly, the current version `(v0.3.12)` refers to a custom static key mappings as
+"application profile", but these are not tied to an application.
 
 ---
 
@@ -163,10 +169,15 @@ Confusingly, the current version `(v0.3.12)` refers to a custom static keymappin
 Polychromatic v1.0.0 is going to be a major update worth waiting for.
 Check out [the roadmap](/docs/roadmap/) to see what new and improved features
 you can expect. Daily builds will be reinstated once the "application profiles"
-replacement is added, so there is no loss of `stable` functionality. Although, you can 
+replacement is added, so there is no loss of functionality. Although, you can 
 always [check out the branch](https://github.com/polychromatic/polychromatic/branches) earlier.
 
-Since the software is developed during free time, progress can be slow at times. Rest assured,
-the software is definitely not dead, but `v0.3.12` is not expecting minor updates. 
+As with any open source project, progress can be slow at times. It's been 2 years since the
+release of `v0.3.12`, with [not just one](https://github.com/polychromatic/polychromatic/releases/tag/v0.4.0),
+or [two](https://github.com/polychromatic/polychromatic/releases/tag/v0.5.0), but **three** refactors internally!
+Things are nicely shaping into place, as the Controller is now based on PyQt5 and no longer WebKitGTK.
 
-As a rough estimate, let's aim for a v1.0.0 beta release in **July or August 2020**.
+Rest assured, the software is definitely not dead, but there will be no minor updates for `v0.3.12`
+as the software is developed linearly.
+
+As a rough estimate, let's aim for a v1.0.0 release (or at least a beta) in **September 2020**.
