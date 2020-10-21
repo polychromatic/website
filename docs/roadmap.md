@@ -22,8 +22,9 @@ roadmap:
         - Refactor Controller (second pass, 2019)
         - Port Controller to PyQt5 (third refactor, 2020)
         - Implement Devices tab
-      pending:
         - Implement Preferences
+      pending:
+        - Miscellaneous internals and styling adjustments
         - Implement Effects tab ("application profiles" replacement)
         - Implement Presets tab ("profiles")
         - Implement Triggers tab (a new feature to activate presets based on events, such as session login)
