@@ -1,0 +1,46 @@
+{% assign distro_id = include.distro_id %}
+{% assign distro_name = include.distro_name %}
+
+<h3>
+    <img src="/assets/img/distros/{{ distro_id }}.svg" alt=""/>
+    {{ distro_name }}
+</h3>
+
+<table class="dependency-table">
+    <thead>
+        <tr>
+            <th>Package</th>
+            <th>Required for</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for package in site.data.dependencies.packages %}
+            <tr>
+                <td>
+                    {% capture link %}{{ site.data.dependencies.link_prefix[distro_id] }}{{ package.packages[distro_id] }}{% endcapture %}
+                    {% if package.aur == true %}
+                        {% capture link %}{{ site.data.dependencies.link_prefix.aur }}{{ package.packages[distro_id] }}{% endcapture %}
+                    {% endif %}
+                    <a href="{{ link }}">{{ package.packages[distro_id] }}</a>
+                </td>
+                <td>
+                    {% assign components = package.required_by | split: ',' %}
+                    {% for component in components %}
+                        {% if component == "controller" %}
+                            <img src="/assets/img/apps/controller.svg" alt="Controller" title="Controller"/>
+                        {% endif %}
+                        {% if component == "tray" %}
+                            <img src="/assets/img/apps/tray-applet.svg" alt="Tray Applet" title="Tray Applet"/>
+                        {% endif %}
+                        {% if component == "cli" %}
+                            <img src="/assets/img/apps/cli.svg" alt="CLI" title="Command Line Interface"/>
+                        {% endif %}
+                        {% if component == "build" %}
+                            Build Dependency
+                        {% endif %}
+                    {% endfor %}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

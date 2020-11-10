@@ -1,0 +1,26 @@
+<svg width="48" height="48" version="1.1" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Polychromatic</title>
+<defs>
+<linearGradient id="linearGradient4779" x1="43" x2="69" y1="994.36" y2="1017.4" gradientTransform="matrix(.7377 0 0 .7826 3.6721 209.61)" gradientUnits="userSpaceOnUse">
+<stop style="stop-color:#000000;stop-opacity:.57647" offset="0"/>
+<stop style="stop-color:#000000;stop-opacity:.57647" offset=".47826"/>
+<stop style="stop-color:#000000;stop-opacity:0" offset="1"/>
+</linearGradient>
+</defs>
+<g transform="translate(-14 -976.36)">
+<rect x="14" y="976.36" width="45" height="45" ry="1.1124e-5" style="fill:#01ff20"/>
+<rect x="15.475" y="977.84" width="42.049" height="42.049" ry="1.0395e-5" style="fill:#222222"/>
+<path d="m52.361 990.38-15.492 1.4772h-16.23l12.541 13.163-5.1639 2.338h-7.377l11.066 12.531h25.82v-24.261z" style="fill-rule:evenodd;fill:url(#linearGradient4779)"/>
+<path d="m52.361 990.38v1.4754h-31.721v-1.4754z" style="fill:#01ff20"/>
+<circle cx="50.5" cy="990.86" r="0" style="fill:#01ff20"/>
+<path d="m52.361 1005.9v1.4754h-31.721v-1.4754z" style="fill:#01ff20"/>
+<g transform="matrix(.7377 0 0 .7377 6.6168 254.62)">
+<circle cx="35.008" cy="1019.4" r="5" style="fill:#01ff20"/>
+<circle cx="35.008" cy="1019.4" r="3" style="fill:#222222"/>
+</g>
+<g transform="matrix(.7377 0 0 .7377 3.6721 256.1)">
+<circle cx="52.998" cy="996.36" r="5" style="fill:#01ff20"/>
+<circle cx="52.998" cy="996.36" r="3" style="fill:#222222"/>
+</g>
+</g>
+</svg>

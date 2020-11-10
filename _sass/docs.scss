@@ -71,6 +71,13 @@ $roadmap-line: #00FF00;
     h2, h3, h4 {
         margin-top: -125px;
         padding-top: 135px;
+
+        img {
+            box-shadow: none;
+            max-height: 32px;
+            max-width: 32px;
+            vertical-align: middle;
+        }
     }
 
     hr {
@@ -221,5 +228,14 @@ blockquote {
 
     &::before {
         content: "✗ ";
+    }
+}
+
+/* Mini tweaks */
+.dependency-table {
+    margin-bottom: 15px;
+
+    img {
+        cursor: help;
     }
 }
