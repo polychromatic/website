@@ -33,3 +33,6 @@ sudo apt-get install polychromatic
 If you'd like to be on cutting edge (which may be unstable), swap `stable` with `daily`.
 
 Alternately, .deb files are provided in the [releases notes](https://github.com/polychromatic/polychromatic/releases/latest/).
+
+> This repository may change in future to separate Ubuntu and Debian.
+> However, the current one used today will continue to work.

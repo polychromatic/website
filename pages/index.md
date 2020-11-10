@@ -32,29 +32,29 @@ splash_button_text: Download
 {% include end-row %}
 
 {:.center .grey}
-**Coming Soon:** A command line tool for terminal warriors and scripting junkies.
+The next version will introduce a command line tool for keyboard warriors!
 
 ---
 
 {% include feature
     img_position = "left"
     img = "/assets/img/openrazer.svg"
-    title = "Powered by OpenRazer"
-    text = "Complements the OpenRazer driver and daemon, supporting over 50+ devices.<br><br>[View Supported Devices](https://openrazer.github.io/#devices)"
+    title = "Works with OpenRazer"
+    text = "Supports over 100+ devices, with improvements on the way.<br><br>[View Supported Devices](https://openrazer.github.io/#devices)"
 %}
 
 {% include feature
     img_position = "right"
     img = "/assets/fa/cloud.svg"
     title = "No clouds, no registration"
-    text = "Local software that runs on your computer, with no telemetry."
+    text = "Local software that runs on your computer, like it should."
 %}
 
 {% include feature
     img_position = "left"
     img = "/assets/fa/box-open.svg"
     title = "It's free and open source"
-    text = "Free forever. Licensed and distributed under the [GPLv3](/docs/license/)."
+    text = "Licensed and distributed under the [GPLv3](/docs/license/)."
 %}
 
 ---

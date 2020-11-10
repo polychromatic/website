@@ -12,6 +12,7 @@ Works on:
 * Ubuntu 16.04 (all flavours) or later
 * Linux Mint 18 or later
 * elementaryOS 0.4 or later
+* Pop!_OS 20.04 or later
 
 ## 1. OpenRazer
 
@@ -41,11 +42,11 @@ sudo apt install polychromatic
 
 The PPA is recommended as it keeps the application up-to-date.
 
-### Testing Builds
+## Fancy beta testing?
 
-If you're interested in testing the newest stuff before it goes stable,
-consider using the daily/development builds. While these deliver the newest
-features and improvements quicker, they haven't been as extensively tested.
+If you're interested in testing the latest and greatest,
+consider adding the development "daily" PPA. These will deliver the newest
+features and improvements as soon as they are ready for testing.
 
 ```
 sudo add-apt-repository ppa:polychromatic/daily
@@ -53,12 +54,7 @@ sudo apt update
 sudo apt install polychromatic
 ```
 
-If you later decide to revert back to the stable builds:
+To opt out of testing, use [Software & Updates] to remove
+the `polychromatic/daily` PPA and continue using `polychromatic/stable`.
 
-```
-sudo apt remove polychromatic
-sudo rm /etc/apt/sources.list.d/polychromatic-ubuntu-daily*
-sudo add-apt-repository ppa:polychromatic/stable
-sudo apt update
-sudo apt install polychromatic
-```
+[Software & Updates]: https://wiki.ubuntu.com/SoftwareAndUpdatesSettings
