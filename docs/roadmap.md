@@ -23,8 +23,9 @@ roadmap:
         - Port Controller to PyQt5 (third refactor, 2020)
         - Implement Devices tab
         - Implement Preferences
-      pending:
+      in_progress:
         - Implement Effects tab ("application profiles" replacement)
+      pending:
         - Implement Presets tab ("profiles")
         - Implement Triggers tab (a new feature to activate presets based on events, such as session login)
         - v0.6.0 Beta Release - Cross-distro, device testing and finalizing documentation
@@ -42,6 +43,7 @@ roadmap:
       completed:
         null
       pending:
+        - Add Philips Hue as a backend.
         - Add OpenRGB as a backend.
         - Port application to Windows and macOS.
 

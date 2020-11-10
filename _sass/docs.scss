@@ -151,7 +151,7 @@ blockquote {
             background-size: 1.5em;
             background-position: center;
             box-shadow: lime 0 0 2em;
-            animation: glow 10s infinite;
+            animation: glow 5s infinite;
         }
 
         &.progress {
@@ -175,18 +175,48 @@ blockquote {
 
     ul {
         margin: 0;
+        padding-left: 15px;
+        list-style: none;
+        position: relative;
+
 
         &:last-child {
             margin-bottom: 2em;
         }
 
-        &.completed {
-            li {
-                list-style-image: url(/assets/img/checkmark.svg);
+        .bullet,
+        .circle,
+        .check {
+            background-size: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+            height: 16px;
+            width: 16px;
+        }
+
+        &.pending .bullet {
+            background-image: url(/assets/img/bullet.svg);
+        }
+
+        &.in_progress {
+            color: #00ff00;
+            position: relative;
+
+            .circle {
+                animation: loop 1s linear infinite;
+                border: none;
+                background-image: url(/assets/img/docs/progress-mini.svg);
+                background-size: 100%;
+                margin-top: 2px;
+                height: 16px;
+                width: 16px;
             }
         }
 
-        &.pending {}
+        &.completed .check {
+            background-image: url(/assets/img/checkmark.svg);
+        }
     }
 }
 
@@ -196,7 +226,7 @@ blockquote {
     }
 
     50% {
-        box-shadow: lime 0 0 3em;
+        box-shadow: lime 0 0 1em;
     }
 
     100% {
