@@ -5,6 +5,14 @@ permalink: /docs/translations/
 class: docs
 ---
 
+> **New codebase (v1.0.0) incoming!**
+>
+> New developments are still adding and refining strings. Plus, the translation
+> framework is partially broken. It is recommend to wait until the upcoming beta release (v0.6.0)
+>
+> The instructions below are only applicable to **v0.3.12**, but this series
+> won't receive any further updates.
+
 ## Overview
 
 Polychromatic uses gettext to localize the application to different languages.

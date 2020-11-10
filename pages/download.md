@@ -46,4 +46,4 @@ community_distros:
 ---
 
 {:.center}
-[Manual Installation Instructions](manual/){:.btn} [View Source Code](https://github.com/polychromatic/polychromatic/){:.btn}
+[View Source Code](https://github.com/polychromatic/polychromatic/branches/){:.btn}

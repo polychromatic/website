@@ -5,14 +5,24 @@ permalink: /docs/license/
 class: docs
 ---
 
-## Summary
+## Libraries
 
-With the exceptions of libraries, the Polychromatic project is licensed and distributed under GPLv3.
+With the exceptions of libraries, the Polychromatic project is licensed and
+distributed under GPLv3.
 
-* Cursors - Contains remixes of the DMZ-White cursor. Licensed under the MIT license.
-* Play font - SIL Open Font License v1.10
+```
+#### FontAwesome 5.x
 
-For assets used for this website, refer to the [README file](https://github.com/polychromatic/polychromatic-website#license).
+Copyright (c) 2017-2020 FortAwesome
+Licensed under CC-BY-4.0.
+
+https://github.com/FortAwesome/Font-Awesome
+
+#### Play
+
+Copyright (c) 2011 Jonas Hecksher
+Licensed under the SIL Open Font License, Version 1.1.
+```
 
 
 ## GPLv3

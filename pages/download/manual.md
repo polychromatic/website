@@ -7,28 +7,23 @@ distro_name: Manual Installation
 class: download
 ---
 
-## 1. OpenRazer
+> Only applies to [`dev-1.0.0`](https://github.com/polychromatic/polychromatic/tree/dev-1.0.0) branch.
 
-Ensure you have installed the [OpenRazer](https://openrazer.github.io) driver and daemon installed.
+### Building
 
-Polychromatic depends on:
+`meson` and `ninja` is required to build the project. The build system allows
+for modularity should you wish to exclude the tray applet, controller or CLI.
 
-* `python3-openrazer`
-* `openrazer-daemon`
+You'll need an implementation of `sass` to compile the Qt styling. `sassc` is widely
+available, but there's other implementations that could be used (e.g. `dart-sass`, RubyGems `sass`, or NPM `sass`)
 
----
-
-## 2. Polychromatic
-
-### System-wide Install
-
-* Only applies to [`dev-1.0.0`](https://github.com/polychromatic/polychromatic/tree/dev-1.0.0) branch.
+For instructions on building, see the ["Manual Installation" download page](/download/manual/).
 
 You'll need to install the latest versions of `git`, `meson` and `ninja`, as well
 as the [application's dependencies](/docs/dependencies/).
 
 ```
-git clone https://github.com/polychromatic/polychromatic.git
+git clone https://github.com/polychromatic/polychromatic.git -b dev-1.0.0-pyqt5
 cd polychromatic
 git checkout stable
 meson build
@@ -41,7 +36,7 @@ For quick testing or to start hacking the code right away, you can run Polychrom
 providing the [application's dependencies](/docs/dependencies/) have been installed.
 
 ```
-git clone https://github.com/polychromatic/polychromatic.git -b master
+git clone https://github.com/polychromatic/polychromatic.git -b dev-1.0.0-pyqt5
 cd polychromatic
 ./polychromatic-controller
 ./polychromatic-tray-applet

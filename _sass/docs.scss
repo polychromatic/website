@@ -69,13 +69,24 @@ $roadmap-line: #00FF00;
     }
 
     h2, h3, h4 {
-        margin-top: -135px;
+        margin-top: -125px;
         padding-top: 135px;
     }
 
     hr {
         border-top: 2px solid $table-colour-head;
         margin: 30px 0;
+    }
+
+    table img {
+        box-shadow: none;
+        max-height: 32px;
+        max-width: 32px;
+        vertical-align: middle;
+
+        + a {
+            vertical-align: middle;
+        }
     }
 }
 

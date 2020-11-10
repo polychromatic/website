@@ -24,11 +24,10 @@ roadmap:
         - Implement Devices tab
         - Implement Preferences
       pending:
-        - Miscellaneous internals and styling adjustments
         - Implement Effects tab ("application profiles" replacement)
         - Implement Presets tab ("profiles")
         - Implement Triggers tab (a new feature to activate presets based on events, such as session login)
-        - Beta Release - Cross-distro, device testing and finalizing documentation
+        - v0.6.0 Beta Release - Cross-distro, device testing and finalizing documentation
 
     - name: v1.1.0
       checked: false

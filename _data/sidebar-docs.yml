@@ -21,26 +21,26 @@
     - name: Distros and Enviroments
       url: /docs/distros/
 
-    - name: 'Controller'
+    - name: Controller
       url: /docs/controller/
       disabled: true
 
-    - name: 'Devices'
+    - name: Devices
       url: /docs/controller/devices/
       disabled: true
       indent: true
 
-    - name: 'Effects'
+    - name: Effects
       url: /docs/controller/effects/
       disabled: true
       indent: true
 
-    - name: 'Presets'
+    - name: Presets
       url: /docs/controller/presets/
       disabled: true
       indent: true
 
-    - name: 'Triggers'
+    - name: Triggers
       url: /docs/controller/events/
       disabled: true
       indent: true
@@ -55,19 +55,19 @@
 
 - title: Get Involved
   items:
-    - name: Translations
+    - name: Add Translations
       url: /docs/translations/
 
-    - name: Device Mapping
+    - name: Add Device Map Graphics
       url: /docs/devicemaps/
       disabled: true
 
-    - name: Backend & Device Support
+    - name: Add Backend/Device Support
       url: /docs/backends/
       disabled: true
 
-    - name: Share Custom Effects
-      url: /docs/polychromunity/
+    - name: Sharing Custom Effects
+      url: /docs/create-effects/
       disabled: true
 
 - title: Internals
@@ -81,13 +81,16 @@
 
     - name: Configuration
       url: /docs/config/
+      disabled: true
 
-    - name: 'Effects'
+    - name: Effects
       url: /docs/config-effects/
+      disabled: true
       indent: true
 
-    - name: 'Presets'
+    - name: Presets
       url: /docs/config-presets/
+      disabled: true
       indent: true
 
 - title: Backends
