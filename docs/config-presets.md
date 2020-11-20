@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Presets Save Format
-permalink: /docs/config-presets/
+permalink: /docs/config/presets/
 class: docs
 ---
 

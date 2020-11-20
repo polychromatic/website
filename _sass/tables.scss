@@ -24,4 +24,14 @@ table {
         color: $sidebar-heading;
         font-weight: 600;
     }
+
+    tbody td {
+        vertical-align: top;
+    }
+
+    &.has-icons {
+        tbody td {
+            vertical-align: middle;
+        }
+    }
 }

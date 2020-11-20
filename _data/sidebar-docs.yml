@@ -9,9 +9,9 @@
     - name: License
       url: /docs/license/
 
-    #- name: History
-      #url: /docs/history/
-      #disabled: true
+    - name: History
+      url: /docs/history/
+      disabled: true
 
 - title: User Guide
   items:
@@ -21,80 +21,89 @@
     - name: Distros and Enviroments
       url: /docs/distros/
 
-    #- name: Controller
-      #url: /docs/controller/
-      #disabled: true
+    - name: Controller
+      url: /docs/controller/
+      disabled: true
 
-    #- name: Devices
-      #url: /docs/controller/devices/
-      #disabled: true
-      #indent: true
+    - name: Devices
+      url: /docs/controller/devices/
+      disabled: true
+      indent: 1
 
-    #- name: Effects
-      #url: /docs/controller/effects/
-      #disabled: true
-      #indent: true
+    - name: Effects
+      url: /docs/controller/effects/
+      disabled: true
+      indent: 1
 
-    #- name: Presets
-      #url: /docs/controller/presets/
-      #disabled: true
-      #indent: true
+    - name: Presets
+      url: /docs/controller/presets/
+      disabled: true
+      indent: 1
 
-    #- name: Triggers
-      #url: /docs/controller/events/
-      #disabled: true
-      #indent: true
+    - name: Triggers
+      url: /docs/controller/events/
+      disabled: true
+      indent: 1
 
-    #- name: Tray Applet
-      #url: /docs/tray-applet/
-      #disabled: true
+    - name: Tray Applet
+      url: /docs/tray-applet/
+      disabled: true
 
-    #- name: Command Line
-      #url: /docs/cli/
-      #disabled: true
+    - name: Command Line
+      url: /docs/cli/
+      disabled: true
 
 - title: Get Involved
   items:
     - name: Add Translations
       url: /docs/translations/
 
-    #- name: Add Device Map Graphics
-      #url: /docs/devicemaps/
-      #disabled: true
+    - name: Add Device Maps &amp Graphics
+      url: /docs/devicemaps/
+      disabled: true
 
-    #- name: Add Backend/Device Support
-      #url: /docs/backends/
-      #disabled: true
+    - name: Add Backend Integration
+      url: /docs/backends/
+      disabled: true
 
-    #- name: Sharing Custom Effects
-      #url: /docs/create-effects/
-      #disabled: true
+    - name: Sharing Custom Effects
+      url: /docs/create-effects/
+      disabled: true
 
 - title: Internals
   items:
-    #- name: Architecture
-      #url: /docs/internals/
-      #disabled: true
+    - name: Architecture
+      url: /docs/internals/
+      disabled: true
 
     - name: Dependencies
       url: /docs/dependencies/
 
-    #- name: Configuration
-      #url: /docs/config/
-      #disabled: true
+    - name: Configuration
+      url: /docs/config/
 
-    #- name: Effects
-      #url: /docs/config-effects/
-      #disabled: true
-      #indent: true
+    - name: Effects
+      url: /docs/config/effects/
+      indent: 1
 
-    #- name: Presets
-      #url: /docs/config-presets/
-      #disabled: true
-      #indent: true
+    - name: Layered Effects
+      url: /docs/config/effects/layered/
+      indent: 2
 
-#- title: Backends
-  #items:
-    #- name: OpenRazer
-      #url: /docs/openrazer/
-      #disabled: true
+    - name: Scripted Effects
+      url: /docs/config/effects/scripted/
+      indent: 2
+
+    - name: Sequence Effects
+      url: /docs/config/effects/sequence/
+      indent: 2
+
+    - name: Presets
+      url: /docs/config/presets/
+      indent: 1
+
+- title: Backends
+  items:
+    - name: OpenRazer
+      url: /docs/openrazer/
+      disabled: true

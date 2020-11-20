@@ -1,147 +1,96 @@
 ---
 layout: docs
-title: Effects Save Format
-permalink: /docs/config-effects/
+title: Effect Internals
+permalink: /docs/config/effects/
 class: docs
 ---
 
-Polychromatic works with its own JSON format of "software effects". Effects work
-on any compatible backend for devices that support a individually addressable
-LEDs (matrix).
+Effects could refer to one of the following:
 
-There are two types:
+* **[Hardware](#hardware-effects)** - provided by the firmware or backend. These usually persist across power cycles.
+* **[Software](#software-effects)** - powered by Polychromatic and require the backend to be running.
 
-| Type          | Purpose                   |
-| ------------- | ------------------------- |
-| [Keyframed]   | Custom effects calculated using keyframes.
-| [Scripted]    | Programmable effects written in Python.
+## Hardware Effects
 
-[Keyframed]: #keyframed-effects
-[Scripted]: #scripted-effects
+### OpenRazer
 
-Effects are managed via the Controller application:
+Availablity of effects and parameters vary on the hardware's firmware.
 
-    polychromatic-controller --tab effects
+{:.has-icons}
+| Effect                                        | Parameters / Notes            |
+| --------------------------------------------- | ----------------------------- |
+| ![](/assets/img/docs/effects/none.svg) None   |
+| ![](/assets/img/docs/effects/spectrum.svg) Spectrum |
+| ![](/assets/img/docs/effects/wave.svg) Wave | Direction <1-2>
+| ![](/assets/img/docs/effects/reactive.svg) Reactive | Speed <1-4> and 1 colour
+| ![](/assets/img/docs/effects/ripple.svg) Ripple | Random or 1 colour | Software effect provided by daemon
+| ![](/assets/img/docs/effects/breath.svg) Breath | Random or 1, 2 or 3 colour(s)
+| ![](/assets/img/docs/effects/static.svg) Static | 1 colour
+| ![](/assets/img/docs/effects/pulsate.svg) Pulsate | 1 colour
+| ![](/assets/img/docs/effects/blinking.svg) Blinking | 1 colour
+
+Some Razer firmware retain hardware effects across power cycles and when plugged into
+other computers. Similarly, when software effects are used, the last frames may
+be retained across power cycles. However, newer firmware may default to an effect
+until OpenRazer and/or Polychromatic has started.
+
+
+---
+
+## Software Effects
+
+Like with any RGB application, Polychromatic works with its own format for
+storing "software effects". Polychromatic stores them as JSON files in
+`~/.config/polychromatic/effects/`, enabling the possibility to import
+and export from/to other applications.
+
+Writing effects in this software will work on any supported backend where the
+device is compatible with individually addressable LEDs (matrix) and can be
+set to work within specifications (for example, a scripted effect that
+should only be played on keyboards)
+
+There are three types:
+
+| ID | Type                                                      | Purpose                   |
+| -- | --------------------------------------------------------- | ------------------------- |
+| 1  | [![](/assets/fa/effect-layered.svg) Layered](layered/)    | Each layer describes how to display a specified range of LEDs
+| 2  | [![](/assets/fa/effect-scripted.svg) Scripted](scripted/) | Programmable effects written in Python
+| 3  | [![](/assets/fa/effect-sequence.svg) Sequence](sequence/) | Animated (or static) effect based on pixels and frames
+
 
 > Users previously running v0.3.12 will have their "application profiles"
-migrated as **Keyframed** effects.
+> converted to **Layered effects**.
 
----
+Effects can be edited via the main "Controller" application.
 
-## Keyframed Effects
-
-These are multi-layered effects that are designed for a specific device layout.
-A layer could be:
-
-| Type              | Purpose                                                  |
-| ----------------- | -------------------------------------------------------- |
-| Single Frame      | Set LEDs for the entire layer.
-| Multiple Frames   | Set LEDs on a frame by frame basis.
-| Wave              | Software generated wave using colours of your choice.
-| Spectrum          | Software generated spectrum using colours of your choice.
-
-Layers start at 1, and each higher level will overlay the one below it.
-Before an effect is played, the application will render the keyframes and cache
-them in `~/.cache/polychromatic/rendered/`.
-
-The `polychromatic-helper` process is responsible for sending these frames to
-the hardware. To avoid two processes controlling the device at the same time,
-lock files are placed in the **run directory** (`/run/user/$PID/polychromatic`).
-
-> Interactive effects like **Reactive** and **Ripple** are
-not supported at the moment.
-
----
-
-## Scripted Effects
-
-These scripts hook into `polychromatic.fx`, a high level Python library API to
-interact with devices supported by Polychromatic and passes to the relevant
-backends, such as `openrazer.client`.
-
-There are two files in `~/.config/polychromatic/effects/scripted/` :
-
-* A Python `(.py)` file containing the code.
-* A JSON `(.json)` file describing the metadata.
+When playing effects, the `polychromatic-helper` runs as a process for each device.
+To avoid two processes controlling the device at the same time,
+lock files are placed in the **run directory** (based on the XDG spec, which is
+usually `/run/user/$PID/polychromatic`).
 
 
-### Writing Custom Effects in Python
+### Common Metadata
 
-It is recommended to create and test these within the Controller application,
-as this allows testing on real hardware or via an on-screen software graphic.
+All effects use JSON files to describe the effect and additional data depending
+on the type of effect.
 
-Here's an example:
-
-```
-#!/usr/bin/python3
-
-import polychromatic.fx
-
-def play(fx, params=[]):
-
-    # Parameters Example:
-    # params["var1"]    # "#00FF00"
-    # params["var2"]    # "Fast"
-
-    # Variables
-    fx.rows             # 5
-    fx.cols             # 20
-    fx.name             # Razer BlackWidow Chroma
-    fx.backend          # OpenRazer
-    fx.form_factor      # keyboard
-
-    # Helper functions
-    fx.rgb_to_hex(0, 255, 0)    # Output: #00FF00
-    fx.hex_to_rgb("#00FF00")    # Output: [0, 255, 0]
-
-    # Drawing
-    fx.matrix[0,0] = [255,0,0]
-    fx.draw()
-```
-
-| Variable / Function | Returns   | Purpose                                 | Example      |
-| ----------------- | --------- | ----------------------------------------- | ------------ |
-| `params`          | dict      | User input as specified in the metadata.  | `{"var1": "#00FF00", "var2": "Fast"}`
-| `fx.rows`         | int       | How many keys the device has vertically.  | `6`
-| `fx.cols`         | int       | How many keys the device has horiziontally. | `22`
-| `fx.name`         | str       | Human name of the device.                   | `Razer BlackWidow Chroma`
-| `fx.backend`      | str       | Name of backend powering this device.       | `openrazer`
-| `fx.form_factor`  | str       | Label for this type of device.              | `keyboard`
-| `fx.rgb_to_hex()` | str       | Input integers: `[R,G,B]` to get the hex value. | `[0,255,0] -> "#00FF00"`
-| `fx.hex_to_rgb()` | list      | Input string: `("#RRGGBB")` to get separate R, G, B values. | `"#FF0000" -> [255,0,0]`
-| `fx.matrix[X,Y]`  |           | Set a colour at the specified position. 0-based. |
-| `fx.draw()`       | bool      | Send this frame to the hardware. Returns boolean to indicate success. | `True`
-
-The script can be very flexible using the power of Python using `import`'s and
-as many functions as desired. At minimum, an effect must have:
-
-* `#!/usr/bin/python3` as the shebang.
-* `import polychromatic.fx`
-* `def play(fx, params=[])`
-
-
----
-
-### Metadata (Common)
-
-All effects have JSON files that describe the effect and other data depending on
-the type of effect.
-
-Every effects consists of:
-
+Every effect consists of the following:
 
 ```
 {
     "name": "Example Effect",
-    "author": "Your Name Here",
-    "icon": "ui/img/emblems/code.svg",
-    "summary": "My new effect is a work in progress.",
-    "optimised": {
-        "form_factor": "keyboard",
-        "name": "Razer BlackWidow Chroma"
-    },
-    "format_version": -1,
-    "revision": 1
+    "name[fr_FR]": "Exemple d'effet",
+    "type": 1,
+    "author": "octocat",
+    "author_has_github": true,
+    "icon": "ui/img/emblems/lamp.svg",
+    "summary": "This is an example effect",
+    "summary[fr_FR]": "Ceci est un exemple d'effet",
+    "designed_for": ["keyboard"],
+    "optimised_for": ["Razer BlackWidow Chroma"],
+    "mapping": "blackwidow_m_keys_en_GB.svg",
+    "save_format": 8,
+    "revision": 1,
 }
 ```
 
@@ -149,144 +98,28 @@ Every effects consists of:
 | ------------- | --------- | --------------------------------------------- |
 | `name`        | str       | Name of effect (English)
 | `name[fr]`    | str       | Name of effect (other language, e.g. `fr`)
-| `author`      | str       | Full name or username to creator
-| `icon`        | str       | Relative path to icon (from `data/`), or blank if custom icon.
+| `type`        | int       | Internal effect type
+| `author`      | str       | Full name or username of creator
+| `author_has_github`| bool | `true` if `author` is a username to GitHub
+| `icon`        | str       | Relative path to icon (from data directory or user's `custom_icons` folder), or absolute path to a custom icon.
 | `summary`     | str       | Brief description (English)
 | `summary[fr]` | str       | Brief description (other language, e.g. `fr`)
-| `optimised`   | dict      | Inform other users which device the effect was tested or designed for.
-|               |           | - `"name"` is the original device label, e.g. `"Razer BlackWidow Ultimate 2016"`.
-|               |           | - `"form_factor"` specifies a [device type], e.g. `"keyboard"`.
-| `format_version` | int    | Internal fx module version. **Should not be changed.** Use `-1` to use latest version (when writing new effects)
+| `designed_for`| list      | List of [device types](#device-types) indicating what the effect is designed for. If it doesn't matter, specify `["any"]`.
+| `optimised_for` | list    | List of full device names to indicate where the effect was tested and approved to work on, e.g. `"Razer BlackWidow Ultimate 2016"`.
+| `mapping`     | str       | Filename of the mapping graphic last used when editing this effect.
+| `save_format` | int       | Internal save version. **Should not be changed.**
 | `revision`    | int       | Author's version number of the effect, e.g. `5`. Used to check for updates from the original.
 
 All fields are required.
 
+Additional data depends on the type of effect:
 
----
+* [Layered (type 1)](layered/#additional-metadata)
+* [Scripted (type 2)](scripted/#additional-metadata)
+* [Sequence (type 3)](sequence/#additional-metadata)
 
-### Metadata (Scripted)
-
-```
-{
-    "depends": {
-        "form_factor": ["keyboard"],
-        "OS": ["any"],
-        "py_dependencies": []
-    },
-    "parameters": [
-        {
-            "var": "var1",
-            "label": "CPU Colour",
-            "type": "colour",
-            "value": null,
-            "default": "#00FF00"
-        },
-        {
-            "var": "var2",
-            "label": "Speed",
-            "type": "choice",
-            "options": ["Fast", "Medium", "Slow"],
-            "value": null,
-            "default": "Slow"
-        }
-    ],
-    "checksum_md5": "fa400dcf0b88fe3ebcc3481a4b094c66"
-}
-```
-
-| Key           | Data Type | Purpose                                       |
-| ------------- | --------- | --------------------------------------------- |
-| `depends`     | dict      | - `"form_factor"` is a list of [device types] to prevent the effect running on devices that it was not designed for. If it'll work on anything, specify `"any"`.
-|               |           | - `"OS"` is a list should the effect is limited to a platform. Use `["any"]` or `["linux", "macos", "windows"]` if applicable.
-|               |           | - `"py_dependencies"` is a list of Python modules you've imported. E.g. if `import requests` was used, then list: `["requests"]`.
-| `parameters`  | list      | See [Parameters](#parameters) below.
-| `checksum_md5`| str       | Checksum of the `.py` file. Used to check for changes from the original.
-
-All fields are required.
-
-
-#### Parameters
-
-This key is a list of dictionaries that specify optional parameters. Polychromatic
-will expose these in the interface for the user to choose, and your effect will
-be able to reference them in `params["<var>"]`.
-
-```
-{
-    "parameters": [
-        {
-            "var": "var1",
-            "label": "CPU Colour",
-            "type": "colour",
-            "value": null,
-            "default": "#00FF00"
-        },
-        {
-            "var": "var2",
-            "label": "Pick a number",
-            "type": "list",
-            "options": ["1", "2", "3"],
-            "value": "1",
-            "default": "2"
-        }
-    ]
-}
-```
-
-* `"var"` = Variable name, no spaces, case sensitive.
-* `"label"` = Human readable name
-* `"type"` = One of: `colour`, `list`, `number`, `string`.
-* `"options"` = (`list` only) Options to show in the interface.
-* `"value"` = Current value as set by the user. Starts as `null`.
-* `"default"` = When a value wasn't specified, use this.
-
-For lists, the `value` is validated against the list of `options`. An invalid `value`
-will fallback to the `default`.
-
-Additional keys can be optionally specified for localisation:
-
-* `"label[fr]"`
-* `"options[fr]"`
-
-[device type]: #device-types
-[device types]: #device-types
-
----
-
-### Metadata (Keyframed)
-
-This data is more internal to the application's logic. See docstrings for details.
-
-```
-{
-    "data": [
-        "frames": (int)             # Number of frames
-        "layers": [
-            {
-                "name": (str)
-                "type": (str)       # 'wave', 'spectrum', 'static', 'frames'
-                "single": (bool)    # True if the layer type specifies each frame.
-                "prop": {
-                    "colours": (list)
-                    "direction": (int)
-                }
-                "keyframes": [      # If 'single' is FALSE
-                    "0,0"           # "x,y" values wrapped in string. 1-based.
-                ]
-                "frames": {
-                    1: {            # Frame number. 1-based.
-                        {
-                            "x": (int),
-                            "y": (int),
-                            "colour": (str)
-                        }
-                    }
-                }
-            }
-        ]
-    ]
-}
-```
+Localisation keys are optional and is intended to be used in a future update
+where a facility will allow you to upload/download effects created by other users.
 
 ---
 
@@ -303,7 +136,7 @@ Polychromatic identifies devices into one of these categories:
 * `gpu`
 * `accessory`
 
-For example, the logic in your effect could behave differently between
+For example, the logic in scripted effects could behave differently between
 devices by detecting like this:
 
 ```
@@ -317,16 +150,17 @@ else:
     # everything else
 ```
 
+
 ---
 
 ## Hardware Mappings
 
 Where available, the editor will show a hardware SVG from
 `/usr/share/polychromatic/mapping/` that closely matches the hardware
-layout. As a fallback, a basic matrix grid is displayed, see
-[Hardware Mappings](#hardware-mappings) for details on how the SVG
-graphic is parsed.
+layout or choose one manually. See [Add Device Maps & Graphics](/docs/devicemaps/)
+for details on to structure the SVG when creating new graphics.
 
-> A device's matrix can be directly tested by choosing a device from the
-**Devices** tab, clicking **Device Info** and then **Test Matrix**.
+Alternately, a basic matrix grid can be used for any device.
 
+> A device's matrix can be directly tested via the Controller. Choose the device
+from the **Devices** tab, click **Device Info** and then **Test Matrix**.
