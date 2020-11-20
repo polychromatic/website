@@ -12,7 +12,11 @@ swup.on("contentReplaced", page_enter);
 
 function page_enter(no_scroll) {
     if (no_scroll != true) {
-        window.scrollTo(0, 0);
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
     }
 
     // Update navigation 'active' class
