@@ -24,7 +24,7 @@ The packages are built for compatibility in both Ubuntu and Debian.
 To ensure the latest updates, add the repository and signing key as follows:
 
 ```
-echo "deb http://ppa.launchpad.net/polychromatic/stable/ubuntu xenial main" | sudo tee -a /etc/apt/sources.list.d/polychromatic.list
+echo "deb http://ppa.launchpad.net/polychromatic/stable/ubuntu bionic main" | sudo tee -a /etc/apt/sources.list.d/polychromatic.list
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
 sudo apt-get update
 sudo apt-get install polychromatic
