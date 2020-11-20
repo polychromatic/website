@@ -6,18 +6,20 @@ const options = {
     linkSelector: 'a[href^="/"]:not([data-no-swup]), a[href^="../"]:not([data-no-swup])',
 };
 
+function _do_smooth_scroll() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+}
+
 const swup = new Swup(options);
 swup.on("transitionStart", page_exit);
 swup.on("contentReplaced", page_enter);
 
-function page_enter(no_scroll) {
-    if (no_scroll != true) {
-        window.scroll({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-        });
-    }
+function page_enter() {
+    _do_smooth_scroll();
 
     // Update navigation 'active' class
     var nav_class = document.getElementById("current-page-class").value;
@@ -30,6 +32,19 @@ function page_enter(no_scroll) {
 
     if (nav_active != null) {
         nav_active.classList.add("active");
+    }
+
+    // Smoothly scroll to the top when clicking internal links
+    var links = document.querySelectorAll("a");
+    for (a = 0; a < links.length; a++) {
+        var link = links[a];
+        var same_domain = link.protocol == window.location.protocol && link.host == window.location.host;
+        if (link.smooth == true)
+            continue;
+        if (same_domain != false) {
+            link.addEventListener("click", _do_smooth_scroll);
+            link.smooth = true;
+        }
     }
 
     // If sidebar is present, make sure it's smoothly animated.
@@ -77,4 +92,4 @@ function change_doc(element) {
 }
 
 // Initial page load
-page_enter(true);
+page_enter();
