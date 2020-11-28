@@ -13,6 +13,7 @@ Works on:
 * Linux Mint 18 or later
 * elementaryOS 0.4 or later
 * Pop!_OS 20.04 or later
+* Zorin OS 11 or later
 
 ## 1. OpenRazer
 

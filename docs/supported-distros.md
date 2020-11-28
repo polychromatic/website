@@ -20,7 +20,7 @@ This software is natively provided on these distributions.
 ![](/assets/img/distros/mageia.svg) [Mageia]        | [z3ntu]
 ![](/assets/img/distros/solus.svg) [Solus]          | [z3ntu]
 
-`*` Ubuntu includes flavours and derivatives, such as Linux Mint, elementaryOS and Pop!_OS
+`*` Ubuntu includes flavours and derivatives, such as Linux Mint, elementaryOS, Pop!_OS and Zorin OS
 
 [Ubuntu]: /download/ubuntu/
 [Debian]: /download/debian/
