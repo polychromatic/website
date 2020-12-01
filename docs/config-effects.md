@@ -86,9 +86,8 @@ Every effect consists of the following:
     "icon": "ui/img/emblems/lamp.svg",
     "summary": "This is an example effect",
     "summary[fr_FR]": "Ceci est un exemple d'effet",
-    "designed_for": ["keyboard"],
-    "optimised_for": ["Razer BlackWidow Chroma"],
-    "mapping": "blackwidow_m_keys_en_GB.svg",
+    "map_device": "Razer BlackWidow Chroma",
+    "map_graphic": "blackwidow_m_keys_en_GB.svg",
     "save_format": 8,
     "revision": 1,
 }
@@ -100,13 +99,12 @@ Every effect consists of the following:
 | `name[fr]`    | str       | Name of effect (other language, e.g. `fr`)
 | `type`        | int       | Internal effect type
 | `author`      | str       | Full name or username of creator
-| `author_has_github`| bool | `true` if `author` is a username to GitHub
+| `author_url`  | str       | Optional URL to author, e.g. GitHub profile
 | `icon`        | str       | Relative path to icon (from data directory or user's `custom_icons` folder), or absolute path to a custom icon.
 | `summary`     | str       | Brief description (English)
 | `summary[fr]` | str       | Brief description (other language, e.g. `fr`)
-| `designed_for`| list      | List of [device types](#device-types) indicating what the effect is designed for. If it doesn't matter, specify `["any"]`.
-| `optimised_for` | list    | List of full device names to indicate where the effect was tested and approved to work on, e.g. `"Razer BlackWidow Ultimate 2016"`.
-| `mapping`     | str       | Filename of the mapping graphic last used when editing this effect.
+| `map_device`  | str       | Name of the device that will play this effect. For multiple, use `null`.
+| `map_graphic` | str       | Filename of the mapping graphic to use when editing this effect. For grid, use `null`.
 | `save_format` | int       | Internal save version. **Should not be changed.**
 | `revision`    | int       | Author's version number of the effect, e.g. `5`. Used to check for updates from the original.
 
@@ -120,36 +118,6 @@ Additional data depends on the type of effect:
 
 Localisation keys are optional and is intended to be used in a future update
 where a facility will allow you to upload/download effects created by other users.
-
----
-
-## Device Types
-
-Polychromatic identifies devices into one of these categories:
-
-* `unrecognised`
-* `keyboard`
-* `mouse`
-* `mousemat`
-* `keypad`
-* `headset`
-* `gpu`
-* `accessory`
-
-For example, the logic in scripted effects could behave differently between
-devices by detecting like this:
-
-```
-if fx.form_factor == "keyboard":
-    # code for keyboard
-
-elif fx.form_factor in ["mouse", "keypad"]:
-    # code for mouse or keypad
-
-else:
-    # everything else
-```
-
 
 ---
 

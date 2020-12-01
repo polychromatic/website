@@ -105,17 +105,52 @@ Accompanying the Python file is the JSON file with the
 ```
 {
     "required_os": ["any", "linux"],
-    "parameters": []
+    "parameters": [],
+    "designed_for": ["keyboard"],
+    "optimised_for": ["Razer BlackWidow Chroma"]
 }
 ```
 
 | Key           | Data Type | Purpose                                       |
 | ------------- | --------- | --------------------------------------------- |
-| `required_os` | list      | If applicable, limit effect to run on these platforms. Use `["any"]` or `["linux", "macos", "windows"]`.
+| `required_os` | list      | If applicable, limit effect to run on these platforms. Specify `["linux", "macos", "windows"]` or leave blank for any OS.
 | `parameters`  | list      | See [Parameters](#parameters) below.
+| `designed_for`| list      | List of [device types](#device-types) indicating what the effect is designed for. Leave blank for any device.
+| `optimised_for` | list    | List of full device names to indicate where the effect was tested and approved to work on, e.g. `"Razer BlackWidow Ultimate 2016"`.
 
 All fields are required.
 
+---
+
+## Device Types
+
+Polychromatic identifies devices into one of these categories:
+
+* `unrecognised`
+* `keyboard`
+* `mouse`
+* `mousemat`
+* `keypad`
+* `headset`
+* `gpu`
+* `accessory`
+
+For example, the logic in scripted effects could behave differently between
+devices by detecting like this:
+
+```
+if fx.form_factor == "keyboard":
+    # code for keyboard
+
+elif fx.form_factor in ["mouse", "keypad"]:
+    # code for mouse or keypad
+
+else:
+    # everything else
+```
+
+
+---
 
 ### Parameters
 
