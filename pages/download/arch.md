@@ -12,13 +12,9 @@ class: download
 First, you'll need to install [openrazer-meta](https://aur.archlinux.org/packages/openrazer-meta/) from the AUR.
 
 ```
-pacaur -S openrazer-meta
+yay -S openrazer-meta
 ```
 
-{:.grey}
-There's a bug with `yaourt`, consider using `pacaur` instead.
-See the [OpenRazer website](http://openrazer.github.io/#arch) for original instructions.
-Be sure to restart the computer after installing.
 
 ---
 
@@ -30,6 +26,6 @@ The packages are avaliable from the AUR:
 * [polychromatic-git](https://aur.archlinux.org/packages/polychromatic-git/) - *development/testing*
 
 ```
-yaourt -S polychromatic
+yay -S polychromatic
 pacaur -S polychromatic
 ```
