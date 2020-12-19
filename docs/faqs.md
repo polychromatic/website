@@ -132,6 +132,7 @@ Sadly no, not right now. A third party application is required. See [Can I remap
 
 Not yet. This is a future ambition. In the meantime, other users have reported using these utilities:
 
+* [key-mapper](https://github.com/sezanzeb/key-mapper) _(Python 3, GTK)_
 * [Keyboarding Master](https://sites.google.com/site/keyboardingmaster/) _(Java, GUI)_
 * [Pystromo](https://github.com/byrongibson/Pystromo) _(Python 2)_
 * [keyboard](https://github.com/boppreh/keyboard) _(Python 3)_
