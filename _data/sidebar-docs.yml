@@ -81,29 +81,35 @@
 
     - name: Configuration
       url: /docs/config/
+      disabled: true
 
     - name: Effects
       url: /docs/config/effects/
       indent: 1
+      disabled: true
 
     - name: Layered Effects
       url: /docs/config/effects/layered/
       indent: 2
+      disabled: true
 
     - name: Scripted Effects
       url: /docs/config/effects/scripted/
       indent: 2
+      disabled: true
 
     - name: Sequence Effects
       url: /docs/config/effects/sequence/
       indent: 2
+      disabled: true
 
     - name: Presets
       url: /docs/config/presets/
       indent: 1
-
-- title: Backends
-  items:
-    - name: OpenRazer
-      url: /docs/openrazer/
       disabled: true
+
+#- title: Backends
+  #items:
+    #- name: OpenRazer
+      #url: /docs/openrazer/
+      #disabled: true

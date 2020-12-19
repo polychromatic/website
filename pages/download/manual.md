@@ -7,7 +7,7 @@ distro_name: Manual Installation
 class: download
 ---
 
-> Only applies to [`dev-1.0.0`](https://github.com/polychromatic/polychromatic/tree/dev-1.0.0) branch.
+> Only applies to `master` branch.
 
 ### Building
 
@@ -23,22 +23,20 @@ You'll need to install the latest versions of `git`, `meson` and `ninja`, as wel
 as the [application's dependencies](/docs/dependencies/).
 
 ```
-git clone https://github.com/polychromatic/polychromatic.git -b dev-1.0.0-pyqt5
+git clone https://github.com/polychromatic/polychromatic.git
 cd polychromatic
-git checkout stable
 meson build
 ninja -C build install
 ```
 
 ### Development Mode
 
-For quick testing or to start hacking the code right away, you can run Polychromatic from the root of the repository,
-providing the [application's dependencies](/docs/dependencies/) have been installed.
+For quick testing or to start hacking the code right away, you can run Polychromatic
+from the root of the repository, providing the
+[application's dependencies](/docs/dependencies/) have been installed.
 
 ```
-git clone https://github.com/polychromatic/polychromatic.git -b dev-1.0.0-pyqt5
-cd polychromatic
-./polychromatic-controller
+./polychromatic-controller-dev
 ./polychromatic-tray-applet
 ./polychromatic-cmd
 ```

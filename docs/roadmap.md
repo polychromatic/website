@@ -28,7 +28,7 @@ roadmap:
       pending:
         - Implement Presets tab ("profiles")
         - Implement Triggers tab (a new feature to activate presets based on events, such as session login)
-        - v0.6.0 Beta Release - Cross-distro, device testing and finalizing documentation
+        - Beta Release - Cross-distro, device testing and finalizing documentation
 
     - name: v1.1.0
       checked: false
@@ -36,15 +36,16 @@ roadmap:
         null
       pending:
         - Browse/share effects designed by other Polychromatic users.
-        - Key remapping (macro) support.
 
     - name: Future Ambitions
       checked: false
       completed:
         null
       pending:
-        - Add Philips Hue as a backend.
-        - Add OpenRGB as a backend.
+        - Add backend support for Philips Hue.
+        - Add backend support for OpenRGB.
+        - Key remapping (macro) support.
+        - Interactive effect layers.
         - Port application to Windows and macOS.
 
 ---
