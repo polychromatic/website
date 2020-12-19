@@ -64,14 +64,14 @@ packages:
         opensuse: typelib-1_0-AppIndicator3-0_1
         fedora: libappindicator-gtk3
 
-    # Python: Polib for Gettext
+    # Locales: intltool
     - required_by: build
       aur: true
       packages:
-        arch: python-polib
-        debian: python3-polib
-        opensuse: python3-polib
-        fedora: python3-polib
+        arch: intltool
+        debian: intltool
+        opensuse: intltool
+        fedora: intltool
 
     # SASSC
     - required_by: build
