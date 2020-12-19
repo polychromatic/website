@@ -274,3 +274,14 @@ blockquote {
         cursor: help;
     }
 }
+
+.thumbnail-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    clear: both;
+
+    img {
+        max-width: 320px;
+    }
+}
