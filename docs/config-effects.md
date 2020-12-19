@@ -103,8 +103,10 @@ Every effect consists of the following:
 | `icon`        | str       | Relative path to icon (from data directory or user's `custom_icons` folder), or absolute path to a custom icon.
 | `summary`     | str       | Brief description (English)
 | `summary[fr]` | str       | Brief description (other language, e.g. `fr`)
-| `map_device`  | str       | Name of the device that will play this effect. For multiple, use `null`.
-| `map_graphic` | str       | Filename of the mapping graphic to use when editing this effect. For grid, use `null`.
+| `map_device`  | str       | Name of the device that will play this effect. For scripted effects, leave empty.
+| `map_graphic` | str       | Filename of the mapping graphic to use when editing this effect. For a grid, leave empty.
+| `map_cols`    | int       | Number of columns in this map. Set to `0` for scripted effects.
+| `map_rows`    | int       | Number of rows in this map. Set to `0` for scripted effects.
 | `save_format` | int       | Internal save version. **Should not be changed.**
 | `revision`    | int       | Author's version number of the effect, e.g. `5`. Used to check for updates from the original.
 

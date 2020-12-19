@@ -29,12 +29,14 @@ specified by the following data:
     "loop": true,
     "frames": [
         {
-            "0": {
-                "0": [0,255,0],
-                "1": [0,128,0],
-                "2": [0,64,0],
+            "<x>": {
+                "<y>": "<hex string>"
             },
-            "1": {}
+            "0": {
+                "0": "#00FF00",
+                "1": "#008000",
+                "2": "#004000",
+            }
         }
     ]
 }
@@ -42,10 +44,10 @@ specified by the following data:
 
 | Key           | Data Type | Purpose                                       |
 | ------------- | --------- | --------------------------------------------- |
-| `frames`      | list      | A dictionary for each frame describing how to light up the LEDs
-|               |           | The key is `row`, followed by keys of the `columns`.
-|               |           | The value is stored as a list with 3 RGB integers, e.g. `[255,255,255]`
-| `fps`         | int       | Approximately how many frames to render per second. This isn't precise due to influences by the LED's firmware and backend software.
+| `frames`      | list      | A dictionary for each frame mapping the LED matrix
+|               |           | The key is `x`, followed by keys of the `y`.
+|               |           | The value is stored as a hex string. Following JSON rules, the number is stored as a string.
+| `fps`         | int       | Approximately how many frames to render per second. This isn't precise due to influences by processing speed, such as the LED's firmware or overheads.
 | `loop`        | bool      | Repeat the effect after the last frame?
 
 Prior to running the effect, the application will validate to fill in blanks
