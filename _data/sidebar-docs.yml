@@ -54,7 +54,7 @@
 
 - title: Get Involved
   items:
-    - name: Add Translations
+    - name: Translations
       url: /docs/translations/
 
     - name: Add Device Maps &amp Graphics
