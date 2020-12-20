@@ -294,3 +294,10 @@ blockquote {
         max-width: 320px;
     }
 }
+
+kbd {
+    background: $bg-secondary;
+    border: 1px solid $table-colour;
+    border-radius: 2px;
+    padding: 2px 4px;
+}
