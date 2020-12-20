@@ -1,6 +1,6 @@
 ---
 layout: download-page
-title: Download - Mageia
+title: Download for Mageia
 permalink: /download/mageia/
 distro: mageia
 distro_name: Mageia

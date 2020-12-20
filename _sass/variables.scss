@@ -1,6 +1,11 @@
 /* Colours */
+$primary: #00FF00;
+$secondary: #008000;
+
 $fg-colour: white;
+$text-disabled: darken($fg-colour, 33%);
 $bg-colour: #161616;
+$bg-secondary: #000;
 $pre-colour: #232323;
 $sidebar-heading: #969696;
 $table-colour: #282828;

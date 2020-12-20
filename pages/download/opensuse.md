@@ -1,6 +1,6 @@
 ---
 layout: download-page
-title: Download - openSUSE
+title: Download for openSUSE
 permalink: /download/opensuse/
 distro: opensuse
 distro_name: openSUSE

@@ -1,6 +1,6 @@
 ---
 layout: download-page
-title: Download - Fedora
+title: Download for Fedora
 permalink: /download/fedora/
 distro: fedora
 distro_name: Fedora

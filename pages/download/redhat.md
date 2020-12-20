@@ -1,6 +1,6 @@
 ---
 layout: download-page
-title: Download - Red Hat/CentOS
+title: Download for Red Hat and CentOS
 permalink: /download/redhat/
 distro: redhat
 distro_name: Red Hat / CentOS

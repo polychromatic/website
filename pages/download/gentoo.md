@@ -1,6 +1,6 @@
 ---
 layout: download-page
-title: Download - Gentoo
+title: Download for Gentoo
 permalink: /download/gentoo/
 distro: gentoo
 distro_name: Gentoo

@@ -1,0 +1,80 @@
+@import "variables.scss";
+
+.tab-container {
+    margin: 30px 0;
+}
+
+.tabs {}
+
+.btn-tab {
+    background: lighten($bg-secondary, 5%);
+    border: 1px solid $table-colour;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin: 0;
+
+    img {
+        filter: grayscale(1);
+        max-height: 15px;
+        min-width: 15px;
+
+        vertical-align: middle;
+    }
+
+    span {
+        padding-left: 2px;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: lighten($table-colour, 10%);
+        color: darken($fg-colour, 10%);
+        border-bottom-color: transparent;
+    }
+
+    &:disabled {
+        pointer-events: none;
+        color: $text-disabled;
+    }
+}
+
+@mixin checked_tab {
+    background: $bg-secondary;
+    color: $primary;
+    cursor: default;
+    border-color: $primary;
+    border-bottom-color: transparent;
+
+    img {
+        filter: grayscale(0);
+    }
+}
+
+#radio-download-stable:checked {
+    ~ .tabs #btn-tab-stable {
+        @include checked_tab;
+    }
+
+    ~ #tab-content-stable {
+        display: block;
+    }
+}
+
+#radio-download-testing:checked {
+    ~ .tabs #btn-tab-testing {
+        @include checked_tab;
+    }
+
+    ~ #tab-content-testing {
+        display: block;
+    }
+}
+
+.tab-content {
+    background: $bg-secondary;
+    border-top: 1px solid $table-colour;
+    display: none;
+    margin: 8px 0;
+    padding: 10px;
+}

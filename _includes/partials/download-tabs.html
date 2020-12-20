@@ -1,0 +1,20 @@
+<div class="tab-container">
+    <input id="radio-download-stable" name="tab" type="radio" style="display:none" checked />
+    <input id="radio-download-testing" name="tab" type="radio" style="display:none"/>
+    <div class="tabs">
+        <label id="btn-tab-stable" for="radio-download-stable" class="btn-tab" tabindex="0">
+            <img src="/assets/fa/box.svg" alt=""/>
+            <span>Stable</span>
+        </label>
+        <label id="btn-tab-testing" for="radio-download-testing" class="btn-tab" tabindex="0">
+            <img src="/assets/fa/flask.svg" alt=""/>
+            <span>Testing</span>
+        </label>
+    </div>
+    <div id="tab-content-stable" class="tab-content">
+        {{ include.stable | markdownify }}
+    </div>
+    <div id="tab-content-testing" class="tab-content">
+        {{ include.testing | markdownify }}
+    </div>
+</div>

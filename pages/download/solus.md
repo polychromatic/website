@@ -1,6 +1,6 @@
 ---
 layout: download-page
-title: Download - Solus
+title: Download for Solus
 permalink: /download/solus/
 distro: solus
 distro_name: Solus

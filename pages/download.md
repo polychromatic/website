@@ -5,7 +5,7 @@ permalink: /download/
 class: download
 
 official_distros:
-    - name: Ubuntu / Linux Mint
+    - name: Ubuntu & Derivatives
       url: ubuntu
       maintainer: official
 
