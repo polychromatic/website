@@ -110,6 +110,16 @@ blockquote {
     p {
         padding: 10px;
     }
+
+    &.pkg-cmd {
+        &::before {
+            content: "$";
+            color: lime;
+            padding-right: 2px;
+        }
+
+        padding: 10px;
+    }
 }
 
 .roadmap {

@@ -66,7 +66,6 @@ packages:
 
     # Locales: intltool
     - required_by: build
-      aur: true
       packages:
         arch: intltool
         debian: intltool
@@ -100,7 +99,13 @@ packages:
 # Providing links
 link_prefix:
     arch: https://www.archlinux.org/packages/?q=
-    aur: https://aur.archlinux.org/packages/?K=
     debian: https://packages.debian.org/search?keywords=
     opensuse: https://software.opensuse.org/package/
     fedora: https://apps.fedoraproject.org/packages/
+
+# Command to quickly install
+packagemgr:
+    arch: "sudo pacman -S"
+    debian: "sudo apt install"
+    opensuse: "sudo zypper install"
+    fedora: "sudo dnf install"

@@ -6,6 +6,10 @@
     {{ distro_name }}
 </h3>
 
+<blockquote class="pkg-cmd">
+    <code>{{ site.data.dependencies.packagemgr[distro_id] }}{% for pkg in site.data.dependencies.packages %} {{ pkg.packages[distro_id] }}{% endfor %}</code>
+</blockquote>
+
 <table class="dependency-table">
     <thead>
         <tr>
