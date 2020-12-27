@@ -14,7 +14,7 @@
     <thead>
         <tr>
             <th>Package</th>
-            <th>Required for</th>
+            <th>Component</th>
         </tr>
     </thead>
     <tbody>
@@ -31,16 +31,13 @@
                     {% assign components = package.required_by | split: ',' %}
                     {% for component in components %}
                         {% if component == "controller" %}
-                            <img src="/assets/img/apps/controller.svg" alt="Controller" title="Controller"/>
-                        {% endif %}
-                        {% if component == "tray" %}
-                            <img src="/assets/img/apps/tray-applet.svg" alt="Tray Applet" title="Tray Applet"/>
-                        {% endif %}
-                        {% if component == "cli" %}
-                            <img src="/assets/img/apps/cli.svg" alt="CLI" title="Command Line Interface"/>
-                        {% endif %}
-                        {% if component == "build" %}
-                            Build Dependency
+                            <img src="/assets/img/apps/controller.svg" alt="Controller"/> Controller
+                        {% elsif component == "tray" %}
+                            <img src="/assets/img/apps/tray-applet.svg" alt="Tray Applet"/> Tray Applet
+                        {% elsif component == "all" %}
+                            All
+                        {% elsif component == "build" %}
+                            Build only
                         {% endif %}
                     {% endfor %}
                 </td>

@@ -1,23 +1,23 @@
 # Each package and their respective name for each distro
 packages:
     # Python: Colorama
-    - required_by: controller,tray,cli
+    - required_by: all
       packages:
         arch: python-colorama
         debian: python3-colorama
         opensuse: python3-colorama
         fedora: python3-colorama
 
-    # Python: Requests
-    - required_by: controller,tray,cli
+    # Python: Colour (https://github.com/vaab/colour)
+    - required_by: all
       packages:
-        arch: python-requests
-        debian: python3-requests
-        opensuse: python3-requests
-        fedora: python3-requests
+        arch: python-colour
+        debian: python3-colour
+        opensuse: python3-colour
+        fedora: python3-colour
 
     # Python: setproctitle
-    - required_by: controller,tray,cli
+    - required_by: all
       packages:
         arch: python-setproctitle
         debian: python3-setproctitle
@@ -25,12 +25,20 @@ packages:
         fedora: python3-setproctitle
 
     # imagemagick
-    - required_by: controller,tray,cli
+    - required_by: all
       packages:
         arch: imagemagick
         debian: imagemagick
         opensuse: imagemagick
         fedora: ImageMagick
+
+    # Python: Requests
+    - required_by: controller
+      packages:
+        arch: python-requests
+        debian: python3-requests
+        opensuse: python3-requests
+        fedora: python3-requests
 
     # PyQt5
     - required_by: controller
