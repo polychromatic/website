@@ -65,23 +65,3 @@ will need additional steps.
 | GNOME Shell   | ![](/assets/img/distros/arch.svg) Arch       | Install [`gnome-shell-extensions-appindicator-git`](https://aur.archlinux.org/packages/gnome-shell-extension-appindicator-git/) from the AUR.
 | GNOME Shell   | Other         | Install the GNOME extension that provides AppIndicator support.
 | Pantheon      | elementaryOS  | [This feature was removed in 5.0 "Juno"](https://www.reddit.com/r/elementaryos/comments/8zdrvz/any_way_to_get_back_indicators_in_juno/). You can restore the feature by [following these instructions](https://www.linuxuprising.com/2018/08/how-to-re-enable-ayatana-appindicators.html).
-
----
-
-## Test Workbench
-
-Before a major release is out, the latest version of these distros (at the time)
-are checked to ensure the software is installable and looks good:
-
-| Distro            | Desktop Environment               |
-| ----------------- | --------------------------------- |
-| Manjaro           | KDE (HiDPI)
-| Ubuntu            | GNOME
-| Linux Mint        | Cinnamon
-| elementaryOS      | Pantheon
-| Debian            | MATE
-| Fedora            | GNOME
-| openSUSE Leap     | KDE
-| Mageia            | XFCE
-| Solus             | Budgie
-| Lubuntu           | LXQT
