@@ -45,7 +45,7 @@ This guide will use [Poedit] for performing the translation.
 
 ### Preparing the repository
 
-1. [Fork the `polychromatic`](https://github.com/polychromatic/polychromatic/fork) repository on GitHub.
+1. [Fork the `polychromatic` repository](https://github.com/polychromatic/polychromatic/fork) on GitHub.
 
 1. Clone the repository to your computer.
 
@@ -74,11 +74,28 @@ This guide will use [Poedit] for performing the translation.
 
 1. When finished, save the file to the `locales` directory.
 
-    Poedit will automatically set the filename to the locale code as appropriate.
+    > Poedit will automatically set the filename to the locale code as appropriate.
     For example, **"Spanish (Spain)"** is saved as **"es_ES.po"**
 
 1. Open `locale/LINGUAS` in your text editor and add the new locale code.
 
+1. Open `source/launchers/polychromatic.desktop` in your text editor.
+
+    Duplicate the `GenericName` and `Comment` lines, as well as the `Name` line
+    under `[Desktop Actions]` sections. Append the locale before the `=` sign
+    inside square brackets `[]` and translate, like so:
+
+    ```
+    GenericName=Device Manager for RGB Lighting
+    GenericName[es]=Administrador de dispositivos para iluminación RGB
+
+    Comment=Configure connected lighting peripherals
+    Comment[es]=Configurar conectado iluminación periféricos
+
+    [Desktop Action devices]
+    Name=Configure Devices
+    Name[es]=Configurar dispositivos
+```
 
 ### Testing a translation
 
