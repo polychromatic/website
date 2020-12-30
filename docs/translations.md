@@ -70,6 +70,9 @@ This guide will use [Poedit] for performing the translation.
 
 1. Start translating!
 
+    > **Tip:** Enable the sidebar (View → Show Sidebar) to find translator notes
+    for some strings to assist in determining the context.
+
     ![Example of translating to Spanish](/docs/images/poedit-3.png)
 
 1. When finished, save the file to the `locales` directory.
