@@ -1,7 +1,5 @@
 # Polychromatic Website
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W02DPTW)
-
 A Jekyll-powered static site containing details about the Polychromatic project,
 features along with screenshots and download instructions.
 
