@@ -104,6 +104,7 @@ Every effect consists of the following:
 | `summary`     | str       | Brief description (English)
 | `summary[fr]` | str       | Brief description (other language, e.g. `fr`)
 | `map_device`  | str       | Name of the device that will play this effect. For scripted effects, leave empty.
+| `map_device_icon`  | str  | Form factor icon ID for the `map_device`. For scripted effects, leave empty.
 | `map_graphic` | str       | Filename of the mapping graphic to use when editing this effect. For a grid, leave empty.
 | `map_cols`    | int       | Number of columns in this map. Set to `0` for scripted effects.
 | `map_rows`    | int       | Number of rows in this map. Set to `0` for scripted effects.
