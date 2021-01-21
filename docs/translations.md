@@ -29,10 +29,12 @@ an existing language.
 * [Committing your changes](#committing-your-changes)
 * [Updating existing translations](#updating-existing-translations)
 
+
 ## Requirements
 
 * A PO editor, such as [Poedit]
 * A [GitHub](https://github.com) account
+* A Git client, such as the `git` command
 
 
 ## Steps
@@ -40,7 +42,8 @@ an existing language.
 Before starting, make sure there isn't [any open pull request](https://github.com/polychromatic/polychromatic/pulls)
 for your language already.
 
-This guide will use [Poedit] for performing the translation.
+This guide will use [Poedit] for performing the translation and uses `git`
+in the Terminal for version control.
 
 
 ### Preparing the repository
@@ -129,8 +132,8 @@ This guide will use [Poedit] for performing the translation.
        git commit -m "Add translation for <locale>"
        git push origin master
 
-    Please do not stage/commit the `.pot` or other `.po` files if they are
-    modified.
+    Please do not stage/commit the `.pot` or `.po` files for other languages
+    if they were modified.
 
 1. Open a pull request on GitHub.
 
@@ -139,7 +142,8 @@ This guide will use [Poedit] for performing the translation.
 
 ### Updating existing translations
 
-1. Pull the latest source code to your copy of the repository.
+1. Pull the latest source code to your copy of the repository. Note that any
+   uncommitted changes will be lost.
 
        git reset HEAD --hard
        git pull --rebase https://github.com/polychromatic/polychromatic.git master
