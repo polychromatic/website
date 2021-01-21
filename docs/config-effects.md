@@ -53,9 +53,9 @@ There are three types:
 
 | ID | Type                                                      | Purpose                   |
 | -- | --------------------------------------------------------- | ------------------------- |
-| 1  | [![](/assets/fa/effect-layered.svg) Layered](layered/)    | Each layer describes how to display a specified range of LEDs
-| 2  | [![](/assets/fa/effect-scripted.svg) Scripted](scripted/) | Programmable effects written in Python
-| 3  | [![](/assets/fa/effect-sequence.svg) Sequence](sequence/) | Animated (or static) effect based on pixels and frames
+| 1  | [![](/assets/fa/effects/layered.svg) Layered](layered/)    | Each layer describes how to display a specified range of LEDs
+| 2  | [![](/assets/fa/effects/scripted.svg) Scripted](scripted/) | Programmable effects written in Python
+| 3  | [![](/assets/fa/effects/sequence.svg) Sequence](sequence/) | Animated (or static) effect based on pixels and frames
 
 
 > Users previously running v0.3.12 will have their "application profiles"
