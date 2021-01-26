@@ -7,7 +7,7 @@ class: docs
 
 # v0.3.12
 
-> The current "stable" release, which will be superseded before the end of 2020.
+> The current "stable" release, which will be superseded this year.
 
 ### Packages
 
@@ -48,8 +48,7 @@ class: docs
 # v1.0.0
 
 > A brand new version based on PyQt5.
-> [See roadmap for current status](/docs/roadmap/). Targeted to release before
-> the end of the 2020.
+> [See roadmap for current status](/docs/roadmap/).
 
 {% include partials/dependencies_table.html
     distro_id = "arch"

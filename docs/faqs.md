@@ -181,4 +181,4 @@ Things are nicely shaping into place, as the Controller is now based on PyQt5 an
 Rest assured, the software is definitely not dead, but there will be no minor updates for `v0.3.12`
 as the software development happened linearly.
 
-As a rough estimate, let's hope for a v1.0.0 release (or at least a beta) before the end of 2020!
+This next release will be out as soon as humanly possible!
