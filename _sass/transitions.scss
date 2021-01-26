@@ -1,5 +1,15 @@
 @import 'variables.scss';
 
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 .transition-fade {
   transition: 0.3s;
   opacity: 1;
