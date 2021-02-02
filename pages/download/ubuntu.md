@@ -7,30 +7,35 @@ distro_name: Ubuntu & Derivatives
 class: download
 ---
 
-Works on:
+Latest Requirements:
 
-* Ubuntu 16.04 (all flavours) or later
-* Linux Mint 18 or later
+* Ubuntu 18.04 (all flavours) or later
+* Linux Mint 19 or later
 * elementaryOS 0.4 or later
 * Pop!_OS 20.04 or later
 * Zorin OS 11 or later
 
+# 1. OpenRazer
+
+First, you'll need to install [OpenRazer for Ubuntu](https://openrazer.github.io/#ubuntu).
+
+# 2. Polychromatic
+
 {% capture stable %}
 
-### 1. OpenRazer
+Choose this for a tried & tested experience.
 
-First, you'll need to install OpenRazer. Follow the instructions on
-[the OpenRazer website](https://openrazer.github.io/#ubuntu).
+However, it currently contains v0.3.12, an older version built around the
+BlackWidow Chroma keyboard and devices supported before 2018. If yours is newer,
+consider **Edge** for the time being. While the new code is still in development,
+that version will greatly improve hardware support for you.
 
-### 2. Polychromatic
-
-This will keep the application up-to-date with the rest of the system.
+If you prefer to wait for the next version, stick to **Stable** or **Testing**.
 
 Open a Terminal (usually <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>) and run these commands:
 
 ```
 sudo add-apt-repository ppa:polychromatic/stable
-sudo apt update
 sudo apt install polychromatic
 ```
 
@@ -38,27 +43,34 @@ sudo apt install polychromatic
 {% endcapture %}
 {% capture testing %}
 
-Despite new development taking place in the `master` branch - there isn't a
-working replacement for the effect editor at the moment.
+Choose this to get new versions of the software as soon as it's ready for beta
+testing. This aims for a somewhat stable experience, but bugs could slip through.
 
-As soon as testing for the next generation of the software is ready, this PPA
-will be the first to receive the new features and improvements.
+This is currently the same version as the stable branch.
 
 ```
-sudo add-apt-repository ppa:polychromatic/daily
-sudo apt update
+sudo add-apt-repository ppa:polychromatic/testing
 sudo apt install polychromatic
 ```
 
-These packages are updated no more then once daily, and only if there were
-new changes.
+{% endcapture %}
+{% capture edge %}
 
-To opt out of testing, use [Software & Updates](https://wiki.ubuntu.com/SoftwareAndUpdatesSettings)
-to remove the `polychromatic/daily` PPA and add/replace with `polychromatic/stable`.
+Choose this to be first to receive new features and improvements from the
+`master` branch.
+
+```
+sudo add-apt-repository ppa:polychromatic/edge
+sudo apt install polychromatic
+```
 
 {% endcapture %}
 
 {% include partials/download-tabs.html
     stable=stable
     testing=testing
+    edge=edge
 %}
+
+If you wish to switch the branches later, use [Software & Updates](https://wiki.ubuntu.com/SoftwareAndUpdatesSettings)
+under the **Other Software** tab.

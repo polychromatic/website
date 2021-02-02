@@ -1,20 +1,51 @@
 <div class="tab-container">
+
     <input id="radio-download-stable" name="tab" type="radio" style="display:none" checked />
-    <input id="radio-download-testing" name="tab" type="radio" style="display:none"/>
+
+    {% if include.testing %}
+        <input id="radio-download-testing" name="tab" type="radio" style="display:none"/>
+    {% endif %}
+
+    {% if include.edge %}
+        <input id="radio-download-edge" name="tab" type="radio" style="display:none"/>
+    {% endif %}
+
     <div class="tabs">
+
         <label id="btn-tab-stable" for="radio-download-stable" class="btn-tab" tabindex="0">
             <img src="/assets/fa/box.svg" alt=""/>
             <span>Stable</span>
         </label>
-        <label id="btn-tab-testing" for="radio-download-testing" class="btn-tab" tabindex="0">
-            <img src="/assets/fa/flask.svg" alt=""/>
-            <span>Testing</span>
-        </label>
+
+        {% if include.testing %}
+            <label id="btn-tab-testing" for="radio-download-testing" class="btn-tab" tabindex="0">
+                <img src="/assets/fa/flask.svg" alt=""/>
+                <span>Testing</span>
+            </label>
+        {% endif %}
+
+        {% if include.edge %}
+            <label id="btn-tab-edge" for="radio-download-edge" class="btn-tab" tabindex="0">
+                <img src="/assets/fa/code-branch.svg" alt=""/>
+                <span>Edge</span>
+            </label>
+        {% endif %}
+
     </div>
+
     <div id="tab-content-stable" class="tab-content">
         {{ include.stable | markdownify }}
     </div>
-    <div id="tab-content-testing" class="tab-content">
-        {{ include.testing | markdownify }}
+
+    {% if include.testing %}
+        <div id="tab-content-testing" class="tab-content">
+            {{ include.testing | markdownify }}
     </div>
+    {% endif %}
+
+    {% if include.edge %}
+        <div id="tab-content-edge" class="tab-content">
+            {{ include.edge | markdownify }}
+        </div>
+    {% endif %}
 </div>

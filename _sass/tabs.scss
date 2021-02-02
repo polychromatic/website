@@ -75,6 +75,16 @@
     }
 }
 
+#radio-download-edge:checked {
+    ~ .tabs #btn-tab-edge {
+        @include checked_tab;
+    }
+
+    ~ #tab-content-edge {
+        display: block;
+    }
+}
+
 .tab-content {
     background: $bg-secondary;
     border: 1px solid $table-colour;
