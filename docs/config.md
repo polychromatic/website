@@ -62,6 +62,7 @@ can be safely deleted.
 | `controller`  | `show_menu_bar`   | bool      | Show/hide the menu bar. Press Alt to reveal if hidden.
 | `controller`  | `system_qt_theme` | bool      | Use the system's Qt theme. Dependant on current theme and environment.
 | `controller`  | `window_behaviour`| int       | `0` - Always open in center <br> `1` - Remember last position/size <br> `2` - Let window manager decide
+| `controller`  | `toolbar_style`   | int       | `0` - System default <br> `1` - Icons only <br> `2` - Text only <br> `3` - Text alongside icons <br> `4` - Text under icons
 | `editor`      | `live_preview`    | bool      | When editing effects, show the changes on the physical device.
 | `tray`        | `autostart`       | bool      | Should the tray applet start when the user logs in?
 | `tray`        | `autostart_delay` | int       | How long (in seconds) to wait before autostarting. This helps some desktop environments that suffer from a race condition which causes the applet to display incorrectly or show no devices.
