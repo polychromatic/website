@@ -57,7 +57,7 @@
     - name: Translations
       url: /docs/translations/
 
-    - name: Add Device Maps &amp Graphics
+    - name: Device Maps &amp Graphics
       url: /docs/devicemaps/
       disabled: true
 
