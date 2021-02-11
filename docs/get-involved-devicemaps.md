@@ -83,15 +83,17 @@ one as a starting point.
 Otherwise, it may help to embed a picture of the device and create
 paths for the base unit and its individual LEDs.
 
-> If you do embed an image, don't forget to remove the image from the SVG when
-you're done. Contributions with embedded raster images will **not** be accepted.
+> If you do embed an image to assist, don't forget to remove it SVG when you're
+done. Contributions with embedded raster images will **not** be accepted.
 
 Polychromatic will be changing an object's `fill` and `stroke` colour in the editor.
 Make sure the shape/path has a sufficient stroke style (border). A stroke width
 between `1.5px-2px` is recommended.
 
-If the LED is represented by additional paths, shapes or text (such as keyboard
-keys), consider creating a group (`<g>`).
+**Text Labels**
+
+For text objects (like keys for a keyboard), use the **[Play font](https://github.com/polychromatic/polychromatic/raw/master/data/qt/fonts/Play_regular.ttf)** for consistency.
+If you wish to use a different font, convert the text to path to ensure it can be seen across different operating systems.
 
 ---
 
