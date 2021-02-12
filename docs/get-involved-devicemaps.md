@@ -75,6 +75,9 @@ in the editor.
 #### Step 1: Creating the shapes and paths
 
 > You'll need an SVG editor, such as [Inkscape](https://inkscape.org/).
+>
+> Inkscape adds additional metadata that serves no purpose for the application's
+> operation. When saving, please use [Plain SVG](https://wiki.inkscape.org/wiki/index.php/PlainSVG).
 
 First, you'll want to perform the usual drawing/editing of the device.
 If there is already an identical graphic in `data/devicemaps/`, feel free to use
