@@ -98,6 +98,9 @@ between `1.5px-2px` is recommended.
 For text objects (like keys for a keyboard), use the **[Play font](https://github.com/polychromatic/polychromatic/raw/master/data/qt/fonts/Play_regular.ttf)** for consistency.
 If you wish to use a different font, convert the text to path to ensure it can be seen across different operating systems.
 
+Set the `class` attribute of these objects to `label`. These can be hidden by
+the user if they prefer. If unsure on how to set attributes, see the next section.
+
 ---
 
 #### Step 2: Add IDs and class attributes
