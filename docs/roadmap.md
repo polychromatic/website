@@ -12,7 +12,7 @@ roadmap:
       pending:
         - The tray applet can be tempermental on some DEs, this will be addressed in next version.
 
-    - name: v1.0.0 - Q1 2021
+    - name: v1.0.0
       checked: progress
       completed:
         - New command line utility
