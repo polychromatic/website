@@ -16,9 +16,8 @@
     <meta name="twitter:site" content="{{ site.twitter }}">
     <meta name="twitter:creator" content="{{ site.twitter }}">
 
-    {% for stylesheet in site.stylesheets %}
-    <link rel="stylesheet" href="{{ stylesheet }}">
-    {% endfor %}
+    <link rel="stylesheet" href="/assets/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/css/polychromatic.css">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">

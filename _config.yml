@@ -37,11 +37,6 @@ polychromatic_repo: "https://github.com/polychromatic/polychromatic/"
 rss_feed: "https://github.com/polychromatic/polychromatic/releases.atom"
 twitter: "polychromic_app"
 
-# Stylesheets
-stylesheets:
-    - /assets/lib/bootstrap-grid.min.css
-    - /assets/css/polychromatic.css
-
 # Navigation
 navigation:
     - text: Features
