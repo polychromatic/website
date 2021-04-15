@@ -10,7 +10,7 @@ class: download
 ## 1. OpenRazer
 
 First, you'll need to install [OpenRazer](https://openrazer.github.io).
-See the [OpenRazer website](http://openrazer.github.io/#fedora) for instructions.
+See the [OpenRazer website](https://openrazer.github.io/#fedora) for instructions.
 
 {:.grey}
 Be sure to restart the computer after installing.

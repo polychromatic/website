@@ -18,7 +18,7 @@ emerge app-misc/openrazer
 ```
 
 {:.grey}
-See the [OpenRazer website](http://openrazer.github.io/#gentoo) for original instructions.
+See the [OpenRazer website](https://openrazer.github.io/#gentoo) for original instructions.
 Be sure to restart the computer after installing.
 
 ---

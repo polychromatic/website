@@ -1,0 +1,12 @@
+- text: Features
+  url: /about/
+  class: features
+
+- text: Download
+  url: /download/
+  class: download
+
+- text: Documentation
+  url: https://docs.polychromatic.app/
+  class: docs
+  external: true

@@ -1,4 +1,5 @@
 title: Polychromatic
+author: Luke Horwell
 email: code@horwell.me
 description: >-
   Polychromatic, an RGB lighting management front-end application for GNU/Linux.
@@ -32,18 +33,3 @@ polychromatic_org: "https://github.com/polychromatic/"
 polychromatic_repo: "https://github.com/polychromatic/polychromatic/"
 rss_feed: "https://github.com/polychromatic/polychromatic/releases.atom"
 twitter: "polychromic_app"
-
-# Navigation
-navigation:
-    - text: Features
-      url: /about/
-      class: features
-
-    - text: Download
-      url: /download/
-      class: download
-
-    - text: Documentation
-      url: https://docs.polychromatic.app/
-      class: docs
-      external: true
