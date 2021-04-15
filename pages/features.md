@@ -48,4 +48,4 @@ features:
 New and improved features are on the way. Stay tuned!
 
 {:.center}
-[Check out the Roadmap](https://docs.polychromatic.app/roadmap/){:.btn}
+[Check out the Roadmap](https://docs.polychromatic.app/roadmap/){:.btn .ext}

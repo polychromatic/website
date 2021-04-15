@@ -57,6 +57,25 @@ a {
     color: black;
 }
 
+.btn.ext::after {
+    content: " ";
+    display: inline-block;
+    background-image: url(/assets/fa/external.svg);
+    background-size: 10px;
+    filter: grayscale(1);
+    margin-left: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+.btn.ext:hover::after {
+    filter: grayscale(0);
+}
+
+.btn.ext:active::after {
+    filter: grayscale(1) brightness(0);
+}
+
 .btn + label {
     display: block;
     font-size: 0.8em;
