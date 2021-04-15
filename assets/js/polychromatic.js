@@ -46,29 +46,6 @@ function page_enter() {
             link.smooth = true;
         }
     }
-
-    // If sidebar is present, make sure it's smoothly animated.
-    var nav_sidebar = document.getElementsByClassName("sidebar")[0];
-    if (docs_sidebar_shown === true && nav_sidebar != null) {
-        nav_sidebar.classList.remove("transition-fade");
-        docs_sidebar_shown = window.location.pathname.search("/docs/") != -1;
-
-        setTimeout(function() {
-            nav_sidebar.classList.add("transition-fade");
-        }, 500);
-    }
-
-    // If page contains Yes/No in tables, add the fancy decorations.
-    var td = document.querySelectorAll("td");
-    if (td.length > 0) {
-        for (i = 0; i < td.length; i++) {
-            if (td[i].textContent.startsWith("Yes") === true) {
-                td[i].classList.add("yes");
-            } else if (td[i].textContent.startsWith("No") === true) {
-                td[i].classList.add("no");
-            }
-        }
-    }
 }
 
 function page_exit() {

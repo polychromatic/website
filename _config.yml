@@ -1,16 +1,12 @@
 title: Polychromatic
 email: code@horwell.me
 description: >-
-  A cross-distro front-end for the OpenRazer project. Polychromatic offers a
-  tray applet, a graphical interface, a command line program and
-  tools to schedule tasks so you can configure lighting and profiles on
-  your GNU/Linux system very simply.
-
-  It's a bit like Razer Synapse, but only that it's not.
+  Polychromatic, an RGB lighting management front-end application for GNU/Linux.
+  Powered by OpenRazer, but soon to be vendor agnostic.
 
 baseurl: ""
 url: "https://polychromatic.app"
-source_code_url: "https://github.com/polychromatic/polychromatic-website"
+source_code_url: "https://github.com/polychromatic/website"
 
 # Build settings
 markdown: kramdown
@@ -48,5 +44,6 @@ navigation:
       class: download
 
     - text: Documentation
-      url: /docs/
+      url: https://docs.polychromatic.app/
       class: docs
+      external: true

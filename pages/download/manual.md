@@ -20,7 +20,7 @@ available, but there's other implementations that could be used (e.g. `dart-sass
 For instructions on building, see the ["Manual Installation" download page](/download/manual/).
 
 You'll need to install the latest versions of `git`, `meson` and `ninja`, as well
-as the [application's dependencies](/docs/dependencies/).
+as the [application's dependencies](https://docs.polychromatic.app/dependencies/).
 
 ```
 git clone https://github.com/polychromatic/polychromatic.git
@@ -33,7 +33,7 @@ ninja -C build install
 
 For quick testing or to start hacking the code right away, you can run Polychromatic
 from the root of the repository, providing the
-[application's dependencies](/docs/dependencies/) have been installed.
+[application's dependencies](https://docs.polychromatic.app/dependencies/) have been installed.
 
 ```
 ./polychromatic-controller-dev

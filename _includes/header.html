@@ -23,6 +23,13 @@
         <div class="trigger">
             {% for navitem in site.navigation %}
                 <a id="nav-{{ navitem.class }}" href="{{ navitem.url }}" class="nav-btn {% if page.class == navitem.class %}active{% endif %}">{{ navitem.text }}</a>
+
+                {% if navitem.external == true %}
+                    <a class="external" href="{{ navitem.url }}">
+                        <img src="/assets/fa/external.svg" alt="External Link"/>
+                    </a>
+                {% endif %}
+
                 <div class="seperator">|</div>
             {% endfor %}
         </div>

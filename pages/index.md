@@ -54,7 +54,7 @@ The next version will introduce a command line tool for keyboard warriors!
     img_position = "left"
     img = "/assets/fa/box-open.svg"
     title = "It's free and open source"
-    text = "Licensed and distributed under the [GPLv3](/docs/license/)."
+    text = "Licensed and distributed under the [GPLv3](https://docs.polychromatic.app/license/)."
 %}
 
 ---
