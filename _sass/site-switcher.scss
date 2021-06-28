@@ -1,0 +1,40 @@
+@import 'variables.scss';
+
+.site-switcher {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(20px);
+    padding-top: 6px;
+
+    .tab {
+        background: transparent;
+        border: 1px solid $border-colour;
+        border-bottom: 1px solid $border-colour;
+        border-bottom-color: transparent !important;
+        color: $fg-colour;
+        display: inline-block;
+        padding: 4px 8px;
+
+        &:hover,
+        &:focus {
+            border-color: lighten($border-colour, 10%);
+            color: darken($fg-colour, 10%);
+            text-decoration: none;
+        }
+
+        &:active {
+            border-color: lighten($border-colour, 20%);
+        }
+
+        &.active {
+            background: $bg-secondary;
+            color: $primary;
+            border-color: $primary;
+        }
+
+        &.disabled {
+            cursor: not-allowed;
+            color: $text-disabled;
+            opacity: 0.5;
+        }
+    }
+}

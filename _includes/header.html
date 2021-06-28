@@ -1,6 +1,8 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  {% include site-switcher.html %}
+
+  <div class="site-header-content wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="/">
@@ -37,4 +39,3 @@
 
   </div>
 </header>
-<div id="header-block"></div>

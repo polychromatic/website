@@ -1,10 +1,10 @@
 @import 'variables.scss';
 
-$splash-height: 40vh;
+$splash-height: calc(40vh + #{$header-height});
 
 .splash-block {
     display: block;
-    height: calc(#{$splash-height} + 1em);
+    height: $splash-height;
 }
 
 .splash {
@@ -15,6 +15,7 @@ $splash-height: 40vh;
     background: black;
     overflow: hidden;
     font-size: 1.1em;
+    margin-top: -$header-height;
 
     h2 {
         color: white;
@@ -27,15 +28,16 @@ $splash-height: 40vh;
 
         .chroma-ring {
             position: absolute;
-            height: 200vh;
-            top: -120vh;
-            left: -50vw;
-            animation: rotate 10s linear infinite;
+            height: 150vh;
+            top: -65vh;
+            left: -30vw;
+            animation: rotate 5s linear infinite;
         }
     }
 
     .splash-details {
         background: rgba(0,0,0,0.5);
+        padding-top: $header-height;
     }
 }
 

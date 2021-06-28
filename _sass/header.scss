@@ -1,12 +1,12 @@
 @import 'variables.scss';
 
-body > header {
-    border-bottom: 1px solid lime;
-    background-color: black;
-    background-image: url(/assets/img/header-keys.svg);
-    background-size: cover;
-    background-position: center;
-    animation: smooth-header 0.5s linear forwards;
+.site-header {
+    background: rgba(0,0,0,0.25);
+    background-image: url(/assets/img/header.svg);
+    background-size: contain;
+    background-position: -350px center;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 1px 4px #000;
     height: $header-height;
     position: fixed;
     top: 0;
@@ -14,29 +14,20 @@ body > header {
     right: 0;
     z-index: 1000;
 
-    .wrapper {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background: linear-gradient(to right, rgba(0,0,0,0.5), black);
+    .site-inner {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
 
-#header-block {
-    height: $header-height;
-}
-
-@keyframes smooth-header {
-    0% {
-        background-color: black;
-    }
-
-    100% {
-        background-color: lime;
-    }
+.site-header-content {
+    display: flex;
+    height: $header-height - 35px;
 }
 
 .site-title {
     text-decoration: none !important;
+    margin: auto auto auto 0;
 
     * {
         vertical-align: middle;
@@ -54,7 +45,8 @@ body > header {
 }
 
 .site-nav {
-    float: right;
+    margin: auto;
+    margin-right: 0;
 
     a {
         color: lime;

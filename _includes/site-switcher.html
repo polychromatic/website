@@ -1,0 +1,7 @@
+<div class="site-switcher">
+    <div class="wrapper">
+        {% for subsite in site.data.subsites %}
+            <a class="tab {{ subsite.class }} {% if subsite.url == site.url %}active{% endif %}" href="{{ subsite.url }}">{{ subsite.text }}</a>
+        {% endfor %}
+    </div>
+</div>
