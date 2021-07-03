@@ -6,7 +6,3 @@
   url: /download/
   class: download
 
-- text: Documentation
-  url: https://docs.polychromatic.app/
-  class: docs
-  external: true

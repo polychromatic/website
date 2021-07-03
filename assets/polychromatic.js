@@ -34,6 +34,10 @@ function page_enter() {
         nav_active.classList.add("active");
     }
 
+    // On mobile, close the navigation menu
+    document.getElementById("mobile-menu-toggle").checked = false;
+
+
     // Smoothly scroll to the top when clicking internal links
     var links = document.querySelectorAll("a");
     for (a = 0; a < links.length; a++) {
