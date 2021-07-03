@@ -3,9 +3,10 @@
 #error-page {
     position: absolute;
     left: 0;
-    top: 124px;
-    bottom: 46px;
+    top: 0;
+    bottom: 0;
     right: 0;
+    z-index: 0;
     background-color: black;
     background-image: url(/assets/img/error.jpg);
     background-position: center;
