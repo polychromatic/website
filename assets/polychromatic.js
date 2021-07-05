@@ -53,23 +53,11 @@ function page_enter() {
 }
 
 function page_exit() {
-    docs_sidebar_shown = window.location.pathname.search("/docs/") != -1;
+
 }
 
 function download_select(element) {
     element.classList.add("active");
-}
-
-function change_doc(element) {
-    var nav_docs = document.getElementsByClassName("nav-docs");
-    var nav_sidebar = document.getElementsByClassName("sidebar")[0];
-
-    for (b = 0; b < nav_docs.length; b++) {
-        nav_docs[b].classList.remove("active");
-    }
-
-    element.classList.add("active");
-    nav_sidebar.classList.remove("transition-fade");
 }
 
 // Initial page load
