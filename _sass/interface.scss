@@ -93,13 +93,13 @@ h1, h2, h3 {
 }
 
 pre {
-    background: $pre-colour;
+    background: $bg-secondary;
     color: lime;
     padding: 1em;
     overflow-x: auto;
 }
 
 code {
-    color: lime;
+    color: lightgrey;
     font-size: 1.1em;
 }

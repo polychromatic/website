@@ -33,13 +33,13 @@
     &:hover,
     &:focus {
         border-color: lighten($table-colour, 10%);
-        color: darken($fg-colour, 10%);
+        color: darken($text-colour, 10%);
         border-bottom-color: transparent;
     }
 
     &:disabled {
         pointer-events: none;
-        color: $text-disabled;
+        color: $grey-colour;
     }
 }
 

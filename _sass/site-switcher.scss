@@ -10,14 +10,14 @@
         border: 1px solid $border-colour;
         border-bottom: 1px solid $border-colour;
         border-bottom-color: transparent !important;
-        color: $fg-colour;
+        color: $text-colour;
         display: inline-block;
         padding: 4px 8px;
 
         &:hover,
         &:focus {
             border-color: lighten($border-colour, 10%);
-            color: darken($fg-colour, 10%);
+            color: darken($text-colour, 10%);
             text-decoration: none;
         }
 
@@ -33,7 +33,7 @@
 
         &.disabled {
             cursor: not-allowed;
-            color: $text-disabled;
+            color: $grey-colour;
             opacity: 0.5;
         }
     }
