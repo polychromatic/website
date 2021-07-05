@@ -1,48 +1,45 @@
 ---
 layout: default
 ---
-<article class="page transition-fade">
+<article class="wrapper transition-fade">
 
-    <header class="page-header">
+    <header>
         <h1 class="page-title">{{ page.title | escape }}</h1>
     </header>
 
-    <div class="page-content">
+    {% for feature in page.features %}
+    {% capture currentcycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    <div class="row feature-page {{ currentcycle }}">
 
-        {% for feature in page.features %}
-        {% capture currentcycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-        <div class="row feature-page {{ currentcycle }}">
-
-            {% if currentcycle == 'odd' %}
-            <div class="col-12 col-md-6 img">
-                {% include img-2x.html src=feature.img %}
-            </div>
-            {% endif %}
-
-            <div class="col-12 col-md-6 text">
-                <h2>{{ feature.title }}</h2>
-                <p>
-                    {{ feature.text | markdownify }}
-                    {% if feature.points %}
-                        <ul>
-                            {% for point in feature.points %}
-                            <li>{{ point }}</li>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
-                </p>
-            </div>
-
-            {% if currentcycle == 'even' %}
-            <div class="col-12 col-md-6 img">
-                {% include img-2x.html src=feature.img %}
-            </div>
-            {% endif %}
-
+        {% if currentcycle == 'odd' %}
+        <div class="col-12 col-md-6 img">
+            {% include img-2x.html src=feature.img %}
         </div>
-        {% endfor %}
+        {% endif %}
 
-        {{ content }}
+        <div class="col-12 col-md-6 text">
+            <h2>{{ feature.title }}</h2>
+            <p>
+                {{ feature.text | markdownify }}
+                {% if feature.points %}
+                    <ul>
+                        {% for point in feature.points %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </p>
+        </div>
+
+        {% if currentcycle == 'even' %}
+        <div class="col-12 col-md-6 img">
+            {% include img-2x.html src=feature.img %}
+        </div>
+        {% endif %}
+
     </div>
+    {% endfor %}
+
+    {{ content }}
 
 </article>

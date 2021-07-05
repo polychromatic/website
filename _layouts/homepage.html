@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="page transition-fade">
+<article class="transition-fade">
 
     <div class="splash">
         <div class="wrapper">
@@ -21,8 +21,15 @@ layout: default
     </div>
     <div class="splash-block"></div>
 
-    <div class="page-content">
-    {{ content }}
+    <div class="wrapper">
+        <h1 class="center">{{ page.titles.image_box }}</h1>
+        {% include partials/image-box.html %}
+    </div>
+
+    {% include partials/features.html %}
+
+    <div class="wrapper">
+        {{ content }}
     </div>
 
 </article>

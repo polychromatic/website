@@ -1,0 +1,25 @@
+
+{% for feature in page.features %}
+
+<div class="row feature {% if forloop.last %}last{% endif %}">
+
+    <div class="feature-image-wrapper col-12 col-sm-5">
+        {% include img-2x.html src=feature.image %}
+    </div>
+
+    <div class="feature-text-wrapper col-12 col-sm-7">
+        <h2 class="feature-title">{{ feature.title }}</h2>
+
+        <div class="feature-text">
+            {{ feature.text | markdownify }}
+
+            {% if feature.button %}
+                <a class="btn" href="{{ feature.button.url }}">{{ feature.button.label }}</a>
+            {% endif %}
+        </div>
+
+    </div>
+
+</div>
+
+{% endfor %}
