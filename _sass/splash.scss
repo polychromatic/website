@@ -4,7 +4,7 @@ $splash-height: calc(40vh + #{$header-height});
 
 .splash-block {
     display: block;
-    height: $splash-height;
+    height: calc(#{$splash-height} - 100px + 2em);
 }
 
 .splash {

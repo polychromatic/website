@@ -1,0 +1,27 @@
+<div class="row">
+
+    <div class="col">
+        <div class="image-box">
+            {% for item in page.image_box %}
+                {% assign uid = item.label | downcase | replace: ' ', '' %}
+
+                <input id="image-box-{{ uid }}" class="image-box-radio" type="radio" name="image-box" style="display:none" tabindex="0" {% if forloop.first %}checked{% endif %}/>
+                <label class="item" for="image-box-{{ uid }}">
+                    <div class="item-box">
+                        <div class="item-title">
+                            <img class="item-icon" src="{{ item.icon }}" alt=""/>
+                            <span>{{ item.label }}</span>
+                        </div>
+                        {{ item.summary | markdownify }}
+                    </div>
+                </label>
+
+                <div class="image">
+                    {% include img-2x.html src=item.image %}
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+
+</div>

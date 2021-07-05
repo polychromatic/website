@@ -12,8 +12,28 @@ splash_paragraph: >-
 
 splash_button_url: /download/
 splash_button_text: Download
+
+image_box:
+    - label: Controller
+      icon: /assets/img/apps/controller.svg
+      image: /assets/img/homepage/controller.png
+      summary: Configure hardware features and create animated effects
+
+    - label: Tray Applet
+      icon: /assets/img/apps/tray-applet.svg
+      image: /assets/img/homepage/tray-applet.png
+      summary: Quickly change settings from your desktop's system tray
+
+    - label: Command Line
+      icon: /assets/img/fa/terminal.svg
+      image: /assets/img/homepage/controller.png
+      summary: For those that work in the terminal or set lighting via scripts
 ---
 
+{:.center}
+# Managing RGB lighting made simple
+
+{% include partials/image-box.html %}
 
 {% include partials/feature.html
     img_position = "left"
