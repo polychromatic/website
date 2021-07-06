@@ -19,38 +19,37 @@ a {
 }
 
 .btn {
-    width: auto;
-    height: 2.5em;
-    background-color: #323232;
-    color: #ded9cb;
+    background-color: $bg-button;
+    color: $button-text;
+    border: 2px solid $border-colour;
     display: inline-block;
+    text-decoration: none;
     padding: 0.25em 1em;
     margin: 0.25em;
     font-size: 1em;
-    line-height: 1.75em;
-    vertical-align: middle;
-    text-decoration: none;
-    text-align: center;
-    border: 2px solid #2d2d2d;
-    -webkit-user-select: none;
-    -webkit-appearance: none;
-}
+    line-height: 1.5em;
 
-.btn:hover {
-    color: #0da902;
-    text-decoration: none;
-}
+    &:focus {
+        background-color: darken($bg-button, 5%);
+        color: #fff;
+    }
 
-.btn:active {
-    background-color: #06ff00;
-    color: black;
-}
+    &:hover {
+        background-color: lighten($bg-button, 5%);
+        color: #fff;
+        text-decoration: none;
+    }
 
-.btn + label {
-    display: block;
-    font-size: 0.8em;
-    color: #808080;
-    padding: 0.5em 0;
+    &:active {
+        background-color: darken($bg-button, 5%);
+        border-color: darken($border-colour, 5%);
+        color: $primary;
+    }
+
+    &:disabled {
+        background: $bg-secondary;
+        color: $grey-colour;
+    }
 }
 
 hr {
