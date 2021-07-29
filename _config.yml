@@ -17,14 +17,11 @@ disable_disk_cache: true
 #~  - jekyll-feed
 
 # Exclude from processing.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - vendor/
+  - scripts/
+  - LICENSE
+  - README.md
 
 # Common URLs
 openrazer_repo: "https://github.com/openrazer/openrazer/"
