@@ -2,6 +2,10 @@
   url: /features/
   class: features
 
+- text: Screenshots
+  url: /screenshots/
+  class: screenshots
+
 - text: Download
   url: /download/
   class: download
