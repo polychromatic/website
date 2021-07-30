@@ -26,39 +26,43 @@ image_box:
 
     - label: Command Line
       icon: /assets/fa/terminal.svg
-      image: /assets/img/homepage/controller.png
+      image: /assets/img/homepage/cli.png
       summary: For those that work in the terminal or set lighting via scripts
 
 features:
-    - title: Works with OpenRazer
+    - title: Compatible with OpenRazer
       image: /assets/img/logo/openrazer.svg
-      text: "Supports over 120 devices, including: keyboards, mice, mousemats and headsets."
+      text: "Supporting over 120 devices, including: keyboards, mice, mouse mats and headsets."
       button:
         label: View Supported Devices
         url: /devices/
 
-    - title: No registration required
+    - title: No clouds, no login
       image: /assets/fa/cloud.svg
-      text: Local software that runs on your computer, like it should.
+      text: Software running locally on your computer, like it should.
 
     - title: It's free and open source
       image: /assets/fa/box-open.svg
       text: Licensed and distributed under the [GPLv3](https://docs.polychromatic.app/license/).
 
 titles:
-    image_box: Managing RGB lighting made simple
+    image_box: Manage RGB lighting peripherals on GNU/Linux
 ---
 
 {:.center}
-# Razer, snake... meet penguin.
+# Snake, meet penguin.
 
 {:.center}
 ![Tux meets a snake](/assets/img/homepage/meet-penguin.svg)
 
-{:.center}
-Whether you've got one or planning to buy Razer peripherals, OpenRazer + Polychromatic will cover your gaming weapon.
+{:.center .shrink}
+Polychromatic complements OpenRazer for controlling Razer hardware
+on Linux, with more features and vendors still to come!
 
 {:.center}
-[Download](/download/){:.btn}
+[View Features](/about/){:.btn}
+
+{:.center .grey}
+(Legal stuff: the real snake logo is trademarked, and both projects are NOT afflicated by Razer!)
 
 [OpenRazer]: https://openrazer.github.io

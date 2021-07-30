@@ -3,7 +3,7 @@ author: Luke Horwell
 email: code@horwell.me
 description: >-
   Polychromatic, an RGB lighting management front-end application for GNU/Linux.
-  Powered by OpenRazer, but soon to be vendor agnostic.
+  Supports OpenRazer, and more brands in future.
 
 baseurl: ""
 url: "https://polychromatic.app"
