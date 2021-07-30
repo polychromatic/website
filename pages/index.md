@@ -60,7 +60,7 @@ Polychromatic complements OpenRazer for controlling Razer hardware
 on Linux, with more features and vendors still to come!
 
 {:.center}
-[View Features](/about/){:.btn}
+[View Features](/features/){:.btn}
 
 {:.center .grey}
 (Legal stuff: the real snake logo is trademarked, and both projects are NOT afflicated by Razer!)

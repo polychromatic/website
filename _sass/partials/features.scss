@@ -51,11 +51,6 @@
         margin-right: 1em;
     }
 
-    p {
-        /* Edge of viewport */
-        margin-right: 2em;
-    }
-
     .btn {
         /* Align left */
         margin-right: auto;
@@ -64,6 +59,36 @@
     /* Alternating rows */
     .feature:nth-of-type(even) {
         background: $bg-secondary;
+    }
+
+    /* Feature page tweaks */
+    .feature.large {
+        .feature-image-wrapper {
+            img {
+                max-height: 24em;
+                max-width: 24em;
+            }
+        }
+
+        /* Swap sides for every other one */
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+
+            .feature-text-wrapper {
+                text-align: right;
+            }
+
+            .btn {
+                margin-left: auto;
+                margin-right: 0;
+            }
+
+            .feature-image-wrapper img {
+                /* Align left */
+                margin-left: 1em;
+                margin-right: auto;
+            }
+        }
     }
 }
 
