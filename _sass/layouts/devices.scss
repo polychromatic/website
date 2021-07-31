@@ -1,0 +1,33 @@
+@import 'variables.scss';
+
+.device-list-info {
+    background: $bg-secondary;
+    border: 1px solid $border-colour;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.device-backend-links {
+    .link {
+        display: inline-flex;
+        margin-right: 2em;
+    }
+
+    svg {
+        height: 16px;
+        width: 16px;
+        margin: auto 0.25em;
+
+        path {
+            fill: $primary;
+        }
+    }
+}
+
+.device-table {
+    img {
+        height: 24px;
+        width: 24px;
+        vertical-align: middle;
+    }
+}

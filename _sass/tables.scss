@@ -1,0 +1,37 @@
+@import "variables.scss";
+
+table {
+    width: 100%;
+    border-spacing: 0;
+
+    tr {
+        background: $table-colour;
+
+        &:nth-child(even) {
+            background: $table-colour-alt;
+        }
+    }
+
+    th, td {
+        text-align: left;
+        padding: 0.5em 1em;
+        vertical-align: middle;
+        border-left: 1px solid $table-colour;
+    }
+
+    th {
+        background: $table-colour-head;
+        color: $sidebar-heading;
+        font-weight: 600;
+    }
+
+    tbody td {
+        vertical-align: top;
+    }
+
+    &.has-icons {
+        tbody td {
+            vertical-align: middle;
+        }
+    }
+}

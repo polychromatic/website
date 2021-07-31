@@ -1,0 +1,31 @@
+@import 'variables.scss';
+
+blockquote {
+    background: $bg-secondary;
+    border-left: 4px solid $secondary;
+    color: lighten($bg-secondary, 50%);
+    margin: 15px 0;
+
+    p {
+        padding: 10px;
+        margin: 0px;
+
+        + p {
+            padding-top: 0;
+        }
+    }
+
+    strong {
+        color: $secondary;
+    }
+
+    &.pkg-cmd {
+        &::before {
+            content: "$";
+            color: lime;
+            padding-right: 2px;
+        }
+
+        padding: 10px;
+    }
+}

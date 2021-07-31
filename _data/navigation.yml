@@ -10,3 +10,6 @@
   url: /download/
   class: download
 
+- text: Supported Devices
+  url: /devices/
+  class: devices
