@@ -2,27 +2,20 @@
 
 $splash-height: calc(40vh + #{$header-height});
 
-.splash-block {
-    display: block;
-    height: calc(#{$splash-height} - 100px + 2em);
-}
-
 .splash {
-    position: absolute;
-    left: 0;
-    right: 0;
     height: $splash-height;
     background: black;
     overflow: hidden;
+    position: relative;
     font-size: 1.1em;
     margin-top: -$header-height;
+    margin-bottom: 4em;
 
     h2 {
         color: white;
     }
 
     .chroma-backdrop {
-        position: relative;
         height: $splash-height;
         pointer-events: none;
 
@@ -30,15 +23,26 @@ $splash-height: calc(40vh + #{$header-height});
             position: absolute;
             height: 150vh;
             top: -65vh;
-            left: -30vw;
+            left: -5vw;
             animation: rotate 5s linear infinite;
         }
     }
 
     .splash-details {
         background: rgba(0,0,0,0.5);
-        padding-top: $header-height;
+        display: flex;
+        position: absolute;
+        left: 50vw;
+        top: $header-height;
+        bottom: 0;
+        right: 0;
+        max-width: $trigger-mobile;
+        padding: 1em 2em;
     }
+}
+
+.splash-details-inner {
+    margin: auto 0;
 }
 
 @keyframes rotate {
@@ -51,8 +55,20 @@ $splash-height: calc(40vh + #{$header-height});
     }
 }
 
-@media screen and (min-width: $screen-sm) {
-    .splash-details-inner {
-        margin-top: 10vh;
+@media (min-width: $trigger-mobile + 1px) {
+    .splash {
+        .splash-details {
+            max-width: 600px;
+        }
+    }
+}
+
+@media (max-width: $trigger-mobile) {
+    .splash {
+        height: 70vh;
+
+        .splash-details {
+            left: 0;
+        }
     }
 }

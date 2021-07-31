@@ -5,21 +5,18 @@ layout: default
 
     <div class="splash">
         <div class="wrapper">
-            <div class="row">
-                <div class="col-6 chroma-backdrop">
-                    <img class="chroma-ring" alt="Chroma ring" src="/assets/img/splash/chroma.svg">
-                </div>
-                <div class="col-6 splash-details">
-                    <div class="splash-details-inner">
-                        <h2>{{ page.splash_title }}</h2>
-                        <p>{{ page.splash_paragraph }}</p>
-                        <a href="{{ page.splash_button_url }}" class="btn">{{ page.splash_button_text }}</a>
-                    </div>
+            <div class="chroma-backdrop">
+                <img class="chroma-ring" alt="Chroma ring" src="/assets/img/splash/chroma.svg">
+            </div>
+            <div class="splash-details">
+                <div class="splash-details-inner">
+                    <h2>{{ page.splash_title }}</h2>
+                    <p>{{ page.splash_paragraph }}</p>
+                    <a href="{{ page.splash_button_url }}" class="btn">{{ page.splash_button_text }}</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="splash-block"></div>
 
     <div class="wrapper">
         <h1 class="center">{{ page.titles.image_box }}</h1>
