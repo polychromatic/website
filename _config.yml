@@ -7,7 +7,7 @@ description: >-
 
 baseurl: ""
 url: "https://polychromatic.app"
-source_code_url: "https://github.com/polychromatic/website"
+source_code_url: "https://github.com/polychromatic"
 
 # Build settings
 markdown: kramdown
