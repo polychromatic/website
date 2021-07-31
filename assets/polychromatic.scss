@@ -2,20 +2,24 @@
 # SCSS imports for the Polychromatic website.
 ---
 
-@import 'variables.scss';
-@import 'typography.scss';
+/* Global */
+@import 'base.scss';
+@import 'blockquote.scss';
+@import 'buttons.scss';
+@import 'footer.scss';
+@import 'header.scss';
 @import 'layout.scss';
 @import 'scrollbar.scss';
-@import 'interface.scss';
-@import 'header.scss';
 @import 'site-switcher.scss';
-@import 'footer.scss';
-@import 'error.scss';
 @import 'tables.scss';
 @import 'transitions.scss';
+@import 'typography.scss';
+@import 'variables.scss';
+
+/* Local */
+@import 'error.scss';
 @import 'splash.scss';
 @import 'tabs.scss';
-@import 'blockquote.scss';
 @import 'layouts/devices.scss';
 @import 'layouts/downloads.scss';
 @import 'partials/features.scss';

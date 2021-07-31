@@ -1,0 +1,41 @@
+@import 'variables.scss';
+
+a {
+    color: lime;
+    text-decoration: none;
+
+    &:hover {
+        color: green;
+        text-decoration: underline;
+
+        code {
+            color: green;
+        }
+    }
+
+    &:focus {
+        outline-color: lime;
+    }
+}
+
+hr {
+    border-color: $bg-colour;
+}
+
+h1, h2, h3 {
+    color: lime;
+    font-weight: 500;
+}
+
+pre {
+    background: $bg-secondary;
+    border: 1px solid $bg-colour;
+    color: lime;
+    padding: 1em;
+    overflow-x: auto;
+}
+
+code {
+    color: lightgrey;
+    font-size: 1.1em;
+}
