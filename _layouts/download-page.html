@@ -19,6 +19,7 @@ layout: default
 
             {{ content }}
 
+            {% if page.permalink != "/download/manual/" %}
             <hr>
 
             <h3>Available backends to install</h3>
@@ -37,6 +38,8 @@ layout: default
                     {% endif %}
                 {% endfor %}
             </div>
+            {% endif %}
+
         </div>
 
     </div>

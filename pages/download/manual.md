@@ -1,26 +1,31 @@
 ---
 layout: download-page
-title: Manual Installation
+title: Build Instructions
 permalink: /download/manual/
 distro: generic
-distro_name: Manual Installation
+distro_name: Build Instructions
+distro_accent: '0,128,0'
 class: download
 ---
 
-> Only applies to `master` branch.
+## Prerequisites
 
-### Building
+* `meson` and `ninja` are required to build the project. The build system allows
+for modularity should you wish to only install specific components (tray applet, controller, CLI)
 
-`meson` and `ninja` is required to build the project. The build system allows
-for modularity should you wish to exclude the tray applet, controller or CLI.
+* You'll need an implementation of SASS to compile Polychromatic's Qt styling. `sassc` is widely
+available, but there's other implementations that could be used.
 
-You'll need an implementation of `sass` to compile the Qt styling. `sassc` is widely
-available, but there's other implementations that could be used (e.g. `dart-sass`, RubyGems `sass`, or NPM `sass`)
+* `intltool` is required for compiling translations.
 
-For instructions on building, see the ["Manual Installation" download page](/download/manual/).
+* `git` is needed for retrieving the source code.
 
-You'll need to install the latest versions of `git`, `meson` and `ninja`, as well
-as the [application's dependencies](https://docs.polychromatic.app/dependencies/).
+[Full Dependencies List](https://docs.polychromatic.app/dependencies/){:.btn}
+
+
+## Building
+
+Clone the repository and build as follows:
 
 ```
 git clone https://github.com/polychromatic/polychromatic.git
@@ -29,16 +34,38 @@ meson build
 ninja -C build install
 ```
 
-### Development Mode
 
-For quick testing or to start hacking the code right away, you can run Polychromatic
-from the root of the repository, providing the
-[application's dependencies](https://docs.polychromatic.app/dependencies/) have been installed.
+## Running directly in the repository
+
+Providing the [application and build dependencies](https://docs.polychromatic.app/dependencies/)
+are installed, the software can be ran directly from the folder.
+Useful for testing, hacking, bisecting or debugging changes.
 
 ```
 ./polychromatic-controller-dev
 ./polychromatic-tray-applet
-./polychromatic-cmd
+./polychromatic-cli
 ```
 
-In development mode, the application will compile the styling required to render the UI each time it is ran.
+Your configuration and cache is isolated to a `savedatadev` directory
+when running via `polychromatic-controller-dev`. To isolate for other components,
+set this environment variable:
+
+    export POLYCHROMATIC_DEV_CFG=true
+
+
+## Minimal /opt files
+
+Alternately, if you already have all of the application's dependencies installed,
+there is a script to generate the minimal files needed to run that can be placed into `/opt`, or
+anywhere else on the system where a normal installation is limited.
+
+This lacks integration with the desktop, as this method excludes the placement
+of desktop launchers (including automatic start at login). These could be
+manually placed in your `~/.local/share/applications` and desktop's start-up
+programs, if desired.
+
+```
+./scripts/create-files-for-opt.sh <destination>
+```
+
