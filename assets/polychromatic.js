@@ -110,7 +110,7 @@ function page_exit() {
 
 }
 
-function download_select(element) {
+function download_selected(element) {
     element.classList.add("active");
 }
 

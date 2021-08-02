@@ -4,46 +4,42 @@ title: Download
 permalink: /download/
 class: download
 
-official_distros:
+distros:
     - name: Ubuntu & Derivatives
       url: ubuntu
-      maintainer: official
 
     - name: Debian
       url: debian
-      maintainer: official
 
     - name: Arch Linux
       url: arch
-      maintainer: z3ntu
 
     - name: Fedora
       url: fedora
-      maintainer: z3ntu
 
     - name: openSUSE
       url: opensuse
-      maintainer: z3ntu
-
-    - name: Mageia
-      url: mageia
-      maintainer: z3ntu
 
     - name: Solus
       url: solus
-      maintainer: z3ntu
 
-community_title: "Community Supported"
-community_distros:
+    - name: Mageia
+      url: mageia
+
     - name: Gentoo
+      class: community
       url: gentoo
-      maintainer: vifino
 
-    - name: CentOS / Red Hat
+    - name: CentOS & Red Hat
+      class: community
       url: redhat
-      maintainer: moozhub
+---
 
 ---
 
 {:.center}
-[View Source Code](https://github.com/polychromatic/polychromatic/branches/){:.btn}
+### Alternate Methods
+
+{:.center}
+[Source Code]({{ site.polychromatic_repo }}){:.btn .ext}
+[Build Instructions](/download/manual/){:.btn}

@@ -1,71 +1,78 @@
 @import 'variables.scss';
 
+/****************************
+ * Index page
+*****************************/
 .distros {
-    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
 
-    .col {
-        text-align: center;
-        background: black;
-        border: 1px solid green;
-        margin: 0.5em;
-        padding: 1em;
-        transition: border-color $btn-speed, filter $btn-speed;
+.distro {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    background: black;
+    border: 1px solid green;
+    margin: 0.5em;
+    padding: 1em;
+    width: 10em;
+    transition: border-color $btn-speed, filter $btn-speed;
 
-        &:hover,
-        &:focus {
-            border-color: lime;
-            text-decoration: none;
+    img {
+        height: 5em;
+        margin: 0 auto;
+        filter: grayscale(1);
+        transition: filter $btn-speed;
+    }
 
-            img {
-                filter: grayscale(0);
-            }
+    span {
+        display: block;
+        margin: 1em auto 0.25em;
+        color: green;
+        transition: color $btn-speed;
+    }
 
-            span {
-                color: lime;
-            }
-        }
-
-        &:active,
-        &.active {
-            background-color: lime;
-
-            img {
-                filter: grayscale(1) brightness(0.25);
-                transition: none;
-            }
-
-            span {
-                color: black;
-            }
-        }
+    &:hover,
+    &:focus {
+        border-color: lime;
+        text-decoration: none;
 
         img {
-            height: 100%;
-            max-height: 5em;
-            max-width: 5em;
-            filter: grayscale(1);
-            transition: filter $btn-speed;
+            filter: grayscale(0);
         }
 
         span {
-            display: block;
-            margin: 1em 0;
-            color: green;
-            transition: color $btn-speed;
+            color: lime;
+        }
+    }
+
+    &:active,
+    &.active {
+        background-color: lime;
+
+        img {
+            filter: grayscale(1) brightness(0.25);
+            transition: none;
+        }
+
+        span {
+            color: black;
         }
     }
 }
 
-@media screen and (max-width: $screen-sm) {
+@media screen and (max-width: $trigger-mobile) {
     .distros {
-        .col {
-            flex: 1 auto;
-            display: flex;
-            flex-direction: row;
+        justify-content: center;
+    }
 
-            span {
-                margin: auto;
-            }
+    .distro {
+        width: 8em;
+
+        img {
+            height: 3.5em;
         }
     }
 }

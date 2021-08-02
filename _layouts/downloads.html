@@ -7,23 +7,15 @@ layout: default
         <h1 class="page-title">{{ page.title | escape }}</h1>
     </header>
 
-    <div class="distros row">
-    {% for distro in page.official_distros %}
-        <a class="col" href="/download/{{ distro.url }}/" onclick="download_select(this)">
-            <img src="/assets/img/distros/{{ distro.url }}.svg" alt="{{ distro.name }} logo"/>
-            <span>{{ distro.name }}</span>
-        </a>
-    {% endfor %}
-    </div>
-
-    {% if page.community_title %}<h3>{{ page.community_title }}</h3>{% endif %}
-    <div class="distros row">
-    {% for distro in page.community_distros %}
-        <a class="col" href="/download/{{ distro.url }}/" onclick="download_select(this)">
-            <img src="/assets/img/distros/{{ distro.url }}.svg" alt="{{ distro.name }} logo"/>
-            <span>{{ distro.name }}</span>
-        </a>
-    {% endfor %}
+    <div class="row">
+        <div class="col distros">
+            {% for distro in page.distros %}
+                <a class="distro" href="/download/{{ distro.url }}/" onclick="download_selected(this)">
+                    <img src="/assets/img/distros/{{ distro.url }}.svg" alt="{{ distro.name }} logo"/>
+                    <span>{{ distro.name }}</span>
+                </a>
+            {% endfor %}
+        </div>
     </div>
 
     {{ content }}
