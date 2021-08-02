@@ -10,7 +10,7 @@ layout: default
     <div class="row">
         <div class="col distros">
             {% for distro in page.distros %}
-                <a class="distro" href="/download/{{ distro.url }}/" onclick="download_selected(this)">
+                <a class="distro {{ distro.class }}" href="/download/{{ distro.url }}/" onclick="download_selected(this)">
                     <img src="/assets/img/distros/{{ distro.url }}.svg" alt="{{ distro.name }} logo"/>
                     <span>{{ distro.name }}</span>
                 </a>

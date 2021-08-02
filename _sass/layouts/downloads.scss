@@ -77,6 +77,24 @@
     }
 }
 
+/* Badges */
+.distro.community {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "Community";
+        background: $red;
+        color: white;
+        font-size: 0.7em;
+        position: absolute;
+        top: 1.5em;
+        right: -4.25em;
+        padding: 0.25em 4em;
+        transform: rotate(45deg);
+    }
+}
+
 
 /****************************
  * Distro Instructions
