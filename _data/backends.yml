@@ -1,0 +1,4 @@
+- name: OpenRazer
+  id: openrazer
+  logo: /assets/img/logo/openrazer.svg
+  url: https://openrazer.github.io

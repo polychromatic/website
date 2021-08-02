@@ -5,14 +5,17 @@ permalink: /download/solus/
 distro: solus
 distro_name: Solus
 class: download
+
+backends:
+    openrazer: https://openrazer.github.io/#solus
 ---
 
-## OpenRazer & Polychromatic
+## Solus Software Center
 
-Polychromatic and the OpenRazer dependencies are available from the **Solus Software Center**
+Polychromatic can be found by search:
 
-![](/assets/img/downloads/solus-software-center.png)
+![polychromatic in Solus Software Center](/assets/img/downloads/solus-software-center.png)
 
-{:.grey}
-If you didn't have OpenRazer installed originally, it is recommended to
-restart the computer after installing.
+Or install via the command line:
+
+    sudo eopkg install openrazer

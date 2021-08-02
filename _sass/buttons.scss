@@ -4,7 +4,7 @@
     background-color: $bg-button;
     color: $button-text;
     border: 2px solid $border-colour;
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none;
     padding: 0.25em 1em;
     margin: 0.25em;
@@ -28,9 +28,31 @@
         color: $primary;
     }
 
-    &:disabled {
+    &:disabled,
+    &.disabled {
+        /* For best results, do not use as <a> tag */
         background: $bg-secondary;
         color: $grey-colour;
+        cursor: not-allowed;
+        transition: border-color $btn-speed;
+
+        img, span {
+            filter: grayscale(1);
+            opacity: 0.75;
+        }
+
+        &:active {
+            border-color: $negative-colour;
+            transition: none;
+        }
+    }
+
+    /* Icons */
+    img {
+        height: 24px;
+        width: 24px;
+        margin: auto;
+        margin-right: 0.25em;
     }
 }
 

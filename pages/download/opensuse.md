@@ -5,18 +5,25 @@ permalink: /download/opensuse/
 distro: opensuse
 distro_name: openSUSE
 class: download
+
+backends:
+    openrazer: https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta
 ---
 
-## OpenRazer & Polychromatic
+> Only stable builds are avaliable for this distribution.
 
-First, you'll need to install [OpenRazer](https://openrazer.github.io).
+### One Click Install
 
-Both OpenRazer can Polychromatic are built by the openSUSE Build Service:
+[![](/assets/img/distros/opensuse-small.svg) Tumbleweed](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Tumbleweed/polychromatic.ymp){:.btn}
+[![](/assets/img/distros/opensuse-small.svg) Leap 15.2](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Leap_15.2/polychromatic.ymp){:.btn}
 
-* [openrazer-meta](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta)
-* [polychromatic](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic)
+### Or... using the Terminal
 
-From there, you'll be able to download packages, get instructions or perform a one-click install.
+```
+sudo zypper addrepo https://download.opensuse.org/repositories/hardware:razer/openSUSE_Leap_15.2/hardware:razer.repo
+sudo zypper refresh
+sudo zypper install polychromatic
+```
 
-{:.grey}
-Be sure to restart the computer after installing.
+For binary packages and instructions, visit the
+[openSUSE Build Service](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic).

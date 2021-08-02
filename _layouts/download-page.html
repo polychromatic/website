@@ -17,6 +17,24 @@ layout: default
 
             {{ content }}
 
+            <hr>
+
+            <h3>Available backends to install</h3>
+            <div class="backend-list">
+                {% for backend in site.data.backends %}
+                    {% if page.backends[backend.id] %}
+                        <a class="btn " href="{{ page.backends[backend.id] }}">
+                            <img src="{{ backend.logo }}" alt="{{ backend.name }} logo"/>
+                            <span>{{ backend.name }}</span>
+                        </a>
+                    {% else %}
+                        <div class="btn disabled">
+                            <img src="{{ backend.logo }}" alt="{{ backend.name }} logo"/>
+                            <span>{{ backend.name }}</span>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
 
     </div>

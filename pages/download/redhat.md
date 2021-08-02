@@ -5,20 +5,21 @@ permalink: /download/redhat/
 distro: redhat
 distro_name: Red Hat / CentOS
 class: download
+
+backends:
+    openrazer: https://openrazer.github.io/#redhat
 ---
 
-These packages are maintained by [moozhub] in the [yum-repo-mooz] repository.
-If there's a packaging or dependency problem, please [raise the issue] in their repository.
+These packages are maintained by [moozhub] in the [moozhub/yum-repo-mooz] repository.
 
-## OpenRazer & Polychromatic
+```
+sudo yum -y install yum-utils
+sudo yum-config-manager --add-repo=https://raw.githubusercontent.com/moozhub/yum-repo-mooz/master/elmooz.repo
+sudo yum install polychromatic
+```
 
-For instructions on installing OpenRazer and Polychromatic, see this README:
-
-<https://github.com/moozhub/yum-repo-mooz>
-
-{:.grey}
-Be sure to restart the computer after installing.
+For packaging or dependency problems, please [raise the issue] in their repository.
 
 [moozhub]: https://github.com/moozhub
-[yum-repo-mooz]: https://github.com/moozhub/yum-repo-mooz
+[moozhub/yum-repo-mooz]: https://github.com/moozhub/yum-repo-mooz
 [raise the issue]: https://github.com/moozhub/yum-repo-mooz/issues

@@ -34,17 +34,37 @@
     </div>
 
     <div id="tab-content-stable" class="tab-content">
+        <blockquote>
+            <p>
+                For the tried &amp; tested experience.
+            </p>
+        </blockquote>
+
         {{ include.stable | markdownify }}
     </div>
 
     {% if include.testing %}
         <div id="tab-content-testing" class="tab-content">
+            <blockquote>
+                <p>
+                    Get the latest software updates as soon as they're ready for wider testing.
+                </p>
+            </blockquote>
+
             {{ include.testing | markdownify }}
-    </div>
+        </div>
     {% endif %}
 
     {% if include.edge %}
         <div id="tab-content-edge" class="tab-content">
+            <blockquote>
+                <p>
+                    It's cutting edge, you'll be the first to receive new features
+                    and improvements from the
+                    <a href="{{ site.polychromatic_repo }}"><code>master</code></a> branch.
+                </p>
+            </blockquote>
+
             {{ include.edge | markdownify }}
         </div>
     {% endif %}

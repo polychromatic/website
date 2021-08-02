@@ -5,18 +5,21 @@ permalink: /download/mageia/
 distro: mageia
 distro_name: Mageia
 class: download
+
+backends:
+    openrazer: https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta
 ---
 
-## OpenRazer & Polychromatic
+> Only stable builds are avaliable for this distribution.
 
-First, you'll need to install [OpenRazer](https://openrazer.github.io).
+Supports Mageia 7, 8 and Cauldron.
 
-Both OpenRazer can Polychromatic are built by the openSUSE Build Service:
+Open a Terminal and run these commands. Change the release version if necessary:
 
-* [openrazer-meta](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta)
-* [polychromatic](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic)
+```
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Mageia_8/hardware:razer.repo
+sudo dnf install polychromatic
+```
 
-From there, you'll be able to download packages, get instructions or perform a one-click install.
-
-{:.grey}
-Be sure to restart the computer after installing.
+For binary packages and instructions, visit the
+[openSUSE Build Service](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic).

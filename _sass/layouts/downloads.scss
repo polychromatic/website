@@ -70,6 +70,10 @@
     }
 }
 
+
+/****************************
+ * Distro Instructions
+*****************************/
 .download-page {
     .distro-logo {
         width: 100%;
@@ -78,6 +82,23 @@
 
     .download-instructions img {
         max-width: 100%;
+    }
+}
+
+.backend-list {
+    .backend {
+        display: inline-flex;
+
+        img {
+            height: 32px;
+            width: 32px;
+            vertical-align: middle;
+            margin: auto 0.25em;
+        }
+
+        span {
+            margin: auto;
+        }
     }
 }
 
