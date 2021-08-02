@@ -111,6 +111,35 @@
     }
 }
 
+#unsupported-os {
+    background: $bg-secondary;
+    border: 1px solid $red;
+    display: flex;
+    margin: 1em 10em;
+    animation: unsupported-glow 2s infinite;
+
+    img {
+        margin: 1em 2em;
+        height: 5em;
+    }
+
+    h2 {
+        color: lighten($red, 50%);
+    }
+}
+
+@keyframes unsupported-glow {
+    0% {
+        box-shadow: 0px 0px 2px $red;
+    }
+    50% {
+        box-shadow: 0px 0px 10px $red;
+    }
+    100% {
+        box-shadow: 0px 0px 2px $red;
+    }
+}
+
 /****************************
  * Distro Instructions
 *****************************/

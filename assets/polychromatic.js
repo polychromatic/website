@@ -63,17 +63,37 @@ function page_enter() {
     }
 
     // Downloads Index
-    _autodetect_OS();
+    if (window.location.pathname == "/download/")
+        _autodetect_OS();
 }
 
 function _autodetect_OS() {
-    var agent = navigator.userAgent;
+    var agent = window.navigator.userAgent;
+    var platform = window.navigator.platform;
 
     // Some distros put their name in the user agent (Firefox)
     if (agent.search("Ubuntu") > 0) {
         document.querySelector("#ubuntu").classList.add("detected");
     } else if (agent.search("Fedora") > 0) {
         document.querySelector("#fedora").classList.add("detected");
+    }
+
+    // Show unsupported message for Windows/Mac platforms
+    var possible_win = ["Windows", "Win32", "Win64"];
+    var possible_mac = ["Macintosh", "MacIntel", "MacPPC"];
+    var unsupported_box = document.querySelector("#unsupported-os");
+    var unsupported_img = document.querySelector("#unsupported-os-img");
+
+    if (possible_win.indexOf(platform) !== -1) {
+        unsupported_box.style.display = "flex";
+        unsupported_box.hidden = false;
+        unsupported_img.src = "/assets/img/platforms/windows.svg";
+    }
+
+    if (possible_mac.indexOf(platform) !== -1) {
+        unsupported_box.style.display = "flex";
+        unsupported_box.hidden = false;
+        unsupported_img.src = "/assets/img/platforms/mac.png";
     }
 }
 

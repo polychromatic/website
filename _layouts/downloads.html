@@ -7,6 +7,17 @@ layout: default
         <h1 class="page-title">{{ page.title | escape }}</h1>
     </header>
 
+    <div id="unsupported-os" style="display:none" hidden>
+        <img id="unsupported-os-img" src="" alt=""/>
+        <div>
+            <h2>Your operating system is not supported yet</h2>
+            <p class="grey">Sorry! Polychromatic only runs on GNU/Linux systems.</p>
+            <p>
+                <a class="btn" href="https://docs.polychromatic.app/faqs/#is-windows-or-macos-supported">Read FAQs</a>
+            </p>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col distros">
             {% for distro in page.distros %}
