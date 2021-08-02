@@ -4,6 +4,7 @@ title: Download for Fedora
 permalink: /download/fedora/
 distro: fedora
 distro_name: Fedora
+distro_accent: '81,162,218'
 class: download
 
 backends:

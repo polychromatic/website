@@ -4,6 +4,7 @@ title: Download for Debian
 permalink: /download/debian/
 distro: debian
 distro_name: Debian
+distro_accent: '215,7,81'
 class: download
 
 backends:

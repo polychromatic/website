@@ -4,6 +4,7 @@ title: Download for openSUSE
 permalink: /download/opensuse/
 distro: opensuse
 distro_name: openSUSE
+distro_accent: '115,186,37'
 class: download
 
 backends:

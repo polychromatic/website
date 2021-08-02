@@ -13,6 +13,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
+    transition: background $page-speed ease-out;
 
     .site-inner {
         padding-top: 15px;

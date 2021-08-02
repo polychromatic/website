@@ -4,6 +4,7 @@ title: Download for Solus
 permalink: /download/solus/
 distro: solus
 distro_name: Solus
+distro_accent: '76,82,99'
 class: download
 
 backends:

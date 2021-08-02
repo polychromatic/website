@@ -4,6 +4,7 @@ title: Download for Red Hat and CentOS
 permalink: /download/redhat/
 distro: redhat
 distro_name: Red Hat / CentOS
+distro_accent: '233,52,66'
 class: download
 
 backends:

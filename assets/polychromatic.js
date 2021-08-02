@@ -52,6 +52,15 @@ function page_enter() {
 
     // For Supported Devices page
     _fetch_device_list("openrazer", "https://openrazer.github.io/api/devices.json", "https://openrazer.github.io/api/latest_version.txt");
+
+    // Accent colour changes on header
+    var bg_accent = document.getElementById("header-accent");
+    var header = document.querySelector(".site-header");
+    if (bg_accent) {
+        header.style.backgroundColor = "rgba(" + bg_accent.value + ", 0.25)";
+    } else {
+        header.style.backgroundColor = null;
+    }
 }
 
 function _fetch_device_list(backend_id, devices_url, version_url) {

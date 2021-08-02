@@ -4,6 +4,7 @@ title: Download for Mageia
 permalink: /download/mageia/
 distro: mageia
 distro_name: Mageia
+distro_accent: '35,151,212'
 class: download
 
 backends:

@@ -4,6 +4,7 @@ title: Download for Arch
 permalink: /download/arch/
 distro: arch
 distro_name: Arch Linux
+distro_accent: '23,147,209'
 class: download
 
 backends:
