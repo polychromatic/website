@@ -30,7 +30,7 @@ distros:
       class: community
       url: gentoo
 
-    - name: CentOS & Red Hat
+    - name: Red Hat
       class: community
       url: redhat
 ---

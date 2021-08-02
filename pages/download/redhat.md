@@ -1,9 +1,9 @@
 ---
 layout: download-page
-title: Download for Red Hat and CentOS
+title: Download for Red Hat
 permalink: /download/redhat/
 distro: redhat
-distro_name: Red Hat / CentOS
+distro_name: Red Hat
 distro_accent: '233,52,66'
 class: download
 
