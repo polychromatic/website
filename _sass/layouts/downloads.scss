@@ -13,7 +13,7 @@
     display: inline-flex;
     flex-direction: column;
     text-align: center;
-    background: black;
+    background: $bg-secondary;
     border: 1px solid green;
     margin: 0.5em;
     padding: 1em;
@@ -95,6 +95,21 @@
     }
 }
 
+.distro.detected {
+    animation: distro-detected 2s infinite;
+}
+
+@keyframes distro-detected {
+    0% {
+        box-shadow: 0px 0px 2px $primary;
+    }
+    50% {
+        box-shadow: 0px 0px 10px $primary;
+    }
+    100% {
+        box-shadow: 0px 0px 2px $primary;
+    }
+}
 
 /****************************
  * Distro Instructions

@@ -50,16 +50,30 @@ function page_enter() {
         }
     }
 
-    // For Supported Devices page
+    // Supported Devices
     _fetch_device_list("openrazer", "https://openrazer.github.io/api/devices.json", "https://openrazer.github.io/api/latest_version.txt");
 
-    // Accent colour changes on header
+    // Downloads --> Distro
     var bg_accent = document.getElementById("header-accent");
     var header = document.querySelector(".site-header");
     if (bg_accent) {
         header.style.backgroundColor = "rgba(" + bg_accent.value + ", 0.25)";
     } else {
         header.style.backgroundColor = null;
+    }
+
+    // Downloads Index
+    _autodetect_OS();
+}
+
+function _autodetect_OS() {
+    var agent = navigator.userAgent;
+
+    // Some distros put their name in the user agent (Firefox)
+    if (agent.search("Ubuntu") > 0) {
+        document.querySelector("#ubuntu").classList.add("detected");
+    } else if (agent.search("Fedora") > 0) {
+        document.querySelector("#fedora").classList.add("detected");
     }
 }
 
