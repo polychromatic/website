@@ -17,16 +17,19 @@ image_box:
     - label: Controller
       icon: /assets/img/apps/controller.svg
       image: /assets/img/homepage/controller.png
+      alt: Screenshot of Polychromatic's Controller application
       summary: Configure hardware features and create animated effects
 
     - label: Tray Applet
       icon: /assets/img/apps/tray-applet.svg
       image: /assets/img/homepage/tray-applet.png
+      alt: Screenshot of Polychromatic's tray applet
       summary: Quickly change settings from your desktop's system tray
 
     - label: Command Line
       icon: /assets/fa/terminal.svg
       image: /assets/img/homepage/cli.png
+      alt: Screenshot of the terminal running polychromatic-cli
       summary: For those that work in the terminal or set lighting via scripts
 
 features:

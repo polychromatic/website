@@ -17,7 +17,11 @@
                 </label>
 
                 <div class="image">
-                    {% include img-2x.html src=item.image %}
+                    {% if include.2x == true %}
+                        {% include img-2x.html src=item.image alt=item.alt %}
+                    {% else %}
+                        <img src="{{ item.image }}" alt="{{ item.alt }}"/>
+                    {% endif %}
                 </div>
 
             {% endfor %}
