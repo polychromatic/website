@@ -1,11 +1,11 @@
 @import 'variables.scss';
 
 a {
-    color: lime;
+    color: $primary;
     text-decoration: none;
 
     &:hover {
-        color: green;
+        color: $secondary;
         text-decoration: underline;
 
         code {
@@ -14,7 +14,7 @@ a {
     }
 
     &:focus {
-        outline-color: lime;
+        outline-color: $primary;
     }
 }
 
@@ -23,7 +23,7 @@ hr {
 }
 
 h1, h2, h3 {
-    color: lime;
+    color: $primary;
     font-weight: 500;
 }
 
