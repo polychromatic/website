@@ -20,11 +20,12 @@ distros:
     - name: openSUSE
       url: opensuse
 
-    - name: Solus
-      url: solus
-
     - name: Mageia
       url: mageia
+
+    - name: Solus
+      class: community
+      url: solus
 
     - name: Gentoo
       class: community
