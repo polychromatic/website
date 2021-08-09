@@ -13,8 +13,8 @@ source_code_url: "https://github.com/polychromatic"
 markdown: kramdown
 disable_disk_cache: true
 
-#~ plugins:
-#~  - jekyll-feed
+plugins:
+  - jekyll-sitemap
 
 # Exclude from processing.
 exclude:
