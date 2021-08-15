@@ -51,6 +51,16 @@ sudo apt-get install polychromatic
     edge=edge
 %}
 
+> **Note for Debian 11 "Bullseye":**
+>
+> The tray applet cannot be installed because some dependencies are no longer
+> available from the repository. Either omit installing `polychromatic-tray-applet`
+> or manually install these packages:
+>
+> * <https://packages.debian.org/sid/gir1.2-appindicator3-0.1>
+> * <https://packages.debian.org/sid/amd64/libappindicator3-1>
+> * <https://packages.debian.org/sid/amd64/libindicator3-7>
+
 Packages for this distribution are split, so only specific components
 can be installed if desired:
 
