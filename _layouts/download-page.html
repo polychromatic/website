@@ -22,7 +22,8 @@ layout: default
             {% if page.permalink != "/download/manual/" %}
             <hr>
 
-            <h3>Available backends to install</h3>
+            <h2>Install a backend</h2>
+            <p>If you haven't already, you'll need to install a backend that provides support for your device.</p>
             <div class="backend-list">
                 {% for backend in site.data.backends %}
                     {% if page.backends[backend.id] %}
