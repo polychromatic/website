@@ -27,6 +27,7 @@ To install, open a Terminal (usually CTRL+ALT+T) and run these commands.
 
 ```
 sudo add-apt-repository ppa:polychromatic/stable
+sudo apt update
 sudo apt install polychromatic
 ```
 
@@ -36,6 +37,7 @@ sudo apt install polychromatic
 
 ```
 sudo add-apt-repository ppa:polychromatic/testing
+sudo apt update
 sudo apt install polychromatic
 ```
 
@@ -44,6 +46,7 @@ sudo apt install polychromatic
 
 ```
 sudo add-apt-repository ppa:polychromatic/edge
+sudo apt update
 sudo apt install polychromatic
 ```
 
