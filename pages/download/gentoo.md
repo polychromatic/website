@@ -14,7 +14,8 @@ backends:
 These packages are maintained by [vifino] in the [vifino/vifino-overlay] repository.
 
 ```
-sudo layman -a vifino-overlay
+eselect repository enable vifino-overlay
+emaint sync -r vifino-overlay
 emerge app-misc/polychromatic
 ```
 
