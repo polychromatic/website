@@ -69,7 +69,7 @@ can be installed if desired:
 * `polychromatic-tray-applet`
 * `polychromatic-cli`
 
-> **What this, Ubuntu?!**
+> **What's this, Ubuntu?!**
 >
 > Launchpad acts as the repository host for this package archive.
 > The packages and dependencies are compatible between Debian and Ubuntu.

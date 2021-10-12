@@ -14,7 +14,7 @@ backends:
 {% capture stable %}
 
 Polychromatic is [available from the AUR](https://aur.archlinux.org/packages/polychromatic/).
-For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#Comparison_tables) like `yay`:
+For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#Comparison_tables):
 
 ```
 yay -S polychromatic
@@ -25,7 +25,7 @@ yay -S polychromatic
 {% capture edge %}
 
 Polychromatic is [available from the AUR](https://aur.archlinux.org/packages/polychromatic-git/).
-For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#Comparison_tables) like `yay`:
+For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#Comparison_tables):
 
 ```
 yay -S polychromatic-git
