@@ -39,8 +39,5 @@ distros:
 ---
 
 {:.center}
-### Alternate Methods
+[View Source Code]({{ site.polychromatic_repo }}){:.btn .ext}
 
-{:.center}
-[Source Code]({{ site.polychromatic_repo }}){:.btn .ext}
-[Build Instructions](/download/manual/){:.btn}
