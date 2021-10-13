@@ -19,4 +19,6 @@ Polychromatic can be found by search:
 
 Or install via the command line:
 
-    sudo eopkg install openrazer
+```shell
+sudo eopkg install openrazer
+```

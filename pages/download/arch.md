@@ -16,7 +16,7 @@ backends:
 Polychromatic is [available from the AUR](https://aur.archlinux.org/packages/polychromatic/).
 For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#Comparison_tables):
 
-```
+```shell
 yay -S polychromatic
 ```
 
@@ -27,7 +27,7 @@ yay -S polychromatic
 Polychromatic is [available from the AUR](https://aur.archlinux.org/packages/polychromatic-git/).
 For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#Comparison_tables):
 
-```
+```shell
 yay -S polychromatic-git
 ```
 

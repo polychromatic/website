@@ -17,7 +17,7 @@ although the software won't stay up-to-date that way.
 
 {% capture stable %}
 
-```
+```shell
 echo "deb http://ppa.launchpad.net/polychromatic/stable/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
 sudo apt-get update
@@ -27,7 +27,7 @@ sudo apt-get install polychromatic
 
 {% capture testing %}
 
-```
+```shell
 echo "deb http://ppa.launchpad.net/polychromatic/testing/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
 sudo apt-get update
@@ -37,7 +37,7 @@ sudo apt-get install polychromatic
 
 {% capture edge %}
 
-```
+```shell
 echo "deb http://ppa.launchpad.net/polychromatic/edge/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
 sudo apt-get update

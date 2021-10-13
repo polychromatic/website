@@ -13,7 +13,7 @@ backends:
 
 These packages are maintained by [moozhub] in the [moozhub/yum-repo-mooz] repository.
 
-```
+```shell
 sudo yum -y install yum-utils
 sudo yum-config-manager --add-repo=https://raw.githubusercontent.com/moozhub/yum-repo-mooz/master/elmooz.repo
 sudo yum install polychromatic

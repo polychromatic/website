@@ -1,0 +1,85 @@
+.language-diff {
+    /* Insert */
+    .gi {
+        color: lime;
+    }
+    /* Delete */
+    .gd {
+        color: red;
+    }
+}
+
+.language-json {
+    /* "Parent" */
+    .p {
+        color: grey;
+    }
+
+    /* Key */
+    .nl {
+        color: aqua;
+    }
+
+    /* Value (string) */
+    .s2 {
+        color: lime;
+    }
+
+    /* Value (integer) */
+    .mi {
+        color: orange;
+    }
+
+    /* Value (boolean) */
+    .kc {
+        color: magenta;
+    }
+}
+
+.language-ini {
+    /* Workaround for .desktop files */
+    .s + .err {
+        /* Key */
+        color: aqua !important;
+
+        + .nn {
+            color: orange;
+
+            ~ .err {
+                color: lime;
+            }
+        }
+    }
+
+    /* Key + Equals */
+    .py,
+    .p {
+        color: aqua;
+    }
+
+    /* Value */
+    .s {
+        color: lime;
+    }
+
+    /* Group */
+    .nn {
+        color: darkgrey;
+    }
+}
+
+.language-shell {
+    .nb {
+        color: white;
+    }
+
+    /* Comment */
+    .c {
+        color: darken($grey-colour, 33%);
+    }
+
+    /* Parameter starting with dash */
+    .nt {
+        color: white;
+    }
+}
