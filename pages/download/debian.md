@@ -21,7 +21,12 @@ although the software won't stay up-to-date that way.
 echo "deb http://ppa.launchpad.net/polychromatic/stable/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
 sudo apt-get update
-sudo apt-get install polychromatic
+
+# Full installation
+sudo apt install polychromatic
+
+# Or, selectively install components
+sudo apt install polychromatic-controller polychromatic-tray-applet polychromatic-cli
 ```
 {% endcapture %}
 
@@ -31,7 +36,12 @@ sudo apt-get install polychromatic
 echo "deb http://ppa.launchpad.net/polychromatic/testing/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
 sudo apt-get update
-sudo apt-get install polychromatic
+
+# Full installation
+sudo apt install polychromatic
+
+# Or, selectively install components
+sudo apt install polychromatic-controller polychromatic-tray-applet polychromatic-cli
 ```
 {% endcapture %}
 
@@ -41,7 +51,12 @@ sudo apt-get install polychromatic
 echo "deb http://ppa.launchpad.net/polychromatic/edge/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
 sudo apt-get update
-sudo apt-get install polychromatic
+
+# Full installation
+sudo apt install polychromatic
+
+# Or, selectively install components
+sudo apt install polychromatic-controller polychromatic-tray-applet polychromatic-cli
 ```
 {% endcapture %}
 
@@ -50,14 +65,6 @@ sudo apt-get install polychromatic
     testing=testing
     edge=edge
 %}
-
-Packages for this distribution are split, so only specific components
-can be installed if desired:
-
-* `polychromatic` (installs all components)
-* `polychromatic-controller`
-* `polychromatic-tray-applet`
-* `polychromatic-cli`
 
 > **What's this, Ubuntu?!**
 >

@@ -28,7 +28,12 @@ To install, open a Terminal (usually CTRL+ALT+T) and run these commands.
 ```shell
 sudo add-apt-repository ppa:polychromatic/stable
 sudo apt update
+
+# Full installation
 sudo apt install polychromatic
+
+# Or, selectively install components
+sudo apt install polychromatic-controller polychromatic-tray-applet polychromatic-cli
 ```
 
 
@@ -38,7 +43,12 @@ sudo apt install polychromatic
 ```shell
 sudo add-apt-repository ppa:polychromatic/testing
 sudo apt update
+
+# Full installation
 sudo apt install polychromatic
+
+# Or, selectively install components
+sudo apt install polychromatic-controller polychromatic-tray-applet polychromatic-cli
 ```
 
 {% endcapture %}
@@ -47,7 +57,12 @@ sudo apt install polychromatic
 ```shell
 sudo add-apt-repository ppa:polychromatic/edge
 sudo apt update
+
+# Full installation
 sudo apt install polychromatic
+
+# Or, selectively install components
+sudo apt install polychromatic-controller polychromatic-tray-applet polychromatic-cli
 ```
 
 Successful builds are usually published within an hour of new commits.
@@ -59,14 +74,6 @@ Successful builds are usually published within an hour of new commits.
     testing=testing
     edge=edge
 %}
-
-Packages for this distribution are split, so only specific components
-can be installed if desired:
-
-* `polychromatic` (installs all components)
-* `polychromatic-controller`
-* `polychromatic-tray-applet`
-* `polychromatic-cli`
 
 If you wish to switch the branches later, use [Software & Updates](https://wiki.ubuntu.com/SoftwareAndUpdatesSettings)
 under the **Other Software** tab.
