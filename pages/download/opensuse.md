@@ -16,12 +16,12 @@ backends:
 ### One Click Install
 
 [![](/assets/img/distros/opensuse-small.svg) Tumbleweed](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Tumbleweed/polychromatic.ymp){:.btn}
-[![](/assets/img/distros/opensuse-small.svg) Leap 15.2](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Leap_15.2/polychromatic.ymp){:.btn}
+[![](/assets/img/distros/opensuse-small.svg) Leap 15.4](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Leap_15.4/polychromatic.ymp){:.btn}
 
 ### Or... using the Terminal
 
 ```shell
-sudo zypper addrepo https://download.opensuse.org/repositories/hardware:razer/openSUSE_Leap_15.2/hardware:razer.repo
+sudo zypper addrepo https://download.opensuse.org/repositories/hardware:razer/openSUSE_Leap_15.4/hardware:razer.repo
 sudo zypper refresh
 sudo zypper install polychromatic
 ```
