@@ -3,7 +3,7 @@ layout: download-page
 title: Download for Ubuntu
 permalink: /download/ubuntu/
 distro: ubuntu
-distro_name: Ubuntu & Derivatives
+distro_name: Ubuntu
 distro_accent: '225,63,32'
 class: download
 

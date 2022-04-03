@@ -20,10 +20,11 @@ layout: default
 
     <div class="row">
         <div class="col distros">
-            {% for distro in page.distros %}
-                <a id="{{ distro.url }}" class="distro {{ distro.class }}" href="/download/{{ distro.url }}/" onclick="download_selected(this)">
-                    <img src="/assets/img/distros/{{ distro.url }}.svg" alt="{{ distro.name }} logo"/>
-                    <span>{{ distro.name }}</span>
+            {% for page in site.pages %}
+                {% if page.layout != "download-page" %}{% continue %}{% endif %}
+                <a id="{{ page.url }}" class="distro {% if page.distro_unofficial == true %}community{% endif %}" href="{{ page.permalink }}" onclick="download_selected(this)">
+                    <img src="/assets/img/distros/{{ page.distro }}.svg" alt="{{ page.name }} logo"/>
+                    <span>{{ page.distro_name }}</span>
                 </a>
             {% endfor %}
         </div>

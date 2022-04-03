@@ -5,6 +5,7 @@ permalink: /download/redhat/
 distro: redhat
 distro_name: Red Hat
 distro_accent: '233,52,66'
+distro_unofficial: true
 class: download
 
 backends:

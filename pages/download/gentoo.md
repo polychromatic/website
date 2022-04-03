@@ -5,6 +5,7 @@ permalink: /download/gentoo/
 distro: gentoo
 distro_name: Gentoo
 distro_accent: '158,149,247'
+distro_unofficial: true
 class: download
 
 backends:

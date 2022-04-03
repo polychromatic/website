@@ -5,6 +5,7 @@ permalink: /download/slackware/
 distro: slackware
 distro_name: Slackware
 distro_accent: '73,98,174'
+distro_unofficial: true
 class: download
 
 backends:
