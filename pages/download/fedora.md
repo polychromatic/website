@@ -13,14 +13,12 @@ backends:
 
 > Only stable builds are avaliable for this distribution.
 
-Supports Fedora 33 to 35.
-
-Open a Terminal and run these commands. Change the release version if necessary:
+Open a Terminal and run these commands, this is for Fedora 36:
 
 ```shell
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_35/hardware:razer.repo
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_36/hardware:razer.repo
 sudo dnf install polychromatic
 ```
 
-For binary packages and instructions, visit the
+For binary packages and other Fedora versions, visit the
 [openSUSE Build Service](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic).
