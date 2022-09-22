@@ -26,7 +26,6 @@ exclude:
 # Common URLs
 openrazer_repo: "https://github.com/openrazer/openrazer/"
 openrazer_website: "https://openrazer.github.io/"
-polychromatic_org: "https://github.com/polychromatic/"
 polychromatic_repo: "https://github.com/polychromatic/polychromatic/"
 rss_feed: "https://github.com/polychromatic/polychromatic/releases.atom"
 twitter: "polychromic_app"
