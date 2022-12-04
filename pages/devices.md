@@ -16,10 +16,6 @@ Polychromatic by itself is just a frontend, and doesn't contain driver code to
 directly control RGB hardware.
 
 This project only supports [OpenRazer] at the moment.
-In future, we'd like to add support for other brands using [phue](https://github.com/polychromatic/polychromatic/issues/296),
-[OpenRGB](https://github.com/polychromatic/polychromatic/issues/340) and
-[libratbag](https://github.com/polychromatic/polychromatic/issues/339).
-This is a fairly new objective. [Read more about the history of this project.](https://docs.polychromatic.app/history/)
 
 [OpenRazer]: https://openrazer.github.io
 
