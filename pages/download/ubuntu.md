@@ -38,24 +38,14 @@ sudo apt install polychromatic-controller polychromatic-tray-applet polychromati
 
 
 {% endcapture %}
-{% capture testing %}
+
+{% capture preview %}
+
+Get the latest features, fixes and improvements as soon as
+[as they are developed](https://github.com/polychromatic/polychromatic/commits/master).
 
 ```shell
-sudo add-apt-repository ppa:polychromatic/testing
-sudo apt update
-
-# Full installation
-sudo apt install polychromatic
-
-# Or, selectively install components
-sudo apt install polychromatic-controller polychromatic-tray-applet polychromatic-cli
-```
-
-{% endcapture %}
-{% capture edge %}
-
-```shell
-sudo add-apt-repository ppa:polychromatic/edge
+sudo add-apt-repository ppa:polychromatic/preview
 sudo apt update
 
 # Full installation
@@ -71,8 +61,7 @@ Successful builds are usually published within an hour of new commits.
 
 {% include partials/download-tabs.html
     stable=stable
-    testing=testing
-    edge=edge
+    preview=preview
 %}
 
 If you wish to switch the branches later, use [Software & Updates](https://wiki.ubuntu.com/SoftwareAndUpdatesSettings)

@@ -2,70 +2,33 @@
 
     <input id="radio-download-stable" name="tab" type="radio" style="display:none" checked />
 
-    {% if include.testing %}
-        <input id="radio-download-testing" name="tab" type="radio" style="display:none"/>
-    {% endif %}
-
-    {% if include.edge %}
-        <input id="radio-download-edge" name="tab" type="radio" style="display:none"/>
+    {% if include.preview %}
+        <input id="radio-download-preview" name="tab" type="radio" style="display:none"/>
     {% endif %}
 
     <div class="tabs">
 
         <label id="btn-tab-stable" for="radio-download-stable" class="btn-tab" tabindex="0">
             <img src="/assets/fa/box.svg" alt=""/>
-            <span>Stable</span>
+            <span>Release</span>
         </label>
 
-        {% if include.testing %}
-            <label id="btn-tab-testing" for="radio-download-testing" class="btn-tab" tabindex="0">
+        {% if include.preview %}
+            <label id="btn-tab-preview" for="radio-download-preview" class="btn-tab" tabindex="0">
                 <img src="/assets/fa/flask.svg" alt=""/>
-                <span>Testing</span>
-            </label>
-        {% endif %}
-
-        {% if include.edge %}
-            <label id="btn-tab-edge" for="radio-download-edge" class="btn-tab" tabindex="0">
-                <img src="/assets/fa/code-branch.svg" alt=""/>
-                <span>Edge</span>
+                <span>Preview</span>
             </label>
         {% endif %}
 
     </div>
 
     <div id="tab-content-stable" class="tab-content">
-        <blockquote>
-            <p>
-                For the tried &amp; tested experience.
-            </p>
-        </blockquote>
-
         {{ include.stable | markdownify }}
     </div>
 
-    {% if include.testing %}
-        <div id="tab-content-testing" class="tab-content">
-            <blockquote>
-                <p>
-                    Get the latest software updates as soon as they're ready for wider testing.
-                </p>
-            </blockquote>
-
-            {{ include.testing | markdownify }}
-        </div>
-    {% endif %}
-
-    {% if include.edge %}
-        <div id="tab-content-edge" class="tab-content">
-            <blockquote>
-                <p>
-                    It's cutting edge, you'll be the first to receive new features
-                    and improvements from the
-                    <a href="{{ site.polychromatic_repo }}"><code>master</code></a> branch.
-                </p>
-            </blockquote>
-
-            {{ include.edge | markdownify }}
+    {% if include.preview %}
+        <div id="tab-content-preview" class="tab-content">
+            {{ include.preview | markdownify }}
         </div>
     {% endif %}
 </div>

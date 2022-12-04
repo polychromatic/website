@@ -65,22 +65,12 @@
     }
 }
 
-#radio-download-testing:checked {
-    ~ .tabs #btn-tab-testing {
+#radio-download-preview:checked {
+    ~ .tabs #btn-tab-preview {
         @include checked_tab;
     }
 
-    ~ #tab-content-testing {
-        display: block;
-    }
-}
-
-#radio-download-edge:checked {
-    ~ .tabs #btn-tab-edge {
-        @include checked_tab;
-    }
-
-    ~ #tab-content-edge {
+    ~ #tab-content-preview {
         display: block;
     }
 }

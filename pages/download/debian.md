@@ -30,25 +30,13 @@ sudo apt install polychromatic-controller polychromatic-tray-applet polychromati
 ```
 {% endcapture %}
 
-{% capture testing %}
+{% capture preview %}
+
+Get the latest features, fixes and improvements as soon as
+[as they are developed](https://github.com/polychromatic/polychromatic/commits/master).
 
 ```shell
-echo "deb http://ppa.launchpad.net/polychromatic/testing/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
-sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
-sudo apt-get update
-
-# Full installation
-sudo apt install polychromatic
-
-# Or, selectively install components
-sudo apt install polychromatic-controller polychromatic-tray-applet polychromatic-cli
-```
-{% endcapture %}
-
-{% capture edge %}
-
-```shell
-echo "deb http://ppa.launchpad.net/polychromatic/edge/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
+echo "deb http://ppa.launchpad.net/polychromatic/preview/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/polychromatic.list
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 96B9CD7C22E2C8C5
 sudo apt-get update
 
@@ -62,8 +50,7 @@ sudo apt install polychromatic-controller polychromatic-tray-applet polychromati
 
 {% include partials/download-tabs.html
     stable=stable
-    testing=testing
-    edge=edge
+    preview=preview
 %}
 
 > **What's this, Ubuntu?!**

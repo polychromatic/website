@@ -22,9 +22,12 @@ yay -S polychromatic
 
 {% endcapture %}
 
-{% capture edge %}
+{% capture preview %}
 
-Polychromatic is [available from the AUR](https://aur.archlinux.org/packages/polychromatic-git/).
+Use [polychromatic-git](https://aur.archlinux.org/packages/polychromatic-git/)
+instead for the latest features, fixes and improvements
+from the [master branch](https://github.com/polychromatic/polychromatic/commits/master).
+
 For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#Comparison_tables):
 
 ```shell
@@ -38,5 +41,5 @@ package if you wish to get the latest changes.
 
 {% include partials/download-tabs.html
     stable=stable
-    edge=edge
+    preview=preview
 %}
