@@ -38,10 +38,11 @@ distros:
     - name: Slackware
       class: community
       url: slackware
----
 
+    - name: NixOS
+      class: community
+      url: nixos
 ---
 
 {:.center}
 [View Source Code]({{ site.polychromatic_repo }}){:.btn .ext}
-
