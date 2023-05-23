@@ -21,7 +21,7 @@ backends:
 ### Or... using the Terminal
 
 ```shell
-sudo zypper addrepo https://download.opensuse.org/repositories/hardware:razer/openSUSE_Leap_15.4/hardware:razer.repo
+sudo zypper addrepo https://download.opensuse.org/repositories/hardware:/razer/openSUSE_Leap_15.4/hardware:razer.repo
 sudo zypper refresh
 sudo zypper install polychromatic
 ```

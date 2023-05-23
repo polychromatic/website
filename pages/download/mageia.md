@@ -18,7 +18,7 @@ Supports Mageia 7, 8 and Cauldron.
 Open a Terminal and run these commands. Change the release version if necessary:
 
 ```shell
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Mageia_8/hardware:razer.repo
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Mageia_8/hardware:razer.repo
 sudo dnf install polychromatic
 ```
 
