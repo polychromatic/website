@@ -11,7 +11,7 @@ features:
 
     - title: Controller, Tray or Terminal
       image: /assets/img/features/interfaces.svg
-      text: "Accessible via 3 interfaces: The main application, tray applet`*`, or command line for terminal warriors."
+      text: "Accessible via 3 interfaces:<br>The main application, tray applet`*`, or command line."
 
     - title: Inspect Device Info
       image: /assets/img/features/device-info.png
