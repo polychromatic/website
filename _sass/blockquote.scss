@@ -13,6 +13,10 @@ blockquote {
         + p {
             padding-top: 0;
         }
+
+        + .highlighter-rouge {
+            margin-top: -15px;
+        }
     }
 
     ul {
