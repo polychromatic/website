@@ -146,6 +146,8 @@ function _process_device_list(backend_id, devices) {
         var vidpid = row.insertCell(1);
         name.innerHTML = `<img src="/assets/img/formfactor/${device.type}.svg" title="${formfactor}"/> ${device.name}`;
         vidpid.innerHTML = device.vid + ":" + device.pid;
+        if (device.alias_ids && device.alias_ids.length > 0)
+            vidpid.innerHTML += `, ${device.alias_ids.join(", ")}`;
     }
 }
 
