@@ -31,10 +31,6 @@ distros:
       class: community
       url: gentoo
 
-    - name: Red Hat
-      class: community
-      url: redhat
-
     - name: Slackware
       class: community
       url: slackware
