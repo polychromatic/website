@@ -12,16 +12,10 @@ backends:
     openrazer: https://openrazer.github.io/#gentoo
 ---
 
-These packages are maintained by [vifino] in the [vifino/vifino-overlay] repository.
+To install [sys-apps/polychromatic]:
 
 ```shell
-eselect repository enable vifino-overlay
-emaint sync -r vifino-overlay
-emerge app-misc/polychromatic
+emerge -av sys-apps/polychromatic
 ```
 
-For packaging or dependency problems, please [raise the issue] in their repository.
-
-[vifino]: https://github.com/vifino/
-[vifino/vifino-overlay]: https://github.com/vifino/vifino-overlay/tree/master/app-misc/polychromatic/
-[raise the issue]: https://github.com/vifino/vifino-overlay/issues
+[sys-apps/polychromatic]: https://packages.gentoo.org/packages/sys-apps/polychromatic
