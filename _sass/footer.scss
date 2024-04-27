@@ -32,18 +32,24 @@ footer {
         top: 0.2em;
         margin-left: 0.5em;
 
-        img {
+        svg {
             width: 32px;
             height: 32px;
             padding: 0 0.15em;
             transition: opacity 0.2s;
             opacity: 1;
+
+            path {
+                fill: $primary;
+            }
         }
 
         a {
+            text-decoration: none;
+
             &:hover,
             &:focus {
-                img {
+                svg {
                     opacity: 0.75;
                 }
             }
