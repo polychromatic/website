@@ -13,7 +13,7 @@ backends:
 
 ### 1. Add the repository
 
-**Fedora 36+**
+**Fedora 37+**
 ```shell
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
 ```

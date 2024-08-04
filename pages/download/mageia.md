@@ -11,9 +11,7 @@ backends:
     openrazer: https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta
 ---
 
-> Only stable builds are avaliable for this distribution.
-
-Supports Mageia 7, 8 and Cauldron.
+Supports Mageia 9 and Cauldron.
 
 Open a Terminal and run these commands. Change the release version if necessary:
 
