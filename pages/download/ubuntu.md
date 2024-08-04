@@ -21,7 +21,7 @@ backends:
 > * Zorin OS 11 or later
 >
 
-To install, open a Terminal (usually CTRL+ALT+T) and run these commands.
+To add the repository and install, open the Terminal (usually CTRL+ALT+T):
 
 {% capture stable %}
 
