@@ -8,7 +8,7 @@ distro_accent: '23,147,209'
 class: download
 
 backends:
-    openrazer: https://aur.archlinux.org/packages/openrazer-meta/
+    openrazer: https://archlinux.org/packages/extra/any/openrazer-daemon/
 ---
 
 {% capture stable %}
