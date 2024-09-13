@@ -7,9 +7,6 @@ distro_name: Gentoo
 distro_accent: '158,149,247'
 distro_unofficial: true
 class: download
-
-backends:
-    openrazer: https://openrazer.github.io/#gentoo
 ---
 
 To install [sys-apps/polychromatic]:

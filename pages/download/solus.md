@@ -7,9 +7,6 @@ distro_name: Solus
 distro_accent: '76,82,99'
 distro_unofficial: true
 class: download
-
-backends:
-    openrazer: https://openrazer.github.io/#solus
 ---
 
 ## Solus Software Center

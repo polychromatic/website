@@ -6,19 +6,32 @@ distro: mageia
 distro_name: Mageia
 distro_accent: '35,151,212'
 class: download
-
-backends:
-    openrazer: https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta
 ---
 
-Supports Mageia 9 and Cauldron.
+To add the repository, open the Terminal:
 
-Open a Terminal and run these commands. Change the release version if necessary:
+### Mageia 9
 
 ```shell
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Mageia_8/hardware:razer.repo
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Mageia_9/hardware:razer.repo
 sudo dnf install polychromatic
 ```
 
-For binary packages and instructions, visit the
-[openSUSE Build Service](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic).
+### Mageia Cauldron
+
+```shell
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Mageia_Cauldron/hardware:razer.repo
+sudo dnf install polychromatic
+```
+
+### OpenRazer
+
+Polychromatic shares the repository with OpenRazer. It will be automatically installed when installing this software.
+
+You'll need to add your user to the `plugdev` group. Reboot afterwards for changes to take effect.
+
+```shell
+sudo gpasswd -a $USER plugdev
+```
+
+Alternate options can be found on the [openSUSE Build Service](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=polychromatic).
