@@ -18,6 +18,14 @@ For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#
 yay -S polychromatic
 ```
 
+Or manually:
+
+```shell
+git clone https://aur.archlinux.org/polychromatic.git
+cd polychromatic
+makepkg -si
+```
+
 {% endcapture %}
 
 {% capture preview %}
@@ -31,8 +39,17 @@ For example, using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#
 yay -S polychromatic-git
 ```
 
-Depending on the AUR helper, you may need to manually update/rebuild this
-package if you wish to get the latest changes.
+You'll likely need to update/rebuild this package if you wish to get the latest changes.
+
+Or manually:
+
+```shell
+git clone https://aur.archlinux.org/polychromatic-git.git
+cd polychromatic
+makepkg -si
+```
+
+Run `makepkg` again later to get the latest changes.
 
 {% endcapture %}
 
@@ -41,7 +58,11 @@ package if you wish to get the latest changes.
     preview=preview
 %}
 
-AUR packages need to be manually rebuilt when there is a major Python version update.
+{:.warning}
+> **Tip**
+>
+> Be sure to rebuild this package whenever there's a new major version of `python` (like 3.11 → 3.12).
+
 
 ### OpenRazer
 
