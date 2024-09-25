@@ -22,7 +22,7 @@ layout: default
         <div class="col distros">
             {% for page in site.pages %}
                 {% if page.layout != "download-page" %}{% continue %}{% endif %}
-                <a id="{{ page.url }}" class="distro {% if page.distro_unofficial == true %}community{% endif %}" href="{{ page.permalink }}" onclick="download_selected(this)">
+                <a id="{{ page.distro }}" class="distro {% if page.distro_unofficial == true %}community{% endif %}" href="{{ page.permalink }}" onclick="download_selected(this)" style="--distro-accent: rgb({{ page.distro_accent }})">
                     <img src="/assets/img/distros/{{ page.distro }}.svg" alt="{{ page.name }} logo"/>
                     <span>{{ page.distro_name }}</span>
                 </a>

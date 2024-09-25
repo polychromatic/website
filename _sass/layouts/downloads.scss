@@ -7,50 +7,53 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    justify-content: center;
 }
 
 .distro {
+    --distro-accent: $secondary;
+
     display: inline-flex;
     flex-direction: column;
     text-align: center;
     background: $bg-secondary;
-    border: 1px solid green;
+    border: 1px solid $border-colour;
     margin: 0.5em;
     padding: 1em;
-    width: 10em;
+    width: 12em;
     transition: border-color $btn-speed, filter $btn-speed;
 
     img {
         height: 5em;
         margin: 0 auto;
-        filter: grayscale(1);
+        filter: brightness(0.8);
         transition: filter $btn-speed;
     }
 
     span {
         display: block;
         margin: 1em auto 0.25em;
-        color: green;
+        color: $grey-colour;
         transition: color $btn-speed;
     }
 
     &:hover,
     &:focus {
-        border-color: lime;
+        border-color: var(--distro-accent);
         text-decoration: none;
 
         img {
-            filter: grayscale(0);
+            filter: none;
         }
 
         span {
-            color: lime;
+            color: var(--distro-accent);
         }
     }
 
     &:active,
     &.active {
-        background-color: lime;
+        background-color: var(--distro-accent);
 
         img {
             filter: grayscale(1) brightness(0.25);
@@ -84,7 +87,7 @@
 
     &::before {
         content: "Community";
-        background: $red;
+        background: $border-colour;
         color: white;
         font-size: 0.7em;
         position: absolute;
