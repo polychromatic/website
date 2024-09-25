@@ -12,9 +12,9 @@ class: download
 
 ### One Click Install
 
-[![](/assets/img/distros/opensuse-small.svg) Tumbleweed](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Tumbleweed/polychromatic.ymp){:.btn}
-[![](/assets/img/distros/opensuse-small.svg) Leap 15.5](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Leap_15.5/polychromatic.ymp){:.btn}
-[![](/assets/img/distros/opensuse-small.svg) Leap 15.6](){:.btn .disabled}
+[![](/assets/img/distros/opensuse.svg) Tumbleweed](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Tumbleweed/polychromatic.ymp){:.btn}
+[![](/assets/img/distros/opensuse.svg) Leap 15.5](https://software.opensuse.org/ymp/hardware:razer/openSUSE_Leap_15.5/polychromatic.ymp){:.btn}
+[![](/assets/img/distros/opensuse.svg) Leap 15.6](){:.btn .disabled}
 
 ### Or... using the Terminal
 
