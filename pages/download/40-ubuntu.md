@@ -8,15 +8,6 @@ distro_accent: '225,63,32'
 class: download
 ---
 
-Ubuntu includes derivatives like:
-
-* Ubuntu 18.04 (all flavours) or later
-* Linux Mint 19 or later
-* elementaryOS 0.4 or later
-* KDE Neon
-* Pop!_OS 20.04 or later
-* Zorin OS 11 or later
-
 {% capture stable %}
 
 To add the repository and install, open the Terminal:

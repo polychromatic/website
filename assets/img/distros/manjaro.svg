@@ -1,0 +1,9 @@
+<svg width="256" height="256" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0,192)">
+    <g id="logo" transform="matrix(4,0,0,4,0,-192)">
+      <path d="m0 0v64h18v-46h23v-18z" style="fill:#35bf5c"/>
+      <path d="m23 23 2e-6 41h18v-41z" style="fill:#35bf5c"/>
+      <path d="m46 1e-6v64h18v-64z" style="fill:#35bf5c"/>
+    </g>
+  </g>
+</svg>
