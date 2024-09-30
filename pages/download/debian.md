@@ -2,10 +2,12 @@
 layout: download-page
 title: Download for Debian
 permalink: /download/debian/
-distro: debian
-distro_name: Debian
-distro_accent: '215,7,81'
 class: download
+
+distro_name: Debian
+distro_icon: debian.svg
+distro_accent: '215,7,81'
+order: 2
 ---
 
 {% capture stable %}

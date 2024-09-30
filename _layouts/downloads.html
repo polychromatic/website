@@ -22,10 +22,10 @@ layout: default
 
     <div class="row">
         <div class="col distros">
-            {% for page in site.pages %}
-                {% if page.layout != "download-page" %}{% continue %}{% endif %}
-                <a id="{{ page.distro }}" class="distro {% if page.distro_unofficial == true %}community{% endif %}" href="{{ page.permalink }}" onclick="download_selected(this)" style="--distro-accent: rgb({{ page.distro_accent }})">
-                    <img src="/assets/img/distros/{{ page.distro }}.svg" alt="{{ page.name }} logo"/>
+            {% assign distros = site.pages | where: "layout", "download-page" | sort: "order" %}
+            {% for page in distros %}
+                <a id="{{ page.distro_icon | replace:'.svg','' }}" class="distro {% if page.community_package == true %}community{% endif %}" href="{{ page.permalink }}" onclick="download_selected(this)" style="--distro-accent: rgb({{ page.distro_accent }})">
+                    <img src="/assets/img/distros/{{ page.distro_icon }}" alt="{{ page.name }} logo"/>
                     <span>{{ page.distro_name }}</span>
                 </a>
             {% endfor %}

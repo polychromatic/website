@@ -2,10 +2,12 @@
 layout: download-page
 title: Download for Arch
 permalink: /download/arch/
-distro: arch
-distro_name: Arch Linux
-distro_accent: '23,147,209'
 class: download
+
+distro_name: Arch Linux
+distro_icon: arch.svg
+distro_accent: '23,147,209'
+order: 1
 ---
 
 {% capture stable %}

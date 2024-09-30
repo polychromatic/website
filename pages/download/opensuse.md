@@ -2,10 +2,12 @@
 layout: download-page
 title: Download for openSUSE
 permalink: /download/opensuse/
-distro: opensuse
-distro_name: openSUSE
-distro_accent: '115,186,37'
 class: download
+
+distro_name: openSUSE
+distro_icon: opensuse.svg
+distro_accent: '115,186,37'
+order: 4
 ---
 
 > Due to a packaging issue, Leap 15.6 is not supported at the moment.

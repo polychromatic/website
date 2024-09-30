@@ -2,10 +2,12 @@
 layout: download-page
 title: Download for Mageia
 permalink: /download/mageia/
-distro: mageia
-distro_name: Mageia
-distro_accent: '35,151,212'
 class: download
+
+distro_name: Mageia
+distro_icon: mageia.svg
+distro_accent: '35,151,212'
+order: 7
 ---
 
 To add the repository, open the Terminal:

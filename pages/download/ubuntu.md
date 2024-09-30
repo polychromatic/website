@@ -2,10 +2,12 @@
 layout: download-page
 title: Download for Ubuntu
 permalink: /download/ubuntu/
-distro: ubuntu
-distro_name: Ubuntu
-distro_accent: '225,63,32'
 class: download
+
+distro_name: Ubuntu
+distro_icon: ubuntu.svg
+distro_accent: '225,63,32'
+order: 5
 ---
 
 {% capture stable %}

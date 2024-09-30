@@ -2,11 +2,13 @@
 layout: download-page
 title: Download for Solus
 permalink: /download/solus/
-distro: solus
-distro_name: Solus
-distro_accent: '76,82,99'
-distro_unofficial: true
 class: download
+
+distro_name: Solus
+distro_icon: solus.svg
+distro_accent: '76,82,99'
+community_package: true
+order: 10
 ---
 
 ## Solus Software Center
