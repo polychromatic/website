@@ -20,9 +20,10 @@ layout: default
         </div>
     </div>
 
+    {% assign distros = site.pages | where: "layout", "download-page" | sort: "order" %}
+
     <div class="row">
         <div class="col distros">
-            {% assign distros = site.pages | where: "layout", "download-page" | sort: "order" %}
             {% for page in distros %}
                 <a id="{{ page.distro_icon | replace:'.svg','' }}" class="distro {% if page.community_package == true %}community{% endif %}" href="{{ page.permalink }}" onclick="download_selected(this)" style="--distro-accent: rgb({{ page.distro_accent }})">
                     <img src="/assets/img/distros/{{ page.distro_icon }}" alt="{{ page.name }} logo"/>
@@ -32,11 +33,6 @@ layout: default
         </div>
     </div>
 
-    <p class="center">
-        <a href="/download/derivatives/" class="btn">
-            {% include svg/magnifying-glass.svg %}
-            Not listed?
-        </a>
-    </p>
+    </div>
 
 </article>

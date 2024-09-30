@@ -19,6 +19,14 @@ layout: default
 
             {{ content }}
 
+            {% if page.inherits and page.inherits != nil %}
+                {%- for _page in site.pages -%}
+                    {% if _page.distro_name == page.inherits %}
+                        {{ _page.content | markdownify }}
+                    {% endif %}
+                {%- endfor -%}
+            {% endif %}
+
         </div>
 
     </div>
