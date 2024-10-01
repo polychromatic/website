@@ -7,7 +7,7 @@ class: download
 distro_name: Ubuntu
 distro_icon: ubuntu.svg
 distro_accent: '225,63,32'
-order: 5
+order: 4
 ---
 
 {% capture stable %}

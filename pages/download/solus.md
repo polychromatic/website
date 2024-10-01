@@ -8,7 +8,7 @@ distro_name: Solus
 distro_icon: solus.svg
 distro_accent: '76,82,99'
 community_package: true
-order: 10
+order: 60
 ---
 
 ## Solus Software Center

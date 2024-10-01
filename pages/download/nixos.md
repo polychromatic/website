@@ -8,7 +8,7 @@ distro_name: NixOS
 distro_icon: nixos.svg
 distro_accent: '82,119,195'
 community_package: true
-order: 8
+order: 45
 ---
 
 Members of the NixOS community [maintain a package of Polychromatic.](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/polychromatic/default.nix)

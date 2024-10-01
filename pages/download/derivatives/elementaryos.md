@@ -7,6 +7,6 @@ class: download
 distro_name: elementary OS
 distro_accent: '126,128,135'
 distro_icon: elementary.svg
-order: 54
+order: 30
 inherits: Ubuntu
 ---

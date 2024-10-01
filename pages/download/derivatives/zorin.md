@@ -7,6 +7,6 @@ class: download
 distro_name: Zorin OS
 distro_accent: '0,142,204'
 distro_icon: zorin_os.png
-order: 60
+order: 75
 inherits: Ubuntu
 ---

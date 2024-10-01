@@ -7,6 +7,6 @@ class: download
 distro_name: EndeavourOS
 distro_accent: '102,50,153'
 distro_icon: endeavouros.svg
-order: 50
+order: 15
 inherits: Arch Linux
 ---

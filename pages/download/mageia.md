@@ -7,7 +7,7 @@ class: download
 distro_name: Mageia
 distro_icon: mageia.svg
 distro_accent: '35,151,212'
-order: 7
+order: 70
 ---
 
 To add the repository, open the Terminal:

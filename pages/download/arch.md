@@ -7,7 +7,7 @@ class: download
 distro_name: Arch Linux
 distro_icon: arch.svg
 distro_accent: '23,147,209'
-order: 1
+order: 0
 ---
 
 {% capture stable %}

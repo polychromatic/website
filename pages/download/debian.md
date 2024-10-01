@@ -7,7 +7,7 @@ class: download
 distro_name: Debian
 distro_icon: debian.svg
 distro_accent: '215,7,81'
-order: 2
+order: 1
 ---
 
 {% capture stable %}

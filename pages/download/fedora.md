@@ -7,7 +7,7 @@ class: download
 distro_name: Fedora
 distro_icon: fedora.svg
 distro_accent: '81,162,218'
-order: 3
+order: 2
 ---
 
 To add the repository, open the Terminal:

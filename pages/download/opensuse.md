@@ -7,7 +7,7 @@ class: download
 distro_name: openSUSE
 distro_icon: opensuse.svg
 distro_accent: '115,186,37'
-order: 4
+order: 3
 ---
 
 > Due to a packaging issue, Leap 15.6 is not supported at the moment.
