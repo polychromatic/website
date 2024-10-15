@@ -12,7 +12,7 @@ order: 2
 
 To add the repository, open the Terminal:
 
-### Fedora 37+
+### Fedora 37-40
 ```shell
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
 sudo dnf install polychromatic
@@ -21,7 +21,7 @@ sudo dnf install polychromatic
 ### Fedora Rawhide
 
 ```shell
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_Rawhide/hardware:razer.repo
+sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/hardware:/razer/Fedora_Rawhide/hardware:razer.repo
 sudo dnf install polychromatic
 ```
 
