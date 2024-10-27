@@ -87,11 +87,6 @@ You'll need to add your user to the `plugdev` group. Reboot afterwards for chang
 sudo gpasswd -a $USER plugdev
 ```
 
-**For SteamOS users,** while based on Arch, the driver is not easy to install due to the immutable filesystem
-and repository differences. It's not officially supported, but do [let them know](https://github.com/openrazer/openrazer/issues)
-if you have success.
-
-
 [suitable kernel headers]: https://archlinux.org/packages/?sort=&repo=Core&repo=Extra&q=linux+-headers&maintainer=&flagged=
 [openrazer-daemon-git]: https://aur.archlinux.org/packages/openrazer-daemon-git
 [openrazer-driver-dkms-git]: https://aur.archlinux.org/packages/openrazer-driver-dkms-git
