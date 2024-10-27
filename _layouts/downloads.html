@@ -25,6 +25,7 @@ layout: default
     <div class="row">
         <div class="col distros">
             {% for page in distros %}
+                {% if page.hidden == true %}{% continue %}{% endif %}
                 <a id="{{ page.distro_icon | replace:'.svg','' }}" class="distro {% if page.community_package == true %}community{% endif %}" href="{{ page.permalink }}" onclick="download_selected(this)" style="--distro-accent: rgb({{ page.distro_accent }})">
                     <img src="/assets/img/distros/{{ page.distro_icon }}" alt="{{ page.name }} logo"/>
                     <span>{{ page.distro_name }}</span>

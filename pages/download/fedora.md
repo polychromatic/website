@@ -31,6 +31,10 @@ sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/re
 sudo dnf install polychromatic
 ```
 
+### Fedora Silverblue
+
+See [Flatpak](/download/flatpak/)
+
 
 ### OpenRazer
 
