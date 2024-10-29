@@ -56,12 +56,22 @@
         background-color: var(--distro-accent);
 
         img {
-            filter: grayscale(1) brightness(0.25);
+            filter: drop-shadow(0px 0px 10px black);
             transition: none;
         }
 
         span {
             color: black;
+        }
+
+        /* Some logos contrast better with a 'mono' filter */
+        &#arch img,
+        &#debian img,
+        &#fedora img,
+        &#opensuse img,
+        &#manjaro img,
+        &#zorin img {
+            filter: grayscale(1) brightness(0.25);
         }
     }
 }
@@ -100,17 +110,18 @@
 
 .distro.detected {
     animation: distro-detected 2s infinite;
+    border-radius: 5px;
 }
 
 @keyframes distro-detected {
     0% {
-        box-shadow: 0px 0px 2px $primary;
+        box-shadow: 0px 0px 2px var(--distro-accent);
     }
     50% {
-        box-shadow: 0px 0px 10px $primary;
+        box-shadow: 0px 0px 10px var(--distro-accent);
     }
     100% {
-        box-shadow: 0px 0px 2px $primary;
+        box-shadow: 0px 0px 2px var(--distro-accent);
     }
 }
 
@@ -122,7 +133,7 @@
     animation: unsupported-glow 2s infinite;
 
     img {
-        margin: 1em 2em;
+        margin: auto 4em;
         height: 5em;
     }
 
