@@ -48,6 +48,11 @@ function pageEnter() {
     // Downloads page only
     if (window.location.pathname == "/download/")
         downloadPage();
+
+    // Add copy button to code blocks
+    document.querySelectorAll("pre code").forEach(function(code) {
+        makeCopyButton(code);
+    });
 }
 
 function downloadPage() {
@@ -139,6 +144,34 @@ function loadDeviceList(backend_id, devices_url, version_url) {
     requestDevices.send();
     requestVersion.open("GET", version_url);
     requestVersion.send();
+}
+
+function makeCopyButton(code) {
+    const pre = code.parentNode;
+    const btn = document.createElement("button");
+    const img = document.createElement("img");
+
+    const iconCopy = "/assets/img/copy.svg";
+    const iconOK = "/assets/img/copy-ok.svg";
+
+    btn.className = "btn copy-btn";
+    btn.title = "Copy";
+    img.src = iconCopy;
+    btn.appendChild(img);
+    btn.addEventListener("click", function() {
+        navigator.clipboard.writeText(code.innerText).then(function() {
+            img.src = iconOK;
+            pre.classList.add("copied");
+            setTimeout(function() {
+                img.src = iconCopy;
+                pre.classList.remove("copied");
+            }, 2000);
+        }, function() {
+            window.alert("Unable to copy text to clipboard.");
+        });
+    });
+
+    pre.appendChild(btn);
 }
 
 // Initial site load

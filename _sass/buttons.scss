@@ -79,3 +79,61 @@
         filter: grayscale(0);
     }
 }
+
+/* Copy button for code blocks */
+pre {
+    position: relative;
+
+    &.copied {
+        animation: pre-block-copied 0.75s ease-in-out forwards;
+        border-image-slice: 1;
+
+        .copy-btn {
+            background: $bg-colour;
+            border-color: transparent;
+        }
+    }
+
+    &:hover .copy-btn,
+    &:focus .copy-btn {
+        opacity: 1;
+    }
+}
+
+.copy-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    padding: 0.35em;
+    margin: 0;
+
+    &:hover,
+    &:focus {
+        background: $bg-button;
+        color: #fff;
+    }
+
+    img {
+        height: 1em;
+        width: 1em;
+        margin: auto;
+    }
+}
+
+@keyframes pre-block-copied {
+    0% { border-image: linear-gradient(315deg, $bg-colour, $bg-colour, $bg-colour, $bg-colour) 1; }
+    10% { border-image: linear-gradient(315deg, $secondary, $bg-colour, $bg-colour, $bg-colour) 1; }
+    20% { border-image: linear-gradient(315deg, $secondary, $secondary, $bg-colour, $bg-colour) 1; }
+    30% { border-image: linear-gradient(315deg, $secondary, $secondary, $secondary, $bg-colour) 1; }
+    40% { border-image: linear-gradient(315deg, $secondary, $secondary, $secondary, $secondary) 1; }
+    50% {
+        border-color: $secondary;
+    }
+    100% {
+        border-color: $bg-colour;
+    }
+}
