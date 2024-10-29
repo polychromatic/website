@@ -1,10 +1,5 @@
-// Smooth Page Transitions
 var docs_sidebar_shown = false;
 
-const options = {
-    animateHistoryBrowsing: true,
-    linkSelector: 'a[href^="/"]:not([data-no-swup]), a[href^="../"]:not([data-no-swup])',
-};
 
 function _do_smooth_scroll() {
     window.scroll({
@@ -14,12 +9,15 @@ function _do_smooth_scroll() {
     });
 }
 
-const swup = new Swup(options);
-swup.on("transitionStart", page_exit);
-swup.on("contentReplaced", page_enter);
+const swup = new Swup({
+    animateHistoryBrowsing: true,
+    linkSelector: 'a[href^="/"]:not([data-no-swup]), a[href^="../"]:not([data-no-swup])',
+});
+swup.hooks.on("visit:start", pageExit);
+swup.hooks.on("content:replace", pageEnter);
 
-function page_enter() {
     _do_smooth_scroll();
+function pageEnter() {
 
     // Update navigation 'active' class
     var nav_class = document.getElementById("current-page-class").value;
@@ -151,7 +149,7 @@ function _process_device_list(backend_id, devices) {
     }
 }
 
-function page_exit() {
+function pageExit() {
 
 }
 
@@ -160,4 +158,4 @@ function download_selected(element) {
 }
 
 // Initial page load
-page_enter();
+pageEnter();
