@@ -17,9 +17,9 @@
 
     {% include footer.html %}
 
-    <script src="/assets/lib/swup.min.js"></script>
-    <script src="/assets/polychromatic.js"></script>
+    {% assign timestamp = site.time | date: '%s' %}
+    <script src="/assets/lib/swup.umd.js?{{ timestamp }}"></script>
+    <script src="/assets/polychromatic.js?{{ timestamp }}"></script>
 
   </body>
-
 </html>
