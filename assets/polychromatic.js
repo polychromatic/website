@@ -80,7 +80,9 @@ function downloadPage() {
     if (userAgent.indexOf("Macintosh") > 0) {
         unsupportedBox.style.display = "flex";
         unsupportedBox.hidden = false;
-        unsupportedImg.src = "/assets/img/platforms/mac.png";
+        unsupportedImg.src = "/assets/img/platforms/macOS.svg";
+    }
+
     if (userAgent.indexOf("CrOS") > 0) {
         unsupportedBox.style.display = "flex";
         unsupportedBox.hidden = false;
