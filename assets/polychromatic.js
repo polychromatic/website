@@ -80,18 +80,21 @@ function downloadPage() {
         unsupportedBox.style.display = "flex";
         unsupportedBox.hidden = false;
         unsupportedImg.src = "/assets/img/platforms/windows.svg";
+        unsupportedImg.alt = "Windows logo";
     }
 
     if (userAgent.indexOf("Macintosh") > 0) {
         unsupportedBox.style.display = "flex";
         unsupportedBox.hidden = false;
         unsupportedImg.src = "/assets/img/platforms/macOS.svg";
+        unsupportedImg.alt = "macOS logo";
     }
 
     if (userAgent.indexOf("CrOS") > 0) {
         unsupportedBox.style.display = "flex";
         unsupportedBox.hidden = false;
         unsupportedImg.src = "/assets/img/platforms/chromeOS.svg";
+        unsupportedImg.alt = "ChromeOS logo";
         const msg = document.querySelector("#unsupported-os-msg");
         msg.innerText = "While ChromeOS is based on Linux, installing the driver for OpenRazer may not be supported.";
     }
