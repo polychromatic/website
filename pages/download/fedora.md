@@ -14,13 +14,13 @@ To add the repository, open the Terminal:
 
 ### Fedora 41 and later
 ```shell
-sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
+sudo dnf config-manager addrepo --from-repofile=https://openrazer.github.io/hardware:razer.repo
 sudo dnf install polychromatic
 ```
 
 ### Fedora 40 and earlier
 ```shell
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
+sudo dnf config-manager --add-repo https://openrazer.github.io/hardware:razer.repo
 sudo dnf install polychromatic
 ```
 
