@@ -33,18 +33,12 @@ sudo dnf install polychromatic
 
 ### Fedora Silverblue
 
-See [Flatpak](/download/flatpak/)
+See [Flatpak](/download/flatpak/).
 
 
 ### OpenRazer
 
 Polychromatic shares the repository with OpenRazer. It will be automatically installed when installing this software.
-
-You'll need kernel headers present in order for the driver installation to succeed.
-
-```shell
-sudo dnf install kernel-devel
-```
 
 You'll need to add your user to the `plugdev` group. Reboot afterwards for changes to take effect.
 
