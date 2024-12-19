@@ -53,4 +53,4 @@ To learn more about the project, visit the
 `*` To use the tray applet, your desktop environment needs to support the system tray or
 indicators. Some distributions & environments [require additional steps].
 
-[require additional steps]: https://docs.polychromatic.app/distros/#tray-applet-vs-desktop-environments
+[require additional steps]: https://docs.polychromatic.app/quirks/#missing-tray-applet
