@@ -1,0 +1,18 @@
+---
+permalink: /_redirects
+---
+# Moved pages
+/about* /features/
+
+# Removed pages
+/download/manual/ https://github.com/polychromatic/polychromatic/blob/master/DEVELOPMENT.md
+
+# Docs moved to subdomain in 2021
+/docs/* https://docs.polychromatic.app/:splat
+
+# Permalinks
+/permalink/bugs/ https://github.com/polychromatic/polychromatic/issues
+/permalink/donate/ https://www.paypal.me/LukeHorwell
+/permalink/keymapping/ https://docs.polychromatic.app/faqs/#can-i-remap-keys
+/permalink/latest/ https://github.com/polychromatic/polychromatic/releases/latest
+/permalink/src/ https://github.com/polychromatic/polychromatic
